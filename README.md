@@ -1,2 +1,2 @@
 # Bitis
-Redesign Bitis's Vietnam, a leading Vietnam footwear exporter to the world market
+Redesign Bitis's Vietnam, a leading manufacturer specializing in the production of shoes and sandals in Vietnam.
