@@ -231,13 +231,33 @@ p {
     font-size: 15px;
     margin: 5px 0;
 }
-.product-swatch-loop {
-    width: 35px;
-    height: 35px;
-    border: 1px solid #000;
 
+/*----------- Breadcrumb -----------*/
+ul.breadcrumb {
+    margin: 0.5em 0;
+    padding: 10px 0;
+    list-style: none;
+    background-color: #eee;
 }
-
+ul.breadcrumb li {
+    display: inline;
+    font-size: 13px;
+    font-family: subtitle;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: #1a4ea0;
+    text-decoration: none;
+    font-family: body;
+}
+ul.breadcrumb li a:hover {
+    color: #407ee0;
+    text-decoration: underline;
+}
 
 
 

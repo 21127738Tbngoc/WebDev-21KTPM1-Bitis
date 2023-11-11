@@ -1,1 +1,16 @@
 @charset "utf-8";
+
+.google-map {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+.contact-info h5, .contact-form h5 {
+    font-family: title;
+    font-size: 18px;
+}
+
+
+
+
+
+
