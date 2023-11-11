@@ -32,17 +32,14 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: headline;
 }
-
 p {
     font-family: body;
     font-size: 14px;
 }
-
 .title {
     font-family: title;
     font-size: 16px;
 }
-
 .subtitle {
     font-family: subtitle;
     font-size: 16px;
@@ -127,7 +124,6 @@ p {
     font-family: subtitle;
     font-size: 15px;
 }
-
 .nav li {
     padding: 0.8em;
 }
@@ -153,7 +149,44 @@ p {
 }
 
 /*----------- Product cards -----------*/
+.product-loop {
+    flex: 0 0 auto;
+    position: relative;
+    overflow: inherit;
+}
 
+.product {
+    border: 1px solid #ababab;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 3em 0;
+    padding: 16px;
+    position: relative;
+}
+
+.product-thumbnail {
+    position: relative;
+    overflow: hidden;
+}
+.product-thumbnail img {
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.product-label {
+    background: #18b460;
+    color: #fff;
+    font-family: subtitle;
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 4px;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+}
 
 
 
