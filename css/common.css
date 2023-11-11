@@ -156,8 +156,9 @@ p {
 }
 
 .product-card {
-    border: 1px solid #ababab;
-    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 0px 20px 8px #dedede;
+    border-radius: 8px;
     overflow: hidden;
     margin: 3em 0;
     padding: 16px;
@@ -167,12 +168,19 @@ p {
 .product-thumbnail {
     position: relative;
     overflow: hidden;
+    position: relative;
 }
 .product-thumbnail img {
     object-fit: cover;
     width: 100%;
     overflow: hidden;
+    transition: transform .3s ease;
+    display: block;
 }
+.product-thumbnail img:hover {
+    transform:translateY(10px);
+}
+
 .product-label {
     background: #18b460;
     color: #fff;
@@ -206,6 +214,12 @@ p {
     font-family: subtitle;
     font-size: 15px;
     margin: 5px 0;
+}
+.product-swatch-loop {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #000;
+
 }
 
 
