@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/*-------------------------- FONT --------------------------*/
+@font-face {
+    font-family: headline;
+    src: url("font/Inter-Bold.ttf");     
+}
+
+@font-face {
+    font-family: title;
+    src: url("font/Inter-SemiBold.ttf");     
+}
+
+@font-face {
+    font-family: body;
+    src: url("font/Inter-Regular.ttf");
+}
