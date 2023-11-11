@@ -155,7 +155,7 @@ p {
     overflow: inherit;
 }
 
-.product {
+.product-card {
     border: 1px solid #ababab;
     border-radius: 4px;
     overflow: hidden;
@@ -172,9 +172,7 @@ p {
     object-fit: cover;
     width: 100%;
     overflow: hidden;
-
 }
-
 .product-label {
     background: #18b460;
     color: #fff;
@@ -188,7 +186,27 @@ p {
     float: left;
 }
 
-
+.product-info {
+    color: #000;
+    font-family: body;
+    font-size: 12px;
+}
+.product-property {
+    margin: 5px 0;
+}
+.product-name a {
+    font-family: subtitle;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    text-decoration: none;
+    margin: 5px 0;
+}
+.product-price {
+    font-family: subtitle;
+    font-size: 15px;
+    margin: 5px 0;
+}
 
 
 
