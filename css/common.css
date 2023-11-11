@@ -128,8 +128,18 @@ p {
 }
 
 /*--- Hover state ---*/
+.primary-button:hover {
+    background-color: #820013;
+    color: #fff;
+}
+
+.secondary-button:hover {
+    background-color: #0f2e60;
+    color: #fff;
+}
+
 .tertiary-button:hover {
-    background-color: #da0020;
+    background-color: #666;
     color: #fff;
 }
 
@@ -137,6 +147,7 @@ p {
     background-color: #000;
     color: #fff;
 }
+
 
 
 
