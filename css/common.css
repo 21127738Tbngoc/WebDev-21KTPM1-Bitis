@@ -49,45 +49,11 @@ p {
 }
 
 
-/*--------------- NAVIGATION ---------------*/
-.header-nav {
-    background-color: #fff;
-}
-#header_logo {
-    height: 50px;
-    margin: 0.5em 0 1em 0;
-}
-
-.nav-link {
-    font-family: subtitle;
-    font-size: 15px;
-}
-
-.nav li {
-    padding: 0.8em;
-}
-
-.loginbag {
-    display: flex;
-    float: right;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-}
-
-.loginbag-icon {
-    font-size: 24px;
-    color: #000;
-}
-.loginbag-btn {
-    border: none;
-}
-
 /*--------------- BUTTONS ---------------*/
 /*--- Default state ---*/
 .primary-button {
     padding: 8px 24px; 
-    border-radius: 8px;
+    border-radius: 4px;
     border: none;
     background-color: #da0020;
     color: #fff;
@@ -129,17 +95,17 @@ p {
 
 /*--- Hover state ---*/
 .primary-button:hover {
-    background-color: #820013;
+    background-color: #ff415d;
     color: #fff;
 }
 
 .secondary-button:hover {
-    background-color: #0f2e60;
+    background-color: #407ee0;
     color: #fff;
 }
 
 .tertiary-button:hover {
-    background-color: #666;
+    background-color: #333;
     color: #fff;
 }
 
@@ -147,6 +113,45 @@ p {
     background-color: #000;
     color: #fff;
 }
+
+/*--------------- NAVIGATION ---------------*/
+.header-nav {
+    background-color: #fff;
+}
+#header_logo {
+    height: 50px;
+    margin: 0.5em 0 1em 0;
+}
+
+.nav-link {
+    font-family: subtitle;
+    font-size: 15px;
+}
+
+.nav li {
+    padding: 0.8em;
+}
+
+.loginbag {
+    display: flex;
+    float: right;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.loginbag-icon {
+    font-size: 24px;
+    color: #000;
+}
+.loginbag-btn {
+    border: none;
+}
+
+.nav-link:hover {
+    color: #407ee0;
+}
+
 
 
 
