@@ -4,9 +4,11 @@
     margin-top: 1em;
     margin-bottom: 1.5em;
 }
+
 .info-container h5, .form-container h5 {
     font-family: title;
     font-size: 18px;
+    padding-bottom: 1em;
 }
 
 .row {
@@ -29,13 +31,10 @@
     margin: 0;
 }
 .info-list li span {
-    width: 36px;
-    height: 36px;
-    line-height: 40px;
-    padding: 0;
+    padding: 6px 8px;
     float: left;
     margin-left: 0;
-    margin-right: 0.5em;
+    margin-right: 1em;
     border: 1px solid gray;
     border-radius: 4px;
     text-align: center;
@@ -44,6 +43,7 @@
     font-family: subtitle;
     font-size: 16px;
     margin-bottom: 0px;
+    padding-top: 3px;
 }
 
 .info-list li p {
