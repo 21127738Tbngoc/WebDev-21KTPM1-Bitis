@@ -4,10 +4,54 @@
     margin-top: 1em;
     margin-bottom: 1.5em;
 }
-.contact-info h5, .contact-form h5 {
+.info-container h5, .form-container h5 {
     font-family: title;
     font-size: 18px;
 }
+
+.row {
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    flex: wrap;
+}
+
+.info-list, .info-list li {
+    list-style-type: none;
+    margin: 1em 0 0 0;
+    padding: 0;
+    vertical-align: center;
+}
+.info-list li i {
+    font-size: 24px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.info-list li span {
+    width: 36px;
+    height: 36px;
+    line-height: 40px;
+    padding: 0;
+    float: left;
+    margin-left: 0;
+    margin-right: 0.5em;
+    border: 1px solid gray;
+    border-radius: 4px;
+    text-align: center;
+}
+.info-list li h6 {
+    font-family: subtitle;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.info-list li p {
+    font-family: body;
+    font-size: 15px;
+    float: left;
+}
+
 
 
 
