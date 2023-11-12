@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+body {
+    scroll-behavior: smooth;
+}
+
 /*----------- Fonts -----------*/
 @font-face {
     font-family: headline;
@@ -123,6 +127,7 @@ p {
 .nav-link {
     font-family: subtitle;
     font-size: 15px;
+    transition: transform .5s ease;
 }
 .nav li {
     padding: 0.8em;
@@ -146,6 +151,8 @@ p {
 
 .nav-link:hover {
     color: #407ee0;
+    transition-duration: .3s;
+    font-family: title;
 }
 
 /*----------- Product cards -----------*/

@@ -70,12 +70,12 @@
     <div class="container-fluid">
         <div class="container">
             <div class="row d-flex">
-                <!--------- Information --------->
-                <div class="col-5">
+                <!--------- Contact info --------->
+                <div class="col-6">
                     <div class="info-container">
                         <h5 class="border-bottom">Thông tin liên hệ</h5>
                         <ul class="row info-list">
-                            <!-- Address -->
+                            <!-- Địa chỉ -->
                             <li>
                                <span><i class="la la-map-marker"></i></span>
                                <h6>Địa chỉ</h6>
@@ -87,20 +87,36 @@
                                 <h6>Email</h6>
                                 <p>chamsockhachhang@bitis.com.vn</p>
                             </li>
-                            <!-- Phone -->
+                            <!-- Điện thoại -->
                             <li>
                                 <span><i class="la la-envelope"></i></span>
                                 <h6>Điện thoại</h6>
                                 <p>0966158666</p>
                             </li>
+                            <!-- Vận chuyển -->
+                            <li>
+                                <span><i class="la la-shipping-fast"></i></span>
+                                <h6>Vận chuyển</h6>
+                                <a href="https://www.haravan.com/">Haravan Enterprise</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <!--------- Feedback form --------->
-                <div class="col-7">
+                <!--------- Contact form --------->
+                <div class="col-6">
                     <div class="form-container">
                         <h5 class="border-bottom">Để lại lời nhắn</h5>
-                    </div>
+                        <!-- Họ tên -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Họ tên</label><br>
+                            <input type="text" placeholder="Nhập họ và tên" name="name" id="name" style="width:100%" required>
+                        </div>
+                        <!-- Điện thoại -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Số điện thoại</label><br>
+                            <input type="text" placeholder="Nhập số điện thoại" name="tel" id="tel" style="width:100%" required>
+                        </div>
+                    </div>  
                 </div>
             </div>
         </div>

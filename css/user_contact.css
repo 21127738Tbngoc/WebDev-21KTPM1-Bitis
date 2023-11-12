@@ -18,6 +18,7 @@
     flex: wrap;
 }
 
+/*--- Contact info ---*/
 .info-list, .info-list li {
     list-style-type: none;
     margin: 1em 0 0 0;
@@ -51,8 +52,23 @@
     font-size: 15px;
     float: left;
 }
-
-
+.info-list li a {
+    color:#1a4ea0;
+}
+.info-list li a:hover {
+    color:#407ee0;
+}
+/*--- Contact form ---*/
+.form-label {
+    font-family: subtitle;
+    font-size: 13px;
+    margin-bottom: 0.5em;
+}
+input {
+    font-family: body;
+    font-size: 15px;
+    padding: 8px;
+}
 
 
 
