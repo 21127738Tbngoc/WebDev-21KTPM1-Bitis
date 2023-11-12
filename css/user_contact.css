@@ -64,9 +64,9 @@
     font-size: 13px;
     margin-bottom: 0.5em;
 }
-input {
+input, textarea {
     font-family: body;
-    font-size: 15px;
+    font-size: 14px;
     padding: 8px;
 }
 
