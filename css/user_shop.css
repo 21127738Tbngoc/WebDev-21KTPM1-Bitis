@@ -35,3 +35,12 @@
 .product-filter img:hover {
     background-color: #ffc008;
 }
+.color-option {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+.color-option:hover {
+    border: 1.5px solid #ffc008;
+}
