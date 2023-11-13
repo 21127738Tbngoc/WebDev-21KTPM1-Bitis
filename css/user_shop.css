@@ -14,9 +14,9 @@
 
 /*----------- Filter & sort -----------*/
 .product-filter {
-    margin-top: 0.5em;
+    margin-top: 1em;
 }
-.product-filter h5 {
+.product-filter h5, h6 {
     font-family: title;
 }
 .product-filter p {
@@ -33,6 +33,5 @@
     margin-bottom: 0.5em;
 }
 .product-filter img:hover {
-    border: 1px solid #000;
     background-color: #ffc008;
 }
