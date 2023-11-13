@@ -279,7 +279,9 @@ p {
     font-size: 15px;
     margin: 5px 0;
 }
-
+.product-colors {
+    list-style-type: none;
+}
 /*----------- Breadcrumb -----------*/
 ul.breadcrumb {
     margin: 0.5em 0;
