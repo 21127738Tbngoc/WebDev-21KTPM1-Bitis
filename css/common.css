@@ -175,17 +175,31 @@ p {
 .product-thumbnail {
     position: relative;
     overflow: hidden;
-    position: relative;
+    width: 100%;
 }
+
 .product-thumbnail img {
     object-fit: cover;
     width: 100%;
     overflow: hidden;
     transition: transform .5s ease;
-    display: block;
+    display: flex;
+    position: relative;
 }
-.product-thumbnail img:hover {
-    transform:translateY(16px);
+.image-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 1s;
+    visibility: hidden;
+    overflow: hidden;
+}
+.product-thumbnail:hover img .image-hover {
+    opacity: 1;
 }
 
 .product-label {
@@ -200,7 +214,6 @@ p {
     display: block;
     float: left;
 }
-
 .product-label:hover {
     background: #13904c;
 }
