@@ -13,7 +13,26 @@
 }
 
 /*----------- Filter & sort -----------*/
-.product-types {
+.product-filter {
     margin-top: 0.5em;
-    margin-bottom: 1em;
+}
+.product-filter h5 {
+    font-family: title;
+}
+.product-filter p {
+    font-family: subtitle;
+    margin-bottom: 0.5em;
+}
+.product-filter img {
+    width: 50px;
+    background-color: #e4e7e6;
+}
+.product-types {
+    border-radius: 50%;
+    padding: 8px;
+    margin-bottom: 0.5em;
+}
+.product-filter img:hover {
+    border: 1px solid #000;
+    background-color: #ffc008;
 }
