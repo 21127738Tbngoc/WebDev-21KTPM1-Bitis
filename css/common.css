@@ -178,12 +178,31 @@ p {
     width: 100%;
 }
 
-.product-thumbnail .figure img {
+.product-thumbnail img {
     object-fit: cover;
     width: 100%;
     overflow: hidden;
     transition: transform .2s ease;
     display: flex;
+}
+
+/* Swap image on hover  */
+.figure {
+    position: relative;
+    max-width: 100%;
+}
+.figure img.Sirv.image-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+}
+.figure:hover img.Sirv.image-hover {
+    opacity: 1;
 }
 
 .product-label {
@@ -263,22 +282,3 @@ ul.breadcrumb li a:hover {
     text-decoration: underline;
 }
 
-  /*  Rollover image styles  */
-  .figure {
-    position: relative;
-    width: 360px; /* can be omitted for a regular non-lazy image */
-    max-width: 100%;
-  }
-  .figure img.Sirv.image-hover {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    object-fit: contain;
-    opacity: 0;
-    transition: opacity .2s;
-  }
-  .figure:hover img.Sirv.image-hover {
-    opacity: 1;
-  }
