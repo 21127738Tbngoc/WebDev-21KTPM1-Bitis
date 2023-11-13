@@ -175,12 +175,10 @@ p {
 .product-thumbnail {
     position: relative;
     overflow: hidden;
-    width: 100%;
 }
 
 .product-thumbnail img {
     object-fit: cover;
-    width: 100%;
     overflow: hidden;
     transition: transform .2s ease;
     display: flex;
@@ -204,8 +202,8 @@ p {
 .figure:hover img.Sirv.image-hover {
     opacity: 1;
 }
-
-.product-label {
+/*--- Label ---*/
+.product-label-new {
     background: #18b460;
     color: #fff;
     font-family: subtitle;
@@ -217,8 +215,23 @@ p {
     display: block;
     float: left;
 }
-.product-label:hover {
+.product-label-new:hover {
     background: #13904c;
+}
+.product-label-hot {
+    background: #ff415d;
+    color: #fff;
+    font-family: subtitle;
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 4px;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+}
+.product-label-hot:hover {
+    background: #cc344a;
 }
 
 .icon-wishlist {
