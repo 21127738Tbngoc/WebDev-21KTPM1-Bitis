@@ -248,7 +248,7 @@ ul.breadcrumb {
 }
 ul.breadcrumb li {
     display: inline;
-    font-size: 13px;
+    font-size: 12px;
     font-family: subtitle;
 }
 ul.breadcrumb li+li:before {
