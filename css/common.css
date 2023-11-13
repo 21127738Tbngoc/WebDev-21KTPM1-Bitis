@@ -120,7 +120,6 @@ p {
     background-color: #fff;
 }
 #header_logo {
-    height: 50px;
     margin: 0.5em 0 1em 0;
 }
 
@@ -130,7 +129,8 @@ p {
     transition: transform .5s ease;
 }
 .nav li {
-    padding: 0.8em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
 }
 
 .loginbag {
@@ -155,6 +155,30 @@ p {
     font-family: title;
 }
 
+.nav-item, .dropdown, .dropdown-item {
+    padding: 0;
+    margin: 0;
+    font-family: subtitle;
+}
+.dropdown-menu {
+    min-width: 9rem;
+}
+.dropdown-menu[data-bs-popper] {
+    top: 2.7rem;
+    left: 1.6rem;
+    padding: 8px 0;
+}
+.dropdown-menu a {
+    font-size: 14px;
+    padding: 4px 1em;
+    width: 100%;
+}
+.dropdown-menu a:hover {
+    background-color: #e0e0e0;
+}
+.dropdown-menu li {
+    padding: 0;
+}
 /*----------- Product cards -----------*/
 .product-loop {
     flex: 0 0 auto;

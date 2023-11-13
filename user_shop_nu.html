@@ -23,15 +23,31 @@
                 <!-- Logo -->
                 <div class="col-2">
                     <a href="user_home.html" class="d-flex ">
-                        <img src="img/logo.png" alt="logo" id="header_logo">
+                        <img src="img/logo.png" alt="logo" id="header_logo" style="width:85%">
                     </a>
                 </div>
                 <!-- Nav -->
                 <ul class="nav col-6">
-                    <li><a href="user_home.html" class="nav-link px-2 link-dark">Trang chủ</a></li>
-                    <li><a href="#" class="nav-link px-2 link-dark">Về Biti's</a></li>
-                    <li><a href="#" class="nav-link px-2 link-secondary">Sản phẩm</a></li>
-                    <li><a href="#" class="nav-link px-2 link-dark">Liên hệ</a></li>
+                    <li class="nav-item"><a href="user_home.html" class="nav-link link-dark">Trang chủ</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-dark">Về Biti's</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link link-secondary dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sản phẩm</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" data-bs-popper="none">
+                            <li>
+                                <a class="dropdown-item" href="user_shop_nam.html">Giày Dép Nam</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="user_shop_nu.html">Giày Dép Nữ</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="user_shop_nu.html">Phụ kiện</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="user_contact.html" class="nav-link link-dark">Liên hệ</a></li>
                 </ul>
 
                 <!-- Loginbag -->

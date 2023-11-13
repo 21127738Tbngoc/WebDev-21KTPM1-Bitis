@@ -22,16 +22,32 @@
             <div class="row d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
                 <!-- Logo -->
                 <div class="col-2">
-                    <a href="user_home.html" class="d-flex ">
-                        <img src="img/logo.png" alt="logo" id="header_logo">
+                    <a href="home.html" class="d-flex ">
+                        <img src="img/logo.png" alt="logo" id="header_logo" style="width:85%">
                     </a>
                 </div>
                 <!-- Nav -->
                 <ul class="nav col-6">
-                    <li><a href="user_home.html" class="nav-link px-2 link-dark">Trang chủ</a></li>
-                    <li><a href="#" class="nav-link px-2 link-dark">Về Biti's</a></li>
-                    <li><a href="user_shop.html" class="nav-link px-2 link-dark">Sản phẩm</a></li>
-                    <li><a href="user_contact.html" class="nav-link px-2 link-secondary">Liên hệ</a></li>
+                    <li class="nav-item"><a href="user_home.html" class="nav-link link-dark">Trang chủ</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-dark">Về Biti's</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link link-secondary dropdown-toggle show" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">Sản phẩm</a>
+                        <ul class="dropdown-menu show" aria-labelledby="navbarDropdown" data-bs-popper="none">
+                            <li>
+                                <a class="dropdown-item" href="user_shop_nam.html">Giày Dép Nam</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="user_shop_nu.html">Giày Dép Nữ</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="user_shop_nu.html">Phụ kiện</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="user_contact.html" class="nav-link link-dark">Liên hệ</a></li>
                 </ul>
 
                 <!-- Loginbag -->
@@ -39,7 +55,7 @@
                     <button type="button" class="loginbag-btn ms-5 me-1"><i class="la la-search loginbag-icon"></i></button>
                     <button type="button" class="loginbag-btn me-3"><i class="la la-shopping-bag loginbag-icon"></i></button>
                     <button type="button" class="btn outline-button me-3">Đăng nhập</button>
-                    <button type="button" class="btn primary-button">Đăng ký</button>
+                    <button type="button" class="btn primary-button ">Đăng ký</button>
                 </div>
             </div>
         </div>
