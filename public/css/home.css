@@ -15,3 +15,10 @@
 h3 {
     padding-top: 2em;
 }
+
+.news-card {
+    margin: 1em 0;
+}
+.news-card img {
+    object-fit: cover;
+}

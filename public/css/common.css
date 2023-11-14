@@ -100,6 +100,13 @@ p {
     text-align: center;
     margin-top: 2em;
 }
+.link-button-small {
+    font-family: subtitle;
+    color: #000;
+    text-align: center;
+    margin-top: 0;
+    font-size: 14px;
+}
 
 /*--- Hover state ---*/
 .primary-button:hover {
