@@ -34,7 +34,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: headline;
+    font-family: title;
 }
 p {
     font-family: body;
@@ -92,6 +92,13 @@ p {
     cursor: pointer;
     font-family: subtitle;
     font-size: 14px;
+}
+
+.link-button {
+    font-family: subtitle;
+    color: #000;
+    text-align: center;
+    margin-top: 2em;
 }
 
 /*--- Hover state ---*/
