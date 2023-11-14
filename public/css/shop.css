@@ -14,17 +14,18 @@
 
 /*----------- Filter & sort -----------*/
 .product-filter {
-    margin-top: 0.5em;
+    margin-top: 1em;
 }
-.product-filter h5 {
+.product-filter h5, h6 {
     font-family: title;
+    margin-top: 0.6em;
 }
 .product-filter p {
     font-family: subtitle;
     margin-bottom: 0.5em;
 }
 .product-filter img {
-    width: 50px;
+    width: 40px;
     background-color: #e4e7e6;
 }
 .product-types {
@@ -33,6 +34,31 @@
     margin-bottom: 0.5em;
 }
 .product-filter img:hover {
-    border: 1px solid #000;
     background-color: #ffc008;
+}
+.color-option {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    border: 0.8px solid rgb(186, 186, 186);
+}
+.color-option:hover {
+    border: 1.5px solid #000000;
+    box-shadow: none;
+}
+.size-option {
+    border-radius: 4px;
+    padding: 8px;
+    display: inline-block;
+    margin-bottom: 0.3em;
+}
+.product-filter a {
+    text-decoration: none;
+    color: #1d1d1d;
+    font-family: subtitle;
+    background-color: #e4e7e6;
+}
+.size-option:hover {
+    background-color:#ffc008;
 }
