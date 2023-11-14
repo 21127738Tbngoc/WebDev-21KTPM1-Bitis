@@ -20,17 +20,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/shop-nam', shop_namRouter);
-app.use('/shop-nu', shop_nuRouter);
-// app.use('/checkout-user', checkoutUserRouter);
-// app.use('/login-user', loginUserRouter);
-// app.use('/home-admin', homeAdminRouter);
-// app.use('/staff-admin', staffAdminRouter);
-// app.use('/sell-admin', sellAdminRouter);
+// app.use('/shop-nam', shop_namRouter);
+// app.use('/shop-nu', shop_nuRouter);
 
-// app.use('/order-admin', orderAdminRouter);
-// app.use('/product-admin', productAdminRouter);
-// app.use('/revenue-admin', revenueAdminRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
