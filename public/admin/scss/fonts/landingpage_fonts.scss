@@ -60,3 +60,31 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: headline;
+  src: url("../fonts/Inter-Bold.ttf"),
+       url("../fonts/Inter-Bold.woff2"), 
+       url("../fonts/Inter-Bold.eot");        
+}
+
+@font-face {
+  font-family: title;
+  src: url("../fonts/Inter-SemiBold.ttf"),
+       url("../fonts/Inter-SemiBold.woff2"),
+       url("../fonts/Inter-SemiBold.eot");    
+}
+
+@font-face {
+  font-family: subtitle;
+  src: url("../fonts/Inter-Medium.ttf"),
+       url("../fonts/Inter-Medium.woff2"),
+       url("../fonts/Inter-Medium.eot");   
+}
+
+@font-face {
+  font-family: body;
+  src: url("../fonts/Inter-Regular.ttf"),
+       url("../fonts/Inter-Regular.woff2"),
+       url("../fonts/Inter-Regular.eot");
+}
