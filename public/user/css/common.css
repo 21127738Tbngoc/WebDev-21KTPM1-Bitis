@@ -453,3 +453,11 @@ input, textarea {
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
+
+.nav li {
+    padding-left: 0;
+    margin-left: 0;
+}
+.footer-logo {
+    margin-top: -20px; 
+}
