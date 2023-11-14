@@ -1,2 +1,366 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+                <!-- Login modal -->
+                <div class="modal" id="loginModal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h3>Đăng nhập</h3>
+                        <form>
+                            <label for="username">Tên đăng nhập:</label>
+                            <input type="text" id="username" name="username" required>
+                            <label for="password">Mật khẩu:</label>
+                            <input type="password" id="password" name="password" required>
+                            <button type="submit" class="btn primary-button">Đăng nhập</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Javascript Login modal-->
+                <script>
+                    // Open the login modal
+                    document.getElementById('loginBtn').addEventListener('click', openModal);
+                    function closeModal() {
+                        document.getElementById('loginModal').style.display = 'none';
+                    }
+                    function openModal() {
+                        document.getElementById('loginModal').style.display = 'block';
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+    <!--------- Banner --------->
+    <div class="banner">
+        <img src="user/img/home_banner.jpg" alt="banner">
+    </div>
+    <!--------- Products --------->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row g-3">
+                <!--------- Sản phẩm mới --------->
+                <h3 class="row justify-content-center align-content-center">SẢN PHẨM MỚI</h3>
+                <!-- Product card 1 -->
+                <div class="col-3">
+                    <div data-id="HSM004700" class="product-card">
+                        <!-- Thumbnail -->
+                        <div class="product-thumbnail">
+                            <div class="product-label-new">Mới</div>
+                            <div class="product-favorite">
+                                <div class="icon-wishlist"></div>
+                            </div>
+                            <div class="figure">
+                                <img class="Sirv image-main" src="https://ngoc-tran.sirv.com/GiayNam/HSM004700/HSM004700MAIN.jpg" data-src="https://ngoc-tran.sirv.com/GiayNam/HSM004700/HSM004700MAIN.jpg">
+                                <img class="Sirv image-hover" data-src="https://ngoc-tran.sirv.com/GiayNam/HSM004700/HSM004700HOVER.jpg">
+                            </div>
+                        </div>
+                        <!-- Info -->
+                        <div class="product-info">
+                            <!-- Properties -->
+                            <div class="product-property d-flex align-items-center justify-content-between">
+                                <div class="product-number-size"> 7 Size </div>
+                                <div class="product-number-color"> 2 màu sắc </div>
+                            </div>
+                            <!-- Title -->
+                            <div class="product-name">
+                                <a href="#">Giày Thể Thao Nam Biti's Hunter Street HSM004700</a>
+                            </div>
+                            <!-- Price -->
+                            <div class="product-price d-flex align-items-center">731,000 ₫</div>
+                            <!-- Swatch -->
+                            <div class="w-100 product-colors d-flex align-items-center justify-content-center flex-wrap">		
+                                <img src="https://ngoc-tran.sirv.com/GiayNam/HSM004700/HSM004700MAIN.jpg" alt="XNH" class="active">
+                                <img src="https://ngoc-tran.sirv.com/GiayNam/HSM004700/HSM004700NAU.jpg" alt="NAU">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product card 2 -->
+                <div class="col-3">
+                    <div class="product-card">
+                        <!-- Thumbnail -->
+                        <div class="product-thumbnail">
+                            <div class="product-label-new">Mới</div>
+                            <div class="product-favorite">
+                                <div class="icon-wishlist"></div>
+                            </div>
+                            <div class="figure">
+                                <img class="Sirv image-main" src="https://ngoc-tran.sirv.com/GiayNu/HSW004400/HSW004400MAIN.jpg" data-src="https://ngoc-tran.sirv.com/GiayNu/HSW004400/HSW004400MAIN.jpg">
+                                <img class="Sirv image-hover" data-src="https://ngoc-tran.sirv.com/GiayNu/HSW004400/HSW004400HOVER.jpg">
+                            </div>
+                        </div>
+                        <!-- Info -->
+                        <div class="product-info">
+                            <!-- Properties -->
+                            <div class="product-property d-flex align-items-center justify-content-between">
+                                <div class="product-number-size"> 5 Size </div>
+                                <div class="product-number-color"> 3 màu sắc </div>
+                            </div>
+                            <!-- Title -->
+                            <div class="product-name">
+                                <a href="#">Giày Thể Thao Nữ Biti's Hunter X HSW004400</a>
+                            </div>
+                            <!-- Price -->
+                            <div class="product-price d-flex align-items-center">932,000 ₫</div>
+                            <!-- Swatch -->
+                            <div class="w-100 product-colors d-flex align-items-center justify-content-center flex-wrap">		
+                                <img src="https://ngoc-tran.sirv.com/GiayNu/HSW004400/HSW004400MAIN.jpg" alt="TRG" class="active">
+                                <img src="https://ngoc-tran.sirv.com/GiayNu/HSW004400/HSW004400XNH.jpg" alt="XNH">
+                                <img src="https://ngoc-tran.sirv.com/GiayNu/HSW004400/HSW004400XAM.jpg" alt="DEN">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product card 3 -->
+                <div class="col-3">
+                    <div class="product-card">
+                        <!-- Thumbnail -->
+                        <div class="product-thumbnail">
+                            <div class="product-label-new">Mới</div>
+                            <div class="product-favorite">
+                                <div class="icon-wishlist"></div>
+                            </div>
+                            <div class="figure">
+                                <img class="Sirv image-main" src="https://ngoc-tran.sirv.com/GiayNu/HEW000600/HEW000600_1.jpg" data-src="https://ngoc-tran.sirv.com/GiayNu/HEW000600/HEW000600_1.jpg">
+                                <img class="Sirv image-hover" data-src="https://ngoc-tran.sirv.com/GiayNu/HEW000600/HEW000600_2.jpg">
+                            </div>
+                        </div>
+                        <!-- Info -->
+                        <div class="product-info">
+                            <!-- Properties -->
+                            <div class="product-property d-flex align-items-center justify-content-between">
+                                <div class="product-number-size"> 5 Size </div>
+                                <div class="product-number-color"> 3 màu sắc </div>
+                            </div>
+                            <!-- Title -->
+                            <div class="product-name">
+                                <a href="#">Sandal Thể Thao Eva Phun Nữ Biti's Hunter HEW000600</a>
+                            </div>
+                            <!-- Price -->
+                            <div class="product-price d-flex align-items-center">499,000 ₫</div>
+                            <!-- Swatch -->
+                            <div class="w-100 product-colors d-flex align-items-center justify-content-center flex-wrap">		
+                                <img src="https://ngoc-tran.sirv.com/GiayNu/HEW000600/HEW000600_1.jpg" alt="TRG" class="active">
+                                <img src="https://ngoc-tran.sirv.com/GiayNu/HEW000600/HEW000600DNG1.jpg" alt="XNH">
+                                <img src="https://ngoc-tran.sirv.com/GiayNu/HEW000600/HEW000600KEM1.jpg" alt="DEN">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product card 4 -->
+                <div class="col-3">
+                    <div data-id="BSM001100" class="product-card">
+                        <!-- Thumbnail -->
+                        <div class="product-thumbnail">
+                            <div class="product-label-new">Mới</div>
+                            <div class="product-favorite">
+                                <div class="icon-wishlist"></div>
+                            </div>
+                            <div class="figure">
+                                <img class="Sirv image-main" src="https://ngoc-tran.sirv.com/GiayNam/BSM001100/BSM001100MAIN.jpg" data-src="https://ngoc-tran.sirv.com/GiayNam/BSM001100/BSM001100MAIN.jpg" style="width: 100%">
+                                <img class="Sirv image-hover" data-src="https://ngoc-tran.sirv.com/GiayNam/BSM001100/BSM001100HOVER.jpg">
+                            </div>
+                        </div>
+                        <!-- Info -->
+                        <div class="product-info">
+                            <!-- Properties -->
+                            <div class="product-property d-flex align-items-center justify-content-between">
+                                <div class="product-number-size"> 7 Size </div>
+                                <div class="product-number-color"> 3 màu sắc </div>
+                            </div>
+                            <!-- Title -->
+                            <div class="product-name">
+                                <a href="#">Giày Thể Thao Nam Biti's Hunter BSM001100</a>
+                            </div>
+                            <!-- Price -->
+                            <div class="product-price d-flex align-items-center">1,305,000 ₫</div>
+                            <!-- Swatch -->
+                            <div class="w-100 product-colors d-flex align-items-center justify-content-center flex-wrap">		
+                                <img src="https://ngoc-tran.sirv.com/GiayNam/BSM001100/BSM001100MAIN.jpg" alt="XAM" class="active">
+                                <img src="https://ngoc-tran.sirv.com/GiayNam/BSM001100/BSM001100TRG.jpg" alt="TRG">
+                                <img src="https://ngoc-tran.sirv.com/GiayNam/BSM001100/BSM001100DEN.jpg" alt="DEN">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-content-center d-flex">
+                    <a href="/shop-nam" class="link-button">CÒN NHIỀU LẮM, XEM THÊM</a>
+                </div>
+                
+
+                <!--------- Sản phẩm bán chạy --------->
+                <h3 class="row justify-content-center align-content-center">BÁN CHẠY</h3>
+                <!-- Product card 1 -->
+                <div class="col-3">
+                    <div data-id="HSM004700" class="product-card">
+                        <!-- Thumbnail -->
+                        <div class="product-thumbnail">
+                            <div class="product-label-hot">Hot</div>
+                            <div class="product-favorite">
+                                <div class="icon-wishlist"></div>
+                            </div>
+                            <div class="figure">
+                                <img class="Sirv image-main" src="https://ngoc-tran.sirv.com/GiayNam/DSMH09700/DSMH09700MAIN.jpg" data-src="https://ngoc-tran.sirv.com/GiayNam/DSMH09700/DSMH09700MAIN.jpg">
+                                <img class="Sirv image-hover" data-src="https://ngoc-tran.sirv.com/GiayNam/DSMH09700/DSMH09700HOVER.jpg">
+                            </div>
+                        </div>
+                        <!-- Info -->
+                        <div class="product-info">
+                            <!-- Properties -->
+                            <div class="product-property d-flex align-items-center justify-content-between">
+                                <div class="product-number-size"> 7 Size </div>
+                                <div class="product-number-color"> 3 màu sắc </div>
+                            </div>
+                            <!-- Title -->
+                            <div class="product-name">
+                                <a href="#">Giày Thể Thao Nam Biti's Hunter X DSMH09700</a>
+                            </div>
+                            <!-- Price -->
+                            <div class="product-price d-flex align-items-center">731,000 ₫</div>
+                            <!-- Swatch -->
+                            <div class="w-100 product-colors d-flex align-items-center justify-content-center flex-wrap">		
+                                <img src="https://ngoc-tran.sirv.com/GiayNam/DSMH09700/DSMH09700MAIN.jpg" alt="XNH" class="active">
+                                <img src="https://ngoc-tran.sirv.com/GiayNam/DSMH09700/DSMH09700TRG.jpg" alt="NAU">
+                                <img src="https://ngoc-tran.sirv.com/GiayNam/DSMH09700/DSMH09700DEN.jpg" alt="NAU">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product card 2 -->
+                <div class="col-3">
+                    <div data-id="HSM004700" class="product-card">
+                        <!-- Thumbnail -->
+                        <div class="product-thumbnail">
+                            <div class="product-label-hot">Hot</div>
+                            <div class="product-favorite">
+                                <div class="icon-wishlist"></div>
+                            </div>
+                            <div class="figure">
+                                <img class="Sirv image-main" src="https://ngoc-tran.sirv.com/GiayNam/DSMH10600/DSMH10600MAIN.jpg" data-src="https://ngoc-tran.sirv.com/GiayNam/DSMH10600/DSMH10600MAIN.jpg">
+                                <img class="Sirv image-hover" data-src="https://ngoc-tran.sirv.com/GiayNam/DSMH10600/DSMH10600HOVER.jpg">
+                            </div>
+                        </div>
+                        <!-- Info -->
+                        <div class="product-info">
+                            <!-- Properties -->
+                            <div class="product-property d-flex align-items-center justify-content-between">
+                                <div class="product-number-size"> 7 Size </div>
+                                <div class="product-number-color"> 2 màu sắc </div>
+                            </div>
+                            <!-- Title -->
+                            <div class="product-name">
+                                <a href="#">Giày Thể Thao Nam Biti's Hunter Street HSM004700</a>
+                            </div>
+                            <!-- Price -->
+                            <div class="product-price d-flex align-items-center">731,000 ₫</div>
+                            <!-- Swatch -->
+                            <div class="w-100 product-colors d-flex align-items-center justify-content-center flex-wrap">		
+                                <img src="https://ngoc-tran.sirv.com/GiayNam/DSMH10600/DSMH10600MAIN.jpg" alt="XNH" class="active">
+                                <img src="https://ngoc-tran.sirv.com/GiayNam/DSMH10600/DSMH10600DEN.jpg" alt="NAU">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product card 3 -->
+                <div class="col-3">
+                    <div data-id="HSM004700" class="product-card">
+                        <!-- Thumbnail -->
+                        <div class="product-thumbnail">
+                            <div class="product-label-hot">Hot</div>
+                            <div class="product-favorite">
+                                <div class="icon-wishlist"></div>
+                            </div>
+                            <div class="figure">
+                                <img class="Sirv image-main" src="https://ngoc-tran.sirv.com/GiayNam/DSMH02800/DSMH09800MAIN.jpg" data-src="https://ngoc-tran.sirv.com/GiayNam/DSMH02800/DSMH09800MAIN.jpg">
+                                <img class="Sirv image-hover" data-src="https://ngoc-tran.sirv.com/GiayNam/DSMH02800/DSMH09800HOVER.jpg">
+                            </div>
+                        </div>
+                        <!-- Info -->
+                        <div class="product-info">
+                            <!-- Properties -->
+                            <div class="product-property d-flex align-items-center justify-content-between">
+                                <div class="product-number-size"> 7 Size </div>
+                                <div class="product-number-color"> 2 màu sắc </div>
+                            </div>
+                            <!-- Title -->
+                            <div class="product-name">
+                                <a href="#">Giày Thể Thao Nam Biti's Hunter Street DSMH10600</a>
+                            </div>
+                            <!-- Price -->
+                            <div class="product-price d-flex align-items-center">830,000 ₫</div>
+                            <!-- Swatch -->
+                            <div class="w-100 product-colors d-flex align-items-center justify-content-center flex-wrap">		
+                                <img src="https://ngoc-tran.sirv.com/GiayNam/DSMH02800/DSMH09800MAIN.jpg" alt="XNH" class="active">
+                                <img src="https://ngoc-tran.sirv.com/GiayNam/DSMH02800/DSMH09800XNH.jpg" alt="NAU">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product card 4 -->
+                <div class="col-3">
+                    <div data-id="HSM004700" class="product-card">
+                        <!-- Thumbnail -->
+                        <div class="product-thumbnail">
+                            <div class="product-label-hot">Hot</div>
+                            <div class="product-favorite">
+                                <div class="icon-wishlist"></div>
+                            </div>
+                            <div class="figure">
+                                <img class="Sirv image-main" src="https://ngoc-tran.sirv.com/GiayNam/DSMH06200/DSMH06200MAIN.jpg" data-src="https://ngoc-tran.sirv.com/GiayNam/DSMH06200/DSMH06200MAIN.jpg">
+                                <img class="Sirv image-hover" data-src="https://ngoc-tran.sirv.com/GiayNam/DSMH06200/DSMH06200HOVER.jpg">
+                            </div>
+                        </div>
+                        <!-- Info -->
+                        <div class="product-info">
+                            <!-- Properties -->
+                            <div class="product-property d-flex align-items-center justify-content-between">
+                                <div class="product-number-size"> 7 Size </div>
+                                <div class="product-number-color"> 2 màu sắc </div>
+                            </div>
+                            <!-- Title -->
+                            <div class="product-name">
+                                <a href="#">Giày Thể Thao Nam Biti's Hunter Street DSMH10600</a>
+                            </div>
+                            <!-- Price -->
+                            <div class="product-price d-flex align-items-center">731,000 ₫</div>
+                            <!-- Swatch -->
+                            <div class="w-100 product-colors d-flex align-items-center justify-content-center flex-wrap">		
+                                <img src="https://ngoc-tran.sirv.com/GiayNam/DSMH10600/DSMH10600MAIN.jpg" alt="XNH" class="active">
+                                <img src="https://ngoc-tran.sirv.com/GiayNam/DSMH10600/DSMH10600DEN.jpg" alt="NAU">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-content-center d-flex">
+                    <a href="/" class="link-button">CÒN NHIỀU LẮM, XEM THÊM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------- Tin tức --------->
+    <div class="container-fluid">
+        <div class="container">
+            <h3>TIN TỨC BITI'S</h3>
+            <div class="row g-3 d-flex flex-wrap"> 
+                <div class="col-3 news-card">
+                    <img src="user/img/news.png" style="width: 100%;">
+                    <h6 class="subtitle py-2" style="line-height: 18px;">BITI’S đạt giải thưởng doanh nghiệp xuất sắc Châu Á - APEA 2023</h6>
+                    <a href="#" class="link-button-small">Xem thêm</a>
+                </div>
+                <div class="col-3 news-card">
+                    <img src="user/img/news_3.png" style="width: 100%;">
+                    <h6 class="subtitle py-2" style="line-height: 18px;">Gần 1000 thủy thủ BITI’S cùng nhau vượt sóng vươn xa tại trạm kết nối 2023</h6>
+                    <a href="#" class="link-button-small">Xem thêm</a>
+                </div>
+                <div class="col-3 news-card">
+                    <img src="user/img/news_4.png" style="width: 100%;">
+                    <h6 class="subtitle py-2" style="line-height: 18px;">ABBANK và BITI’S hợp lực kiến tạo trải nghiệm Khách hàng Hạnh phúc</h6>
+                    <a href="#" class="link-button-small">Xem thêm</a>
+                </div>
+                <div class="col-3 news-card">
+                    <img src="user/img/news_1.jpg" style="width: 100%;">
+                    <h6 class="subtitle py-2" style="line-height: 18px;">Mã mua sắm ưu đãi tại PNJ dành cho khách hàng thân thiết (Từ tháng 11/2023)</h6>
+                    <a href="#" class="link-button-small">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+    </div>
