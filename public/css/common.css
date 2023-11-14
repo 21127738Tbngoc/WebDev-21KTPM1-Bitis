@@ -384,22 +384,50 @@ ul.breadcrumb li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    padding: 20px;
-    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 500px;
     width: 100%;
     max-height: 80vh;
     overflow-y: auto;
     text-align: center;
 }
+
 .modal-content {
     text-align: left;
+    border: none;
 }
+
+/* Adjust input and button styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input, textarea {
+    font-family: body;
+    font-size: 14px;
+    padding: 8px;
+}
+
+/* Close button style */
 .close {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    color: #555;
     cursor: pointer;
+}
+
+.modal h2 {
+    margin-bottom: 20px;
 }
