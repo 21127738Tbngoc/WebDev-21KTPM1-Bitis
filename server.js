@@ -1,11 +1,15 @@
 'use strict';
 
 var express = require('express'),
-    exphbs  = require('../../'); // "express-handlebars"
+    handlebars  = require('express-handlebars'); // "express-handlebars"
 
 var app = express();
 
-app.engine('handlebars', exphbs());
+var router = require('./src');
+
+app.use('/',router);
+
+app.engine('handlebars', handlebars.engine());
 app.set('view engine', 'handlebars');
 
 app.get('/', function (req, res) {
