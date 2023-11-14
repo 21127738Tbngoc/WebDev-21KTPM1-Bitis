@@ -10,6 +10,8 @@
   <!-- CSS -->
   <link type="text/css" href="user/css/common.css" rel="stylesheet">
   <link type="text/css" href="user/css/formstyle.css" rel="stylesheet">
+  <link href="user/css/common.css" rel="stylesheet">
+  <link href="user/css/home.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
   <link href="user/css/shop.css" rel="stylesheet">
@@ -26,8 +28,6 @@
 
 
 <body>
-
-  <!--------- Navigation --------->
   <div class="header-nav border-bottom">
     <div class="container">
       <div class="row d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
@@ -39,10 +39,10 @@
         </div>
         <!-- Nav -->
         <ul class="nav col-6">
-          <li class="nav-item"><a href="/" class="nav-link link-dark">Trang chủ</a></li>
-          <li class="nav-item"><a href="#" class="nav-link link-dark">Về Biti's</a></li>
+          <li class="nav-item"><a href="/" class="nav-link link-secondary">Trang chủ</a></li>
+          <li class="nav-item"><a href="/about-us" class="nav-link link-dark">Về Biti's</a></li>
           <li class="nav-item dropdown">
-            <a href="#" class="nav-link link-secondary dropdown-toggle" id="navbarDropdown" role="button"
+            <a href="#" class="nav-link link-dark dropdown-toggle" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">Sản phẩm</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown" data-bs-popper="none">
               <li>
@@ -55,113 +55,84 @@
                 <hr class="dropdown-divider">
               </li>
               <li>
-                <a class="dropdown-item" href="/shop-nu">Phụ kiện</a>
+                <a class="dropdown-item" href="#">Phụ kiện</a>
               </li>
             </ul>
           </li>
           <li class="nav-item"><a href="/contact" class="nav-link link-dark">Liên hệ</a></li>
         </ul>
-
         <!-- Loginbag -->
         <div class="loginbag col-4">
           <button type="button" class="loginbag-btn ms-5 me-1"><i class="la la-search loginbag-icon"></i></button>
           <button type="button" class="loginbag-btn me-3"><i class="la la-shopping-bag loginbag-icon"></i></button>
-          <button type="button" class="btn outline-button me-3" id="Sign-in-btn">Đăng nhập</button>
-          <button type="button" class="btn primary-button" id="Sign-up-btn">Đăng ký</button>
+          <button type="button" class="btn outline-button me-3" id="loginBtn">Đăng nhập</button>
+          <button type="button" class="btn primary-button ">Đăng ký</button>
         </div>
+        <!-- Login modal -->
+        <div class="modal" id="loginModal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Đăng nhập</h3>
+            <form>
+              <label for="username">Tên đăng nhập:</label>
+              <input type="text" id="username" name="username" required>
+              <label for="password">Mật khẩu:</label>
+              <input type="password" id="password" name="password" required>
+              <button type="submit" class="btn primary-button">Đăng nhập</button>
+            </form>
+          </div>
+        </div>
+        <!-- Javascript Login modal-->
+        <script>
+          // Open the login modal
+          document.getElementById('loginBtn').addEventListener('click', openModal);
+          function closeModal() {
+            document.getElementById('loginModal').style.display = 'none';
+          }
+          function openModal() {
+            document.getElementById('loginModal').style.display = 'block';
+          }
+        </script>
       </div>
     </div>
   </div>
-  <!-- Sign In -->
-  <div class="row justify-content-center modal fade" id="Signin">
-    <div class="col-lg-5">
-      <div class="card shadow-lg border-0 rounded-lg mt-5">
-        <div class="card-header">
-          <h3 class="text-center font-weight-light my-3">Đăng nhập</h3>
-          <button type="button" class="close" aria-label="Close" onclick="x()">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="card-body">
-          <form>
-            <div class="form-floating mb-3">
-              <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
-              <label for="inputEmail">Địa chỉ Email</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input class="form-control" id="inputPassword" type="password" placeholder="Password" />
-              <label for="inputPassword">Mật khẩu</label>
-            </div>
-            <div class="form-check mb-3">
-              <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
-              <label class="form-check-label" for="inputRememberPassword">Nhớ mật khẩu</label>
-            </div>
-            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-              <a class="small" href="password.html">Quên mật khẩu?</a>
-              <a class="btn btn-primary" href="index.html">Đăng nhập</a>
-            </div>
-          </form>
-        </div>
-        <div class="card-footer text-center py-3">
-          <div class="small"><button href="register.html">Bạn chưa có tài khoản? Đăng ký ngay!</a></div>
-        </div>
-      </div>
+
+
+  <!-- Sign up modal -->
+  <div class="overlay" id="signupOverlay"></div>
+  <div class="modal" id="signupModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeSignupModal()">&times;</span>
+      <img src="user/img/logo.png" style="width: 25%;margin-top: 1em;">
+      <h4>Đăng ký</h4>
+      <form>
+        <label for="username">Email/Số điện thoại</label>
+        <input type="text" id="username" name="username" placeholder="nguyenvana@gmail.com" required>
+        <label for="password">Mật khẩu</label>
+        <input type="password" id="password" name="username" placeholder="••••••••••••••••" required>
+        <p class="additional-text">Quên mật khẩu?</p>
+        <button type="submit" class="btn primary-button">Đăng ký</button><br>
+        <p>Đã có tài khoản? <a class="link-button-small" href="#">Đăng nhập ngay</a></p>
+      </form>
     </div>
   </div>
-  <!-- Sign Up -->
-  <div class="row justify-content-center modal fade" id="Signup">
-    <div class="col-lg-7">
-      <div class="card shadow-lg border-0 rounded-lg mt-5">
-        <div class="card-header">
-          <h3 class="text-center font-weight-light my-4">Tạo tài khoản</h3>
-        </div>
-        <div class="card-body">
-          <form>
-            <div class="row mb-3">
-              <div class="col-md-6">
-                <div class="form-floating mb-3 mb-md-0">
-                  <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" />
-                  <label for="inputFirstName">Họ</label>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-floating">
-                  <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" />
-                  <label for="inputLastName">Tên</label>
-                </div>
-              </div>
-            </div>
-            <div class="form-floating mb-3">
-              <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
-              <label for="inputEmail">Địa chỉ Email</label>
-            </div>
-            <div class="row mb-3">
-              <div class="col-md-6">
-                <div class="form-floating mb-3 mb-md-0">
-                  <input class="form-control" id="inputPassword" type="password" placeholder="Create a password" />
-                  <label for="inputPassword">Mật khẩu</label>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-floating mb-3 mb-md-0">
-                  <input class="form-control" id="inputPasswordConfirm" type="password"
-                    placeholder="Confirm password" />
-                  <label for="inputPasswordConfirm">Xác nhận mật khẩu</label>
-                </div>
-              </div>
-            </div>
-            <div class="mt-4 mb-0">
-              <div class="d-grid"><a class="btn btn-primary btn-block" href="login.html">Đăng ký</a></div>
-            </div>
-          </form>
-        </div>
-        <div class="card-footer text-center py-3">
-          <div class="small"><a href="login.html">Bạn đã có tài khoản? Đăng nhập ngay!</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script type="module" src="user/resources/init.js"></script>
+
+  <!-- Javascript Sign up modal-->
+  <script>
+    // Open the sign up modal
+    document.getElementById('signupBtn').addEventListener('click', openSignupModal);
+    // Close the sign up modal
+    function closeSignupModal() {
+      document.getElementById('signupModal').style.display = 'none';
+      document.getElementById('signupOverlay').style.display = 'none';
+    }
+    // Open the signup modal
+    function openSignupModal() {
+      document.getElementById('signupModal').style.display = 'block';
+      document.getElementById('signupOverlay').style.display = 'block';
+    }
+  </script>
+
 
   {{{body}}}
 
