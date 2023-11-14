@@ -22,3 +22,12 @@ h3 {
 .news-card img {
     object-fit: cover;
 }
+
+
+.nav li {
+    padding-left: 0;
+    margin-left: 0;
+}
+.footer-logo {
+    margin-top: -20px; 
+}
