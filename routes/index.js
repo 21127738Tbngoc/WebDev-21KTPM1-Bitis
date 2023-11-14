@@ -7,15 +7,15 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/shop-nam', function (req, res, next) {
-  res.render('user/shop_nam', { title: 'Biti\'s', layout: 'user_layout.hbs' });
+  res.render('user/shop_nam', { title: 'Giày dép nam', layout: 'user_layout.hbs' });
 });
 
 router.get('/shop-nu', function (req, res, next) {
-  res.render('user/shop_nu', { title: 'Biti\'s', layout: 'user_layout.hbs' });
+  res.render('user/shop_nu', { title: 'Giày dép nữ', layout: 'user_layout.hbs' });
 });
 
 router.get('/contact', function (req, res, next) {
-  res.render('user/contact', { title: 'Biti\'s', layout: 'user_layout.hbs' });
+  res.render('user/contact', { title: 'Thông tin liên hệ', layout: 'user_layout.hbs' });
 });
 
 module.exports = router;
