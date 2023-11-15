@@ -22,17 +22,17 @@
             <div class="row d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
                 <!-- Logo -->
                 <div class="col-2">
-                    <a href="/l" class="d-flex ">
-                        <img src="user/img/logo.png" alt="logo" id="header_logo" style="width:85%">
+                    <a href="user_home.html" class="d-flex ">
+                        <img src="img/logo.png" alt="logo" id="header_logo" style="width:85%">
                     </a>
                 </div>
                 <!-- Nav -->
                 <ul class="nav col-6">
                     <li class="nav-item"><a href="user_home.html" class="nav-link link-dark">Trang chủ</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-dark">Về Biti's</a></li>
+                    <li class="nav-item"><a href="user_about.html" class="nav-link link-dark">Về Biti's</a></li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link link-dark dropdown-toggle show" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">Sản phẩm</a>
-                        <ul class="dropdown-menu show" aria-labelledby="navbarDropdown" data-bs-popper="none">
+                        <a href="#" class="nav-link link-secondary dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sản phẩm</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" data-bs-popper="none">
                             <li>
                                 <a class="dropdown-item" href="user_shop_nam.html">Giày Dép Nam</a>
                             </li>
@@ -43,20 +43,90 @@
                                 <hr class="dropdown-divider">
                             </li>
                             <li>
-                                <a class="dropdown-item" href="user_shop_nu.html">Phụ kiện</a>
+                                <a class="dropdown-item" href="#">Phụ kiện</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="user_contact.html" class="nav-link link-secondary">Liên hệ</a></li>
+                    <li class="nav-item"><a href="user_contact.html" class="nav-link link-dark">Liên hệ</a></li>
                 </ul>
-
                 <!-- Loginbag -->
                 <div class="loginbag col-4">
                     <button type="button" class="loginbag-btn ms-5 me-1"><i class="la la-search loginbag-icon"></i></button>
                     <button type="button" class="loginbag-btn me-3"><i class="la la-shopping-bag loginbag-icon"></i></button>
-                    <button type="button" class="btn outline-button me-3">Đăng nhập</button>
-                    <button type="button" class="btn primary-button ">Đăng ký</button>
+                    <button type="button" class="btn outline-button me-3" id="loginBtn" onclick="openLoginModal()">Đăng nhập</button>
+                    <button type="button" class="btn primary-button" id="signupBtn" onclick="openSignupModal()">Đăng ký</button>
                 </div>
+                <!-- Login modal -->
+                <div class="overlay" id="loginOverlay"></div>
+                <div class="modal" id="loginModal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeLoginModal()">&times;</span>
+                        <img src="img/logo.png" style="width: 25%;margin-top: 1em;">
+                        <h4>Đăng nhập</h4>
+                        <form>
+                            <label for="username">Email/Số điện thoại</label>
+                            <input type="text" id="username" name="username" placeholder="nguyenvana@gmail.com" required>
+                            <label for="password">Mật khẩu</label>
+                            <input type="password" id="password" name="username" placeholder="••••••••••••••••" required>
+                            <p class="additional-text">Quên mật khẩu?</p>
+                            <button type="submit" class="btn primary-button">Đăng nhập</button><br>
+                            <p>Chưa có tài khoản? <a class="link-button-small" href="#">Đăng ký ngay</a></p>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Javascript Login modal-->
+                <script>
+                    // Open the login modal
+                    document.getElementById('loginBtn').addEventListener('click', openLoginModal);
+                    // Close the login modal
+                    function closeLoginModal() {
+                        document.getElementById('loginModal').style.display = 'none';
+                        document.getElementById('loginOverlay').style.display = 'none';
+                    }
+                    // Open the login modal
+                    function openLoginModal() {
+                        document.getElementById('loginModal').style.display = 'block';
+                        document.getElementById('loginOverlay').style.display = 'block';
+                    }
+                </script>
+
+                <!-- Sign up modal -->
+                <div class="overlay" id="signupOverlay"></div>
+                <div class="modal" id="signupModal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeSignupModal()">&times;</span>
+                        <img src="img/logo.png" style="width: 25%;margin-top: 1em;">
+                        <h4>Đăng ký</h4>
+                        <form>
+                            <label for="username">Email/Số điện thoại</label>
+                            <input type="text" id="username" name="username" placeholder="nguyenvana@gmail.com" required>
+                            <label for="password">Mật khẩu</label>
+                            <input type="password" id="password" name="username" placeholder="••••••••••••••••" required>
+                            <p class="additional-text">Quên mật khẩu?</p>
+                            <button type="submit" class="btn primary-button">Đăng ký</button><br>
+                            <p>Đã có tài khoản? <a class="link-button-small" href="#">Đăng nhập ngay</a></p>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Javascript Sign up modal-->
+                <script>
+                    // Open the sign up modal
+                    document.getElementById('signupBtn').addEventListener('click', openSignupModal);
+                    // Close the sign up modal
+                    function closeSignupModal() {
+                        document.getElementById('signupModal').style.display = 'none';
+                        document.getElementById('signupOverlay').style.display = 'none';
+                    }
+                    // Open the signup modal
+                    function openSignupModal() {
+                        document.getElementById('signupModal').style.display = 'block';
+                        document.getElementById('signupOverlay').style.display = 'block';
+                    }
+                </script>
+
+                
             </div>
         </div>
     </div>
