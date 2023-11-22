@@ -1,0 +1,7500 @@
+[{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50da9c"
+  },
+  "order_id": 1,
+  "customer_id": 1,
+  "order_date": "12/20/2022",
+  "product_name": "Hat",
+  "quantity": 7,
+  "unit_price": 27.47,
+  "total_price": 142.29,
+  "shipping_address": "03332 Rockefeller Place",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50da9d"
+  },
+  "order_id": 2,
+  "customer_id": 2,
+  "order_date": "10/29/2023",
+  "product_name": "Jeans",
+  "quantity": 10,
+  "unit_price": 84.58,
+  "total_price": 120.59,
+  "shipping_address": "6 Nancy Trail",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50da9e"
+  },
+  "order_id": 3,
+  "customer_id": 3,
+  "order_date": "1/13/2023",
+  "product_name": "Watch",
+  "quantity": 9,
+  "unit_price": 37.3,
+  "total_price": 402.58,
+  "shipping_address": "097 Leroy Center",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50da9f"
+  },
+  "order_id": 4,
+  "customer_id": 4,
+  "order_date": "10/21/2023",
+  "product_name": "Watch",
+  "quantity": 9,
+  "unit_price": 42.37,
+  "total_price": 197.75,
+  "shipping_address": "7934 Main Road",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daa0"
+  },
+  "order_id": 5,
+  "customer_id": 5,
+  "order_date": "4/4/2023",
+  "product_name": "Shoes",
+  "quantity": 5,
+  "unit_price": 64.13,
+  "total_price": 962.17,
+  "shipping_address": "88 Magdeline Terrace",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daa1"
+  },
+  "order_id": 6,
+  "customer_id": 6,
+  "order_date": "7/11/2023",
+  "product_name": "Watch",
+  "quantity": 2,
+  "unit_price": 99.31,
+  "total_price": 962.95,
+  "shipping_address": "7819 Portage Trail",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daa2"
+  },
+  "order_id": 7,
+  "customer_id": 7,
+  "order_date": "5/28/2023",
+  "product_name": "Hat",
+  "quantity": 4,
+  "unit_price": 41.24,
+  "total_price": 516.44,
+  "shipping_address": "0 Nancy Terrace",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daa3"
+  },
+  "order_id": 8,
+  "customer_id": 8,
+  "order_date": "2/18/2023",
+  "product_name": "T-shirt",
+  "quantity": 9,
+  "unit_price": 23.46,
+  "total_price": 873.03,
+  "shipping_address": "9475 Kim Point",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daa4"
+  },
+  "order_id": 9,
+  "customer_id": 9,
+  "order_date": "4/5/2023",
+  "product_name": "Jeans",
+  "quantity": 1,
+  "unit_price": 41.98,
+  "total_price": 235.01,
+  "shipping_address": "527 Marcy Point",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daa5"
+  },
+  "order_id": 10,
+  "customer_id": 10,
+  "order_date": "12/9/2022",
+  "product_name": "Watch",
+  "quantity": 5,
+  "unit_price": 58.6,
+  "total_price": 379.39,
+  "shipping_address": "69 Center Terrace",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daa6"
+  },
+  "order_id": 11,
+  "customer_id": 11,
+  "order_date": "11/10/2023",
+  "product_name": "Hat",
+  "quantity": 8,
+  "unit_price": 15.09,
+  "total_price": 470.22,
+  "shipping_address": "41952 Knutson Street",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daa7"
+  },
+  "order_id": 12,
+  "customer_id": 12,
+  "order_date": "7/19/2023",
+  "product_name": "Hat",
+  "quantity": 7,
+  "unit_price": 30.25,
+  "total_price": 520.9,
+  "shipping_address": "24 Duke Circle",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daa8"
+  },
+  "order_id": 13,
+  "customer_id": 13,
+  "order_date": "7/13/2023",
+  "product_name": "Jeans",
+  "quantity": 8,
+  "unit_price": 54.54,
+  "total_price": 604.7,
+  "shipping_address": "37266 Memorial Road",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daa9"
+  },
+  "order_id": 14,
+  "customer_id": 14,
+  "order_date": "4/14/2023",
+  "product_name": "Shoes",
+  "quantity": 9,
+  "unit_price": 29.62,
+  "total_price": 324.78,
+  "shipping_address": "63 Canary Avenue",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daaa"
+  },
+  "order_id": 15,
+  "customer_id": 15,
+  "order_date": "6/6/2023",
+  "product_name": "Hat",
+  "quantity": 9,
+  "unit_price": 76.45,
+  "total_price": 477.08,
+  "shipping_address": "93487 Victoria Court",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daab"
+  },
+  "order_id": 16,
+  "customer_id": 16,
+  "order_date": "9/15/2023",
+  "product_name": "Watch",
+  "quantity": 5,
+  "unit_price": 38.25,
+  "total_price": 875.29,
+  "shipping_address": "61496 Basil Alley",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daac"
+  },
+  "order_id": 17,
+  "customer_id": 17,
+  "order_date": "6/15/2023",
+  "product_name": "Shoes",
+  "quantity": 9,
+  "unit_price": 74.14,
+  "total_price": 613.89,
+  "shipping_address": "316 Bonner Center",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daad"
+  },
+  "order_id": 18,
+  "customer_id": 18,
+  "order_date": "1/23/2023",
+  "product_name": "Jeans",
+  "quantity": 6,
+  "unit_price": 99.79,
+  "total_price": 162.16,
+  "shipping_address": "65 Nevada Hill",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daae"
+  },
+  "order_id": 19,
+  "customer_id": 19,
+  "order_date": "8/2/2023",
+  "product_name": "Jeans",
+  "quantity": 6,
+  "unit_price": 88.12,
+  "total_price": 315.75,
+  "shipping_address": "0809 Hoffman Parkway",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daaf"
+  },
+  "order_id": 20,
+  "customer_id": 20,
+  "order_date": "12/6/2022",
+  "product_name": "Jeans",
+  "quantity": 9,
+  "unit_price": 34.21,
+  "total_price": 441,
+  "shipping_address": "4065 Thackeray Terrace",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dab0"
+  },
+  "order_id": 21,
+  "customer_id": 21,
+  "order_date": "5/29/2023",
+  "product_name": "Shoes",
+  "quantity": 5,
+  "unit_price": 32.83,
+  "total_price": 543.46,
+  "shipping_address": "107 Warrior Avenue",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dab1"
+  },
+  "order_id": 22,
+  "customer_id": 22,
+  "order_date": "9/25/2023",
+  "product_name": "T-shirt",
+  "quantity": 10,
+  "unit_price": 64.12,
+  "total_price": 873.52,
+  "shipping_address": "1733 Kenwood Road",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dab2"
+  },
+  "order_id": 23,
+  "customer_id": 23,
+  "order_date": "7/28/2023",
+  "product_name": "Hat",
+  "quantity": 9,
+  "unit_price": 69.41,
+  "total_price": 211.49,
+  "shipping_address": "0 Stuart Park",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dab3"
+  },
+  "order_id": 24,
+  "customer_id": 24,
+  "order_date": "9/15/2023",
+  "product_name": "T-shirt",
+  "quantity": 3,
+  "unit_price": 23.06,
+  "total_price": 593.95,
+  "shipping_address": "66 Bobwhite Pass",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dab4"
+  },
+  "order_id": 25,
+  "customer_id": 25,
+  "order_date": "12/20/2022",
+  "product_name": "Watch",
+  "quantity": 10,
+  "unit_price": 41.93,
+  "total_price": 253.86,
+  "shipping_address": "6287 Mallard Street",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dab5"
+  },
+  "order_id": 26,
+  "customer_id": 26,
+  "order_date": "5/23/2023",
+  "product_name": "Shoes",
+  "quantity": 2,
+  "unit_price": 21.25,
+  "total_price": 485.35,
+  "shipping_address": "90 Nova Lane",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dab6"
+  },
+  "order_id": 27,
+  "customer_id": 27,
+  "order_date": "12/7/2022",
+  "product_name": "T-shirt",
+  "quantity": 6,
+  "unit_price": 93.06,
+  "total_price": 70.28,
+  "shipping_address": "9779 Eastwood Crossing",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dab7"
+  },
+  "order_id": 28,
+  "customer_id": 28,
+  "order_date": "8/31/2023",
+  "product_name": "T-shirt",
+  "quantity": 5,
+  "unit_price": 91.26,
+  "total_price": 652.14,
+  "shipping_address": "48 Sage Parkway",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dab8"
+  },
+  "order_id": 29,
+  "customer_id": 29,
+  "order_date": "2/24/2023",
+  "product_name": "Watch",
+  "quantity": 9,
+  "unit_price": 94.74,
+  "total_price": 937.28,
+  "shipping_address": "92 Columbus Road",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dab9"
+  },
+  "order_id": 30,
+  "customer_id": 30,
+  "order_date": "2/1/2023",
+  "product_name": "Shoes",
+  "quantity": 4,
+  "unit_price": 67.27,
+  "total_price": 144.53,
+  "shipping_address": "46 Monterey Road",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daba"
+  },
+  "order_id": 31,
+  "customer_id": 31,
+  "order_date": "1/14/2023",
+  "product_name": "Shoes",
+  "quantity": 3,
+  "unit_price": 89.45,
+  "total_price": 313.93,
+  "shipping_address": "6773 Forest Run Lane",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dabb"
+  },
+  "order_id": 32,
+  "customer_id": 32,
+  "order_date": "4/29/2023",
+  "product_name": "T-shirt",
+  "quantity": 5,
+  "unit_price": 75.27,
+  "total_price": 60.58,
+  "shipping_address": "221 Warner Trail",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dabc"
+  },
+  "order_id": 33,
+  "customer_id": 33,
+  "order_date": "4/16/2023",
+  "product_name": "Shoes",
+  "quantity": 2,
+  "unit_price": 62.81,
+  "total_price": 540.74,
+  "shipping_address": "68 Londonderry Parkway",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dabd"
+  },
+  "order_id": 34,
+  "customer_id": 34,
+  "order_date": "8/29/2023",
+  "product_name": "Shoes",
+  "quantity": 9,
+  "unit_price": 31.66,
+  "total_price": 469.36,
+  "shipping_address": "7168 Grim Court",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dabe"
+  },
+  "order_id": 35,
+  "customer_id": 35,
+  "order_date": "12/26/2022",
+  "product_name": "Jeans",
+  "quantity": 5,
+  "unit_price": 99.93,
+  "total_price": 254.88,
+  "shipping_address": "22 Schurz Terrace",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dabf"
+  },
+  "order_id": 36,
+  "customer_id": 36,
+  "order_date": "9/16/2023",
+  "product_name": "Hat",
+  "quantity": 5,
+  "unit_price": 43.3,
+  "total_price": 855.9,
+  "shipping_address": "9 Summit Junction",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dac0"
+  },
+  "order_id": 37,
+  "customer_id": 37,
+  "order_date": "12/18/2022",
+  "product_name": "Watch",
+  "quantity": 1,
+  "unit_price": 69.58,
+  "total_price": 465.85,
+  "shipping_address": "79 Havey Park",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dac1"
+  },
+  "order_id": 38,
+  "customer_id": 38,
+  "order_date": "7/12/2023",
+  "product_name": "Hat",
+  "quantity": 9,
+  "unit_price": 84.55,
+  "total_price": 227.73,
+  "shipping_address": "812 Toban Plaza",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dac2"
+  },
+  "order_id": 39,
+  "customer_id": 39,
+  "order_date": "2/10/2023",
+  "product_name": "Watch",
+  "quantity": 6,
+  "unit_price": 46.4,
+  "total_price": 172.85,
+  "shipping_address": "1 Arkansas Drive",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dac3"
+  },
+  "order_id": 40,
+  "customer_id": 40,
+  "order_date": "2/2/2023",
+  "product_name": "Watch",
+  "quantity": 10,
+  "unit_price": 82.33,
+  "total_price": 849.09,
+  "shipping_address": "299 Anniversary Court",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dac4"
+  },
+  "order_id": 41,
+  "customer_id": 41,
+  "order_date": "8/6/2023",
+  "product_name": "Hat",
+  "quantity": 6,
+  "unit_price": 27.28,
+  "total_price": 124.57,
+  "shipping_address": "484 Waxwing Drive",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dac5"
+  },
+  "order_id": 42,
+  "customer_id": 42,
+  "order_date": "12/24/2022",
+  "product_name": "T-shirt",
+  "quantity": 8,
+  "unit_price": 26.4,
+  "total_price": 195.87,
+  "shipping_address": "3 Dwight Center",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dac6"
+  },
+  "order_id": 43,
+  "customer_id": 43,
+  "order_date": "2/11/2023",
+  "product_name": "Hat",
+  "quantity": 4,
+  "unit_price": 44.33,
+  "total_price": 900.59,
+  "shipping_address": "41 Stang Junction",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dac7"
+  },
+  "order_id": 44,
+  "customer_id": 44,
+  "order_date": "8/20/2023",
+  "product_name": "T-shirt",
+  "quantity": 7,
+  "unit_price": 87.72,
+  "total_price": 562.49,
+  "shipping_address": "58782 Park Meadow Parkway",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dac8"
+  },
+  "order_id": 45,
+  "customer_id": 45,
+  "order_date": "9/12/2023",
+  "product_name": "Jeans",
+  "quantity": 7,
+  "unit_price": 51.47,
+  "total_price": 903.07,
+  "shipping_address": "47632 Acker Center",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dac9"
+  },
+  "order_id": 46,
+  "customer_id": 46,
+  "order_date": "7/12/2023",
+  "product_name": "Hat",
+  "quantity": 9,
+  "unit_price": 56.13,
+  "total_price": 330.6,
+  "shipping_address": "30987 Loomis Court",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daca"
+  },
+  "order_id": 47,
+  "customer_id": 47,
+  "order_date": "1/7/2023",
+  "product_name": "Hat",
+  "quantity": 3,
+  "unit_price": 28.51,
+  "total_price": 846.44,
+  "shipping_address": "793 Sunnyside Avenue",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dacb"
+  },
+  "order_id": 48,
+  "customer_id": 48,
+  "order_date": "2/23/2023",
+  "product_name": "Hat",
+  "quantity": 6,
+  "unit_price": 75.64,
+  "total_price": 839.38,
+  "shipping_address": "984 Brentwood Plaza",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dacc"
+  },
+  "order_id": 49,
+  "customer_id": 49,
+  "order_date": "6/2/2023",
+  "product_name": "Hat",
+  "quantity": 7,
+  "unit_price": 88.5,
+  "total_price": 889.99,
+  "shipping_address": "6 Oak Valley Park",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dacd"
+  },
+  "order_id": 50,
+  "customer_id": 50,
+  "order_date": "11/26/2022",
+  "product_name": "T-shirt",
+  "quantity": 9,
+  "unit_price": 57.35,
+  "total_price": 618.45,
+  "shipping_address": "626 Schurz Junction",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dace"
+  },
+  "order_id": 51,
+  "customer_id": 51,
+  "order_date": "3/22/2023",
+  "product_name": "Hat",
+  "quantity": 7,
+  "unit_price": 74.57,
+  "total_price": 744.48,
+  "shipping_address": "398 Moose Place",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dacf"
+  },
+  "order_id": 52,
+  "customer_id": 52,
+  "order_date": "8/30/2023",
+  "product_name": "Jeans",
+  "quantity": 1,
+  "unit_price": 21.51,
+  "total_price": 699.39,
+  "shipping_address": "32574 Blue Bill Park Place",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dad0"
+  },
+  "order_id": 53,
+  "customer_id": 53,
+  "order_date": "9/13/2023",
+  "product_name": "Watch",
+  "quantity": 3,
+  "unit_price": 64.5,
+  "total_price": 642.71,
+  "shipping_address": "2 Oak Point",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dad1"
+  },
+  "order_id": 54,
+  "customer_id": 54,
+  "order_date": "4/18/2023",
+  "product_name": "Shoes",
+  "quantity": 4,
+  "unit_price": 31.31,
+  "total_price": 133.3,
+  "shipping_address": "84147 Dexter Center",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dad2"
+  },
+  "order_id": 55,
+  "customer_id": 55,
+  "order_date": "8/4/2023",
+  "product_name": "Shoes",
+  "quantity": 10,
+  "unit_price": 73.37,
+  "total_price": 837.05,
+  "shipping_address": "2 Tennyson Alley",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dad3"
+  },
+  "order_id": 56,
+  "customer_id": 56,
+  "order_date": "10/28/2023",
+  "product_name": "T-shirt",
+  "quantity": 8,
+  "unit_price": 17.89,
+  "total_price": 851.34,
+  "shipping_address": "26 Sunnyside Circle",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dad4"
+  },
+  "order_id": 57,
+  "customer_id": 57,
+  "order_date": "5/8/2023",
+  "product_name": "T-shirt",
+  "quantity": 3,
+  "unit_price": 10.72,
+  "total_price": 783.35,
+  "shipping_address": "57648 Kenwood Junction",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dad5"
+  },
+  "order_id": 58,
+  "customer_id": 58,
+  "order_date": "11/6/2023",
+  "product_name": "Jeans",
+  "quantity": 2,
+  "unit_price": 26.06,
+  "total_price": 597,
+  "shipping_address": "0107 Lakewood Lane",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dad6"
+  },
+  "order_id": 59,
+  "customer_id": 59,
+  "order_date": "6/30/2023",
+  "product_name": "Jeans",
+  "quantity": 3,
+  "unit_price": 44.3,
+  "total_price": 887.64,
+  "shipping_address": "33 International Alley",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dad7"
+  },
+  "order_id": 60,
+  "customer_id": 60,
+  "order_date": "1/10/2023",
+  "product_name": "Hat",
+  "quantity": 8,
+  "unit_price": 85.68,
+  "total_price": 779.85,
+  "shipping_address": "8742 Rutledge Street",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dad8"
+  },
+  "order_id": 61,
+  "customer_id": 61,
+  "order_date": "10/25/2023",
+  "product_name": "Hat",
+  "quantity": 1,
+  "unit_price": 50.76,
+  "total_price": 661.32,
+  "shipping_address": "0 Leroy Point",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dad9"
+  },
+  "order_id": 62,
+  "customer_id": 62,
+  "order_date": "2/12/2023",
+  "product_name": "T-shirt",
+  "quantity": 4,
+  "unit_price": 62.41,
+  "total_price": 614.78,
+  "shipping_address": "58 Forster Avenue",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dada"
+  },
+  "order_id": 63,
+  "customer_id": 63,
+  "order_date": "2/4/2023",
+  "product_name": "Hat",
+  "quantity": 3,
+  "unit_price": 57,
+  "total_price": 544.53,
+  "shipping_address": "95138 Northport Pass",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dadb"
+  },
+  "order_id": 64,
+  "customer_id": 64,
+  "order_date": "6/13/2023",
+  "product_name": "Hat",
+  "quantity": 4,
+  "unit_price": 93.06,
+  "total_price": 327.95,
+  "shipping_address": "46 Morningstar Circle",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dadc"
+  },
+  "order_id": 65,
+  "customer_id": 65,
+  "order_date": "8/18/2023",
+  "product_name": "Jeans",
+  "quantity": 10,
+  "unit_price": 35.91,
+  "total_price": 10.3,
+  "shipping_address": "48 Red Cloud Drive",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dadd"
+  },
+  "order_id": 66,
+  "customer_id": 66,
+  "order_date": "8/18/2023",
+  "product_name": "Hat",
+  "quantity": 8,
+  "unit_price": 30.22,
+  "total_price": 562.16,
+  "shipping_address": "60 Troy Way",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dade"
+  },
+  "order_id": 67,
+  "customer_id": 67,
+  "order_date": "8/16/2023",
+  "product_name": "Hat",
+  "quantity": 4,
+  "unit_price": 64.05,
+  "total_price": 815.1,
+  "shipping_address": "989 Green Ridge Place",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dadf"
+  },
+  "order_id": 68,
+  "customer_id": 68,
+  "order_date": "11/20/2022",
+  "product_name": "Shoes",
+  "quantity": 3,
+  "unit_price": 35.99,
+  "total_price": 371.29,
+  "shipping_address": "3 Hollow Ridge Plaza",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dae0"
+  },
+  "order_id": 69,
+  "customer_id": 69,
+  "order_date": "8/2/2023",
+  "product_name": "Shoes",
+  "quantity": 10,
+  "unit_price": 52.86,
+  "total_price": 74.02,
+  "shipping_address": "78412 Doe Crossing Drive",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dae1"
+  },
+  "order_id": 70,
+  "customer_id": 70,
+  "order_date": "5/21/2023",
+  "product_name": "Shoes",
+  "quantity": 5,
+  "unit_price": 43.95,
+  "total_price": 818.97,
+  "shipping_address": "4 Hudson Point",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dae2"
+  },
+  "order_id": 71,
+  "customer_id": 71,
+  "order_date": "8/30/2023",
+  "product_name": "Shoes",
+  "quantity": 1,
+  "unit_price": 53.64,
+  "total_price": 850.87,
+  "shipping_address": "1936 Prairieview Hill",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dae3"
+  },
+  "order_id": 72,
+  "customer_id": 72,
+  "order_date": "5/9/2023",
+  "product_name": "Watch",
+  "quantity": 10,
+  "unit_price": 36.35,
+  "total_price": 961.45,
+  "shipping_address": "46 Crest Line Trail",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dae4"
+  },
+  "order_id": 73,
+  "customer_id": 73,
+  "order_date": "8/12/2023",
+  "product_name": "Watch",
+  "quantity": 2,
+  "unit_price": 15.59,
+  "total_price": 44.12,
+  "shipping_address": "3 Haas Point",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dae5"
+  },
+  "order_id": 74,
+  "customer_id": 74,
+  "order_date": "6/30/2023",
+  "product_name": "T-shirt",
+  "quantity": 7,
+  "unit_price": 18.07,
+  "total_price": 979.67,
+  "shipping_address": "6498 Gina Drive",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dae6"
+  },
+  "order_id": 75,
+  "customer_id": 75,
+  "order_date": "1/28/2023",
+  "product_name": "T-shirt",
+  "quantity": 9,
+  "unit_price": 93.55,
+  "total_price": 741.01,
+  "shipping_address": "95 Butterfield Lane",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dae7"
+  },
+  "order_id": 76,
+  "customer_id": 76,
+  "order_date": "10/7/2023",
+  "product_name": "Hat",
+  "quantity": 7,
+  "unit_price": 42.79,
+  "total_price": 78.84,
+  "shipping_address": "13875 Barnett Plaza",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dae8"
+  },
+  "order_id": 77,
+  "customer_id": 77,
+  "order_date": "3/31/2023",
+  "product_name": "T-shirt",
+  "quantity": 4,
+  "unit_price": 22.46,
+  "total_price": 735.54,
+  "shipping_address": "6398 Morrow Parkway",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dae9"
+  },
+  "order_id": 78,
+  "customer_id": 78,
+  "order_date": "10/12/2023",
+  "product_name": "Shoes",
+  "quantity": 9,
+  "unit_price": 66.97,
+  "total_price": 591.82,
+  "shipping_address": "83763 Hoepker Circle",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daea"
+  },
+  "order_id": 79,
+  "customer_id": 79,
+  "order_date": "10/29/2023",
+  "product_name": "Hat",
+  "quantity": 7,
+  "unit_price": 49.31,
+  "total_price": 584.81,
+  "shipping_address": "2 Duke Pass",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daeb"
+  },
+  "order_id": 80,
+  "customer_id": 80,
+  "order_date": "11/28/2022",
+  "product_name": "Hat",
+  "quantity": 5,
+  "unit_price": 24.22,
+  "total_price": 325.62,
+  "shipping_address": "51 Stephen Place",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daec"
+  },
+  "order_id": 81,
+  "customer_id": 81,
+  "order_date": "7/29/2023",
+  "product_name": "Watch",
+  "quantity": 2,
+  "unit_price": 84.47,
+  "total_price": 882.45,
+  "shipping_address": "69470 Summerview Alley",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daed"
+  },
+  "order_id": 82,
+  "customer_id": 82,
+  "order_date": "9/2/2023",
+  "product_name": "Hat",
+  "quantity": 10,
+  "unit_price": 25.98,
+  "total_price": 698.08,
+  "shipping_address": "772 Packers Place",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daee"
+  },
+  "order_id": 83,
+  "customer_id": 83,
+  "order_date": "9/21/2023",
+  "product_name": "Watch",
+  "quantity": 7,
+  "unit_price": 33.14,
+  "total_price": 925.26,
+  "shipping_address": "99 Scoville Place",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daef"
+  },
+  "order_id": 84,
+  "customer_id": 84,
+  "order_date": "2/3/2023",
+  "product_name": "Shoes",
+  "quantity": 2,
+  "unit_price": 80.82,
+  "total_price": 837.04,
+  "shipping_address": "1 Debra Alley",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daf0"
+  },
+  "order_id": 85,
+  "customer_id": 85,
+  "order_date": "9/11/2023",
+  "product_name": "Shoes",
+  "quantity": 5,
+  "unit_price": 69.17,
+  "total_price": 928.01,
+  "shipping_address": "12 Nancy Lane",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daf1"
+  },
+  "order_id": 86,
+  "customer_id": 86,
+  "order_date": "12/27/2022",
+  "product_name": "Shoes",
+  "quantity": 3,
+  "unit_price": 44.96,
+  "total_price": 293.86,
+  "shipping_address": "0 Daystar Trail",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daf2"
+  },
+  "order_id": 87,
+  "customer_id": 87,
+  "order_date": "11/12/2023",
+  "product_name": "Hat",
+  "quantity": 2,
+  "unit_price": 50.35,
+  "total_price": 913.7,
+  "shipping_address": "50134 Declaration Lane",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daf3"
+  },
+  "order_id": 88,
+  "customer_id": 88,
+  "order_date": "6/7/2023",
+  "product_name": "Shoes",
+  "quantity": 9,
+  "unit_price": 50.4,
+  "total_price": 999.64,
+  "shipping_address": "7955 Oak Place",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daf4"
+  },
+  "order_id": 89,
+  "customer_id": 89,
+  "order_date": "10/19/2023",
+  "product_name": "Jeans",
+  "quantity": 9,
+  "unit_price": 12.77,
+  "total_price": 141.01,
+  "shipping_address": "22 Forest Dale Pass",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daf5"
+  },
+  "order_id": 90,
+  "customer_id": 90,
+  "order_date": "6/2/2023",
+  "product_name": "Shoes",
+  "quantity": 4,
+  "unit_price": 94.67,
+  "total_price": 967.57,
+  "shipping_address": "0 Almo Circle",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daf6"
+  },
+  "order_id": 91,
+  "customer_id": 91,
+  "order_date": "2/26/2023",
+  "product_name": "Shoes",
+  "quantity": 3,
+  "unit_price": 27.96,
+  "total_price": 967.73,
+  "shipping_address": "02455 Florence Pass",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daf7"
+  },
+  "order_id": 92,
+  "customer_id": 92,
+  "order_date": "1/23/2023",
+  "product_name": "Shoes",
+  "quantity": 8,
+  "unit_price": 74.28,
+  "total_price": 220.52,
+  "shipping_address": "29092 Anthes Way",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daf8"
+  },
+  "order_id": 93,
+  "customer_id": 93,
+  "order_date": "6/2/2023",
+  "product_name": "T-shirt",
+  "quantity": 3,
+  "unit_price": 65.68,
+  "total_price": 882.65,
+  "shipping_address": "39897 Monterey Avenue",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daf9"
+  },
+  "order_id": 94,
+  "customer_id": 94,
+  "order_date": "6/21/2023",
+  "product_name": "T-shirt",
+  "quantity": 4,
+  "unit_price": 53.23,
+  "total_price": 839.55,
+  "shipping_address": "514 Katie Park",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dafa"
+  },
+  "order_id": 95,
+  "customer_id": 95,
+  "order_date": "10/8/2023",
+  "product_name": "Jeans",
+  "quantity": 6,
+  "unit_price": 90.34,
+  "total_price": 167.99,
+  "shipping_address": "6895 Muir Crossing",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dafb"
+  },
+  "order_id": 96,
+  "customer_id": 96,
+  "order_date": "7/15/2023",
+  "product_name": "Hat",
+  "quantity": 5,
+  "unit_price": 61.97,
+  "total_price": 955.67,
+  "shipping_address": "89191 Hintze Point",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dafc"
+  },
+  "order_id": 97,
+  "customer_id": 97,
+  "order_date": "8/26/2023",
+  "product_name": "T-shirt",
+  "quantity": 5,
+  "unit_price": 55.42,
+  "total_price": 61.23,
+  "shipping_address": "5155 Utah Junction",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dafd"
+  },
+  "order_id": 98,
+  "customer_id": 98,
+  "order_date": "3/16/2023",
+  "product_name": "Watch",
+  "quantity": 2,
+  "unit_price": 45.27,
+  "total_price": 623,
+  "shipping_address": "1683 Duke Hill",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dafe"
+  },
+  "order_id": 99,
+  "customer_id": 99,
+  "order_date": "3/20/2023",
+  "product_name": "T-shirt",
+  "quantity": 1,
+  "unit_price": 25.94,
+  "total_price": 507.87,
+  "shipping_address": "46 Golf View Point",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50daff"
+  },
+  "order_id": 100,
+  "customer_id": 100,
+  "order_date": "2/27/2023",
+  "product_name": "T-shirt",
+  "quantity": 6,
+  "unit_price": 13.93,
+  "total_price": 303.39,
+  "shipping_address": "45632 Morningstar Hill",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db00"
+  },
+  "order_id": 101,
+  "customer_id": 101,
+  "order_date": "1/20/2023",
+  "product_name": "Watch",
+  "quantity": 7,
+  "unit_price": 30.69,
+  "total_price": 587.28,
+  "shipping_address": "4 Old Shore Court",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db01"
+  },
+  "order_id": 102,
+  "customer_id": 102,
+  "order_date": "12/7/2022",
+  "product_name": "Watch",
+  "quantity": 4,
+  "unit_price": 60.22,
+  "total_price": 195.3,
+  "shipping_address": "35258 Tony Avenue",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db02"
+  },
+  "order_id": 103,
+  "customer_id": 103,
+  "order_date": "3/3/2023",
+  "product_name": "T-shirt",
+  "quantity": 4,
+  "unit_price": 60.82,
+  "total_price": 543.69,
+  "shipping_address": "4 Walton Trail",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db03"
+  },
+  "order_id": 104,
+  "customer_id": 104,
+  "order_date": "7/22/2023",
+  "product_name": "Hat",
+  "quantity": 3,
+  "unit_price": 96.4,
+  "total_price": 757.56,
+  "shipping_address": "2705 Loftsgordon Pass",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db04"
+  },
+  "order_id": 105,
+  "customer_id": 105,
+  "order_date": "7/19/2023",
+  "product_name": "Shoes",
+  "quantity": 6,
+  "unit_price": 99.18,
+  "total_price": 791.13,
+  "shipping_address": "83 Linden Lane",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db05"
+  },
+  "order_id": 106,
+  "customer_id": 106,
+  "order_date": "2/20/2023",
+  "product_name": "T-shirt",
+  "quantity": 8,
+  "unit_price": 93.33,
+  "total_price": 639.57,
+  "shipping_address": "8420 Oakridge Way",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db06"
+  },
+  "order_id": 107,
+  "customer_id": 107,
+  "order_date": "7/30/2023",
+  "product_name": "Shoes",
+  "quantity": 5,
+  "unit_price": 94.2,
+  "total_price": 252.65,
+  "shipping_address": "284 Merchant Drive",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db07"
+  },
+  "order_id": 108,
+  "customer_id": 108,
+  "order_date": "8/13/2023",
+  "product_name": "Hat",
+  "quantity": 10,
+  "unit_price": 96.36,
+  "total_price": 674.72,
+  "shipping_address": "107 Maple Trail",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db08"
+  },
+  "order_id": 109,
+  "customer_id": 109,
+  "order_date": "11/17/2023",
+  "product_name": "Watch",
+  "quantity": 7,
+  "unit_price": 38.02,
+  "total_price": 160.43,
+  "shipping_address": "9 Golf View Street",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db09"
+  },
+  "order_id": 110,
+  "customer_id": 110,
+  "order_date": "6/24/2023",
+  "product_name": "T-shirt",
+  "quantity": 6,
+  "unit_price": 60.09,
+  "total_price": 78.72,
+  "shipping_address": "059 Comanche Crossing",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db0a"
+  },
+  "order_id": 111,
+  "customer_id": 111,
+  "order_date": "1/16/2023",
+  "product_name": "Jeans",
+  "quantity": 4,
+  "unit_price": 12,
+  "total_price": 349.05,
+  "shipping_address": "7 Mcguire Crossing",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db0b"
+  },
+  "order_id": 112,
+  "customer_id": 112,
+  "order_date": "11/4/2023",
+  "product_name": "Hat",
+  "quantity": 2,
+  "unit_price": 13.35,
+  "total_price": 961.79,
+  "shipping_address": "3 Redwing Junction",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db0c"
+  },
+  "order_id": 113,
+  "customer_id": 113,
+  "order_date": "12/29/2022",
+  "product_name": "T-shirt",
+  "quantity": 10,
+  "unit_price": 86.72,
+  "total_price": 886.37,
+  "shipping_address": "1223 Bowman Drive",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db0d"
+  },
+  "order_id": 114,
+  "customer_id": 114,
+  "order_date": "10/5/2023",
+  "product_name": "Hat",
+  "quantity": 9,
+  "unit_price": 30.73,
+  "total_price": 912.81,
+  "shipping_address": "3833 Banding Drive",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db0e"
+  },
+  "order_id": 115,
+  "customer_id": 115,
+  "order_date": "10/27/2023",
+  "product_name": "T-shirt",
+  "quantity": 2,
+  "unit_price": 35.39,
+  "total_price": 945.03,
+  "shipping_address": "345 Waywood Point",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db0f"
+  },
+  "order_id": 116,
+  "customer_id": 116,
+  "order_date": "12/28/2022",
+  "product_name": "Shoes",
+  "quantity": 6,
+  "unit_price": 91.69,
+  "total_price": 765.16,
+  "shipping_address": "96 Gina Pass",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db10"
+  },
+  "order_id": 117,
+  "customer_id": 117,
+  "order_date": "8/28/2023",
+  "product_name": "Jeans",
+  "quantity": 9,
+  "unit_price": 90.75,
+  "total_price": 163.01,
+  "shipping_address": "86520 Sycamore Drive",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db11"
+  },
+  "order_id": 118,
+  "customer_id": 118,
+  "order_date": "8/20/2023",
+  "product_name": "T-shirt",
+  "quantity": 9,
+  "unit_price": 28.44,
+  "total_price": 226.4,
+  "shipping_address": "73668 Cherokee Plaza",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db12"
+  },
+  "order_id": 119,
+  "customer_id": 119,
+  "order_date": "4/16/2023",
+  "product_name": "T-shirt",
+  "quantity": 9,
+  "unit_price": 98.87,
+  "total_price": 787.15,
+  "shipping_address": "9 Bobwhite Trail",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db13"
+  },
+  "order_id": 120,
+  "customer_id": 120,
+  "order_date": "4/5/2023",
+  "product_name": "Jeans",
+  "quantity": 7,
+  "unit_price": 94.12,
+  "total_price": 342.9,
+  "shipping_address": "63901 Heffernan Terrace",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db14"
+  },
+  "order_id": 121,
+  "customer_id": 121,
+  "order_date": "6/18/2023",
+  "product_name": "T-shirt",
+  "quantity": 5,
+  "unit_price": 34,
+  "total_price": 802.37,
+  "shipping_address": "59963 Westridge Terrace",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db15"
+  },
+  "order_id": 122,
+  "customer_id": 122,
+  "order_date": "8/22/2023",
+  "product_name": "Jeans",
+  "quantity": 10,
+  "unit_price": 14.73,
+  "total_price": 886.06,
+  "shipping_address": "3 Kenwood Way",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db16"
+  },
+  "order_id": 123,
+  "customer_id": 123,
+  "order_date": "9/18/2023",
+  "product_name": "Jeans",
+  "quantity": 8,
+  "unit_price": 84.53,
+  "total_price": 760.42,
+  "shipping_address": "65841 Clove Drive",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db17"
+  },
+  "order_id": 124,
+  "customer_id": 124,
+  "order_date": "9/4/2023",
+  "product_name": "T-shirt",
+  "quantity": 7,
+  "unit_price": 97.31,
+  "total_price": 285.61,
+  "shipping_address": "4828 Steensland Way",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db18"
+  },
+  "order_id": 125,
+  "customer_id": 125,
+  "order_date": "9/20/2023",
+  "product_name": "Jeans",
+  "quantity": 6,
+  "unit_price": 87.87,
+  "total_price": 608.91,
+  "shipping_address": "0 American Circle",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db19"
+  },
+  "order_id": 126,
+  "customer_id": 126,
+  "order_date": "2/16/2023",
+  "product_name": "Shoes",
+  "quantity": 9,
+  "unit_price": 78.61,
+  "total_price": 415.57,
+  "shipping_address": "205 Fordem Avenue",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db1a"
+  },
+  "order_id": 127,
+  "customer_id": 127,
+  "order_date": "7/25/2023",
+  "product_name": "Hat",
+  "quantity": 1,
+  "unit_price": 65.3,
+  "total_price": 896.02,
+  "shipping_address": "97 Twin Pines Parkway",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db1b"
+  },
+  "order_id": 128,
+  "customer_id": 128,
+  "order_date": "4/14/2023",
+  "product_name": "T-shirt",
+  "quantity": 1,
+  "unit_price": 27.18,
+  "total_price": 973.32,
+  "shipping_address": "3618 Golden Leaf Trail",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db1c"
+  },
+  "order_id": 129,
+  "customer_id": 129,
+  "order_date": "12/21/2022",
+  "product_name": "Shoes",
+  "quantity": 1,
+  "unit_price": 61.79,
+  "total_price": 969.22,
+  "shipping_address": "499 Moland Street",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db1d"
+  },
+  "order_id": 130,
+  "customer_id": 130,
+  "order_date": "8/8/2023",
+  "product_name": "T-shirt",
+  "quantity": 5,
+  "unit_price": 90.68,
+  "total_price": 782.37,
+  "shipping_address": "26056 Maple Wood Road",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db1e"
+  },
+  "order_id": 131,
+  "customer_id": 131,
+  "order_date": "5/5/2023",
+  "product_name": "Hat",
+  "quantity": 5,
+  "unit_price": 45.89,
+  "total_price": 801.18,
+  "shipping_address": "4269 Loeprich Court",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db1f"
+  },
+  "order_id": 132,
+  "customer_id": 132,
+  "order_date": "4/5/2023",
+  "product_name": "Jeans",
+  "quantity": 4,
+  "unit_price": 20.11,
+  "total_price": 331.37,
+  "shipping_address": "6 Iowa Point",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db20"
+  },
+  "order_id": 133,
+  "customer_id": 133,
+  "order_date": "9/25/2023",
+  "product_name": "Watch",
+  "quantity": 10,
+  "unit_price": 90.08,
+  "total_price": 534.41,
+  "shipping_address": "78741 Delladonna Avenue",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db21"
+  },
+  "order_id": 134,
+  "customer_id": 134,
+  "order_date": "3/24/2023",
+  "product_name": "Shoes",
+  "quantity": 10,
+  "unit_price": 18.91,
+  "total_price": 478.79,
+  "shipping_address": "7 Jackson Trail",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db22"
+  },
+  "order_id": 135,
+  "customer_id": 135,
+  "order_date": "1/17/2023",
+  "product_name": "T-shirt",
+  "quantity": 10,
+  "unit_price": 54.01,
+  "total_price": 360.51,
+  "shipping_address": "5342 Drewry Junction",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db23"
+  },
+  "order_id": 136,
+  "customer_id": 136,
+  "order_date": "4/11/2023",
+  "product_name": "Watch",
+  "quantity": 1,
+  "unit_price": 89.51,
+  "total_price": 613.71,
+  "shipping_address": "8 Rusk Terrace",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db24"
+  },
+  "order_id": 137,
+  "customer_id": 137,
+  "order_date": "1/28/2023",
+  "product_name": "T-shirt",
+  "quantity": 7,
+  "unit_price": 16.43,
+  "total_price": 551.78,
+  "shipping_address": "002 Dryden Junction",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db25"
+  },
+  "order_id": 138,
+  "customer_id": 138,
+  "order_date": "2/20/2023",
+  "product_name": "Jeans",
+  "quantity": 8,
+  "unit_price": 12.41,
+  "total_price": 234.03,
+  "shipping_address": "97 Basil Pass",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db26"
+  },
+  "order_id": 139,
+  "customer_id": 139,
+  "order_date": "11/10/2023",
+  "product_name": "Hat",
+  "quantity": 9,
+  "unit_price": 75.81,
+  "total_price": 370.84,
+  "shipping_address": "6 Monument Terrace",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db27"
+  },
+  "order_id": 140,
+  "customer_id": 140,
+  "order_date": "12/9/2022",
+  "product_name": "Jeans",
+  "quantity": 9,
+  "unit_price": 12.08,
+  "total_price": 911.81,
+  "shipping_address": "7816 Shasta Plaza",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db28"
+  },
+  "order_id": 141,
+  "customer_id": 141,
+  "order_date": "9/9/2023",
+  "product_name": "Shoes",
+  "quantity": 6,
+  "unit_price": 86.89,
+  "total_price": 473.01,
+  "shipping_address": "00 Heffernan Center",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db29"
+  },
+  "order_id": 142,
+  "customer_id": 142,
+  "order_date": "11/8/2023",
+  "product_name": "Hat",
+  "quantity": 10,
+  "unit_price": 92.68,
+  "total_price": 159.44,
+  "shipping_address": "002 1st Circle",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db2a"
+  },
+  "order_id": 143,
+  "customer_id": 143,
+  "order_date": "8/6/2023",
+  "product_name": "Shoes",
+  "quantity": 10,
+  "unit_price": 41.1,
+  "total_price": 105.25,
+  "shipping_address": "1 Morrow Trail",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db2b"
+  },
+  "order_id": 144,
+  "customer_id": 144,
+  "order_date": "12/4/2022",
+  "product_name": "Hat",
+  "quantity": 10,
+  "unit_price": 48.33,
+  "total_price": 141.86,
+  "shipping_address": "0069 Marcy Plaza",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db2c"
+  },
+  "order_id": 145,
+  "customer_id": 145,
+  "order_date": "1/17/2023",
+  "product_name": "Shoes",
+  "quantity": 4,
+  "unit_price": 15.86,
+  "total_price": 655.26,
+  "shipping_address": "2934 Sunnyside Drive",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db2d"
+  },
+  "order_id": 146,
+  "customer_id": 146,
+  "order_date": "6/24/2023",
+  "product_name": "Watch",
+  "quantity": 4,
+  "unit_price": 51,
+  "total_price": 38.15,
+  "shipping_address": "06 Fulton Trail",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db2e"
+  },
+  "order_id": 147,
+  "customer_id": 147,
+  "order_date": "8/15/2023",
+  "product_name": "Watch",
+  "quantity": 5,
+  "unit_price": 46.1,
+  "total_price": 755.27,
+  "shipping_address": "018 Hudson Junction",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db2f"
+  },
+  "order_id": 148,
+  "customer_id": 148,
+  "order_date": "2/4/2023",
+  "product_name": "T-shirt",
+  "quantity": 1,
+  "unit_price": 61.1,
+  "total_price": 726.7,
+  "shipping_address": "193 Sloan Hill",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db30"
+  },
+  "order_id": 149,
+  "customer_id": 149,
+  "order_date": "12/21/2022",
+  "product_name": "Shoes",
+  "quantity": 9,
+  "unit_price": 40.5,
+  "total_price": 732.74,
+  "shipping_address": "8 Mcguire Center",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db31"
+  },
+  "order_id": 150,
+  "customer_id": 150,
+  "order_date": "11/5/2023",
+  "product_name": "T-shirt",
+  "quantity": 1,
+  "unit_price": 23.65,
+  "total_price": 94.59,
+  "shipping_address": "4 Nancy Terrace",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db32"
+  },
+  "order_id": 151,
+  "customer_id": 151,
+  "order_date": "10/2/2023",
+  "product_name": "T-shirt",
+  "quantity": 7,
+  "unit_price": 91.52,
+  "total_price": 978.01,
+  "shipping_address": "9116 Schlimgen Junction",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db33"
+  },
+  "order_id": 152,
+  "customer_id": 152,
+  "order_date": "9/7/2023",
+  "product_name": "Shoes",
+  "quantity": 6,
+  "unit_price": 17.9,
+  "total_price": 463.47,
+  "shipping_address": "22255 Walton Junction",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db34"
+  },
+  "order_id": 153,
+  "customer_id": 153,
+  "order_date": "2/2/2023",
+  "product_name": "T-shirt",
+  "quantity": 2,
+  "unit_price": 73.07,
+  "total_price": 373.78,
+  "shipping_address": "1 Darwin Trail",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db35"
+  },
+  "order_id": 154,
+  "customer_id": 154,
+  "order_date": "6/13/2023",
+  "product_name": "Hat",
+  "quantity": 3,
+  "unit_price": 22.4,
+  "total_price": 781.15,
+  "shipping_address": "75281 Pierstorff Hill",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db36"
+  },
+  "order_id": 155,
+  "customer_id": 155,
+  "order_date": "1/2/2023",
+  "product_name": "Hat",
+  "quantity": 5,
+  "unit_price": 86.94,
+  "total_price": 58.85,
+  "shipping_address": "87 Holmberg Alley",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db37"
+  },
+  "order_id": 156,
+  "customer_id": 156,
+  "order_date": "1/31/2023",
+  "product_name": "Shoes",
+  "quantity": 3,
+  "unit_price": 99.3,
+  "total_price": 407.92,
+  "shipping_address": "9 Riverside Drive",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db38"
+  },
+  "order_id": 157,
+  "customer_id": 157,
+  "order_date": "1/8/2023",
+  "product_name": "Watch",
+  "quantity": 10,
+  "unit_price": 98.19,
+  "total_price": 709.88,
+  "shipping_address": "968 Drewry Lane",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db39"
+  },
+  "order_id": 158,
+  "customer_id": 158,
+  "order_date": "4/4/2023",
+  "product_name": "Jeans",
+  "quantity": 1,
+  "unit_price": 53.63,
+  "total_price": 783.67,
+  "shipping_address": "5 Cody Street",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db3a"
+  },
+  "order_id": 159,
+  "customer_id": 159,
+  "order_date": "11/27/2022",
+  "product_name": "Jeans",
+  "quantity": 6,
+  "unit_price": 24.9,
+  "total_price": 36.29,
+  "shipping_address": "828 1st Park",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db3b"
+  },
+  "order_id": 160,
+  "customer_id": 160,
+  "order_date": "11/29/2022",
+  "product_name": "Watch",
+  "quantity": 4,
+  "unit_price": 57.09,
+  "total_price": 315.39,
+  "shipping_address": "2 Mendota Plaza",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db3c"
+  },
+  "order_id": 161,
+  "customer_id": 161,
+  "order_date": "7/25/2023",
+  "product_name": "Watch",
+  "quantity": 6,
+  "unit_price": 91.89,
+  "total_price": 838.51,
+  "shipping_address": "87076 Bunting Circle",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db3d"
+  },
+  "order_id": 162,
+  "customer_id": 162,
+  "order_date": "10/17/2023",
+  "product_name": "T-shirt",
+  "quantity": 3,
+  "unit_price": 22.9,
+  "total_price": 357.34,
+  "shipping_address": "823 Schiller Street",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db3e"
+  },
+  "order_id": 163,
+  "customer_id": 163,
+  "order_date": "3/5/2023",
+  "product_name": "Hat",
+  "quantity": 5,
+  "unit_price": 21.67,
+  "total_price": 400.02,
+  "shipping_address": "2 Dahle Street",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db3f"
+  },
+  "order_id": 164,
+  "customer_id": 164,
+  "order_date": "2/22/2023",
+  "product_name": "Watch",
+  "quantity": 5,
+  "unit_price": 86.02,
+  "total_price": 241.49,
+  "shipping_address": "4815 Longview Court",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db40"
+  },
+  "order_id": 165,
+  "customer_id": 165,
+  "order_date": "2/8/2023",
+  "product_name": "Watch",
+  "quantity": 7,
+  "unit_price": 13.91,
+  "total_price": 715.58,
+  "shipping_address": "8 Bobwhite Court",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db41"
+  },
+  "order_id": 166,
+  "customer_id": 166,
+  "order_date": "6/21/2023",
+  "product_name": "Hat",
+  "quantity": 7,
+  "unit_price": 38.63,
+  "total_price": 201.29,
+  "shipping_address": "174 Lyons Center",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db42"
+  },
+  "order_id": 167,
+  "customer_id": 167,
+  "order_date": "5/9/2023",
+  "product_name": "Watch",
+  "quantity": 1,
+  "unit_price": 30.36,
+  "total_price": 795.44,
+  "shipping_address": "6799 Carberry Terrace",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db43"
+  },
+  "order_id": 168,
+  "customer_id": 168,
+  "order_date": "6/16/2023",
+  "product_name": "Hat",
+  "quantity": 4,
+  "unit_price": 78.6,
+  "total_price": 571.89,
+  "shipping_address": "97207 Hagan Hill",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db44"
+  },
+  "order_id": 169,
+  "customer_id": 169,
+  "order_date": "1/9/2023",
+  "product_name": "Watch",
+  "quantity": 10,
+  "unit_price": 62.36,
+  "total_price": 94.08,
+  "shipping_address": "05199 Sommers Center",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db45"
+  },
+  "order_id": 170,
+  "customer_id": 170,
+  "order_date": "2/8/2023",
+  "product_name": "Hat",
+  "quantity": 6,
+  "unit_price": 90.74,
+  "total_price": 793.28,
+  "shipping_address": "5955 Northridge Point",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db46"
+  },
+  "order_id": 171,
+  "customer_id": 171,
+  "order_date": "7/19/2023",
+  "product_name": "T-shirt",
+  "quantity": 8,
+  "unit_price": 21.54,
+  "total_price": 216.45,
+  "shipping_address": "602 Division Street",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db47"
+  },
+  "order_id": 172,
+  "customer_id": 172,
+  "order_date": "12/17/2022",
+  "product_name": "Hat",
+  "quantity": 2,
+  "unit_price": 90.78,
+  "total_price": 245.73,
+  "shipping_address": "4 Darwin Street",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db48"
+  },
+  "order_id": 173,
+  "customer_id": 173,
+  "order_date": "9/27/2023",
+  "product_name": "Jeans",
+  "quantity": 3,
+  "unit_price": 89.36,
+  "total_price": 181.52,
+  "shipping_address": "62 Thompson Trail",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db49"
+  },
+  "order_id": 174,
+  "customer_id": 174,
+  "order_date": "9/5/2023",
+  "product_name": "Jeans",
+  "quantity": 7,
+  "unit_price": 55.16,
+  "total_price": 202.93,
+  "shipping_address": "7230 Coleman Road",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db4a"
+  },
+  "order_id": 175,
+  "customer_id": 175,
+  "order_date": "6/13/2023",
+  "product_name": "T-shirt",
+  "quantity": 3,
+  "unit_price": 48.35,
+  "total_price": 972.15,
+  "shipping_address": "9 Farragut Hill",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db4b"
+  },
+  "order_id": 176,
+  "customer_id": 176,
+  "order_date": "2/2/2023",
+  "product_name": "T-shirt",
+  "quantity": 1,
+  "unit_price": 55.36,
+  "total_price": 771.28,
+  "shipping_address": "93 Westport Trail",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db4c"
+  },
+  "order_id": 177,
+  "customer_id": 177,
+  "order_date": "6/30/2023",
+  "product_name": "Shoes",
+  "quantity": 7,
+  "unit_price": 55.36,
+  "total_price": 299.84,
+  "shipping_address": "04 Gateway Hill",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db4d"
+  },
+  "order_id": 178,
+  "customer_id": 178,
+  "order_date": "3/18/2023",
+  "product_name": "Shoes",
+  "quantity": 9,
+  "unit_price": 36.81,
+  "total_price": 877.6,
+  "shipping_address": "8332 Melvin Pass",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db4e"
+  },
+  "order_id": 179,
+  "customer_id": 179,
+  "order_date": "8/4/2023",
+  "product_name": "Watch",
+  "quantity": 8,
+  "unit_price": 63.37,
+  "total_price": 985.29,
+  "shipping_address": "66507 Redwing Trail",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db4f"
+  },
+  "order_id": 180,
+  "customer_id": 180,
+  "order_date": "2/11/2023",
+  "product_name": "T-shirt",
+  "quantity": 4,
+  "unit_price": 37.02,
+  "total_price": 105.51,
+  "shipping_address": "8371 Summer Ridge Trail",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db50"
+  },
+  "order_id": 181,
+  "customer_id": 181,
+  "order_date": "4/1/2023",
+  "product_name": "Hat",
+  "quantity": 4,
+  "unit_price": 69.66,
+  "total_price": 736.48,
+  "shipping_address": "2 Cottonwood Alley",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db51"
+  },
+  "order_id": 182,
+  "customer_id": 182,
+  "order_date": "1/6/2023",
+  "product_name": "Hat",
+  "quantity": 3,
+  "unit_price": 58.23,
+  "total_price": 104.06,
+  "shipping_address": "814 Dahle Lane",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db52"
+  },
+  "order_id": 183,
+  "customer_id": 183,
+  "order_date": "10/13/2023",
+  "product_name": "Jeans",
+  "quantity": 6,
+  "unit_price": 10.28,
+  "total_price": 183.08,
+  "shipping_address": "18979 Park Meadow Alley",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db53"
+  },
+  "order_id": 184,
+  "customer_id": 184,
+  "order_date": "8/20/2023",
+  "product_name": "Hat",
+  "quantity": 7,
+  "unit_price": 49.77,
+  "total_price": 773.89,
+  "shipping_address": "109 Arizona Point",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db54"
+  },
+  "order_id": 185,
+  "customer_id": 185,
+  "order_date": "10/17/2023",
+  "product_name": "Jeans",
+  "quantity": 9,
+  "unit_price": 20.88,
+  "total_price": 339.44,
+  "shipping_address": "0 Stoughton Trail",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db55"
+  },
+  "order_id": 186,
+  "customer_id": 186,
+  "order_date": "8/16/2023",
+  "product_name": "Shoes",
+  "quantity": 9,
+  "unit_price": 11.02,
+  "total_price": 741.8,
+  "shipping_address": "0 Dexter Plaza",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db56"
+  },
+  "order_id": 187,
+  "customer_id": 187,
+  "order_date": "7/15/2023",
+  "product_name": "Jeans",
+  "quantity": 1,
+  "unit_price": 69.9,
+  "total_price": 837.54,
+  "shipping_address": "4 Thackeray Street",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db57"
+  },
+  "order_id": 188,
+  "customer_id": 188,
+  "order_date": "12/28/2022",
+  "product_name": "T-shirt",
+  "quantity": 5,
+  "unit_price": 79.72,
+  "total_price": 746.87,
+  "shipping_address": "543 Namekagon Way",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db58"
+  },
+  "order_id": 189,
+  "customer_id": 189,
+  "order_date": "7/3/2023",
+  "product_name": "Jeans",
+  "quantity": 8,
+  "unit_price": 77.17,
+  "total_price": 556.43,
+  "shipping_address": "57140 Daystar Point",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db59"
+  },
+  "order_id": 190,
+  "customer_id": 190,
+  "order_date": "11/20/2022",
+  "product_name": "Watch",
+  "quantity": 8,
+  "unit_price": 48.14,
+  "total_price": 812.31,
+  "shipping_address": "953 Barnett Junction",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db5a"
+  },
+  "order_id": 191,
+  "customer_id": 191,
+  "order_date": "9/22/2023",
+  "product_name": "Shoes",
+  "quantity": 2,
+  "unit_price": 37.12,
+  "total_price": 940,
+  "shipping_address": "9 Welch Drive",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db5b"
+  },
+  "order_id": 192,
+  "customer_id": 192,
+  "order_date": "1/6/2023",
+  "product_name": "Shoes",
+  "quantity": 5,
+  "unit_price": 86.42,
+  "total_price": 222.01,
+  "shipping_address": "198 Dixon Park",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db5c"
+  },
+  "order_id": 193,
+  "customer_id": 193,
+  "order_date": "8/25/2023",
+  "product_name": "Jeans",
+  "quantity": 1,
+  "unit_price": 50.12,
+  "total_price": 605.23,
+  "shipping_address": "53980 Raven Street",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db5d"
+  },
+  "order_id": 194,
+  "customer_id": 194,
+  "order_date": "2/13/2023",
+  "product_name": "Jeans",
+  "quantity": 6,
+  "unit_price": 12.42,
+  "total_price": 145.12,
+  "shipping_address": "8 Gulseth Alley",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db5e"
+  },
+  "order_id": 195,
+  "customer_id": 195,
+  "order_date": "4/13/2023",
+  "product_name": "T-shirt",
+  "quantity": 4,
+  "unit_price": 58.75,
+  "total_price": 636.31,
+  "shipping_address": "6 Northview Parkway",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db5f"
+  },
+  "order_id": 196,
+  "customer_id": 196,
+  "order_date": "9/18/2023",
+  "product_name": "Shoes",
+  "quantity": 8,
+  "unit_price": 89.39,
+  "total_price": 208.07,
+  "shipping_address": "0090 Miller Circle",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db60"
+  },
+  "order_id": 197,
+  "customer_id": 197,
+  "order_date": "3/24/2023",
+  "product_name": "Hat",
+  "quantity": 9,
+  "unit_price": 59.93,
+  "total_price": 974.12,
+  "shipping_address": "718 Manley Road",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db61"
+  },
+  "order_id": 198,
+  "customer_id": 198,
+  "order_date": "12/4/2022",
+  "product_name": "Watch",
+  "quantity": 8,
+  "unit_price": 29.94,
+  "total_price": 384.44,
+  "shipping_address": "650 Glendale Way",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db62"
+  },
+  "order_id": 199,
+  "customer_id": 199,
+  "order_date": "3/8/2023",
+  "product_name": "Hat",
+  "quantity": 2,
+  "unit_price": 62.15,
+  "total_price": 556.82,
+  "shipping_address": "7859 Laurel Lane",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db63"
+  },
+  "order_id": 200,
+  "customer_id": 200,
+  "order_date": "4/5/2023",
+  "product_name": "Shoes",
+  "quantity": 2,
+  "unit_price": 54.93,
+  "total_price": 583.12,
+  "shipping_address": "96 Larry Junction",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db64"
+  },
+  "order_id": 201,
+  "customer_id": 201,
+  "order_date": "9/20/2023",
+  "product_name": "Jeans",
+  "quantity": 2,
+  "unit_price": 52.5,
+  "total_price": 652.16,
+  "shipping_address": "322 Harper Way",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db65"
+  },
+  "order_id": 202,
+  "customer_id": 202,
+  "order_date": "1/19/2023",
+  "product_name": "Watch",
+  "quantity": 2,
+  "unit_price": 41.43,
+  "total_price": 52.4,
+  "shipping_address": "3740 Iowa Alley",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db66"
+  },
+  "order_id": 203,
+  "customer_id": 203,
+  "order_date": "7/26/2023",
+  "product_name": "Hat",
+  "quantity": 4,
+  "unit_price": 47.77,
+  "total_price": 156.82,
+  "shipping_address": "9 Aberg Lane",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db67"
+  },
+  "order_id": 204,
+  "customer_id": 204,
+  "order_date": "10/22/2023",
+  "product_name": "T-shirt",
+  "quantity": 1,
+  "unit_price": 24.17,
+  "total_price": 336.93,
+  "shipping_address": "73 Nevada Drive",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db68"
+  },
+  "order_id": 205,
+  "customer_id": 205,
+  "order_date": "10/1/2023",
+  "product_name": "Jeans",
+  "quantity": 1,
+  "unit_price": 73.94,
+  "total_price": 112.04,
+  "shipping_address": "2560 Oakridge Terrace",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db69"
+  },
+  "order_id": 206,
+  "customer_id": 206,
+  "order_date": "4/22/2023",
+  "product_name": "Jeans",
+  "quantity": 10,
+  "unit_price": 85.39,
+  "total_price": 433.05,
+  "shipping_address": "4205 Glacier Hill Park",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db6a"
+  },
+  "order_id": 207,
+  "customer_id": 207,
+  "order_date": "12/26/2022",
+  "product_name": "Hat",
+  "quantity": 9,
+  "unit_price": 79.32,
+  "total_price": 635.54,
+  "shipping_address": "655 Service Avenue",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db6b"
+  },
+  "order_id": 208,
+  "customer_id": 208,
+  "order_date": "2/14/2023",
+  "product_name": "T-shirt",
+  "quantity": 1,
+  "unit_price": 42.28,
+  "total_price": 241.45,
+  "shipping_address": "6297 Parkside Drive",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db6c"
+  },
+  "order_id": 209,
+  "customer_id": 209,
+  "order_date": "4/7/2023",
+  "product_name": "Watch",
+  "quantity": 9,
+  "unit_price": 10.63,
+  "total_price": 410.12,
+  "shipping_address": "39 Lindbergh Pass",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db6d"
+  },
+  "order_id": 210,
+  "customer_id": 210,
+  "order_date": "8/25/2023",
+  "product_name": "Watch",
+  "quantity": 10,
+  "unit_price": 70.23,
+  "total_price": 412.41,
+  "shipping_address": "02736 New Castle Pass",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db6e"
+  },
+  "order_id": 211,
+  "customer_id": 211,
+  "order_date": "2/1/2023",
+  "product_name": "Jeans",
+  "quantity": 6,
+  "unit_price": 94.46,
+  "total_price": 742.98,
+  "shipping_address": "4383 Village Road",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db6f"
+  },
+  "order_id": 212,
+  "customer_id": 212,
+  "order_date": "5/14/2023",
+  "product_name": "Watch",
+  "quantity": 6,
+  "unit_price": 87.22,
+  "total_price": 721.81,
+  "shipping_address": "33 Summerview Road",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db70"
+  },
+  "order_id": 213,
+  "customer_id": 213,
+  "order_date": "1/10/2023",
+  "product_name": "Jeans",
+  "quantity": 10,
+  "unit_price": 76.04,
+  "total_price": 403.26,
+  "shipping_address": "5 Kim Alley",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db71"
+  },
+  "order_id": 214,
+  "customer_id": 214,
+  "order_date": "11/1/2023",
+  "product_name": "T-shirt",
+  "quantity": 1,
+  "unit_price": 74.93,
+  "total_price": 367.19,
+  "shipping_address": "03771 Manley Parkway",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db72"
+  },
+  "order_id": 215,
+  "customer_id": 215,
+  "order_date": "1/6/2023",
+  "product_name": "Shoes",
+  "quantity": 5,
+  "unit_price": 67.97,
+  "total_price": 359.58,
+  "shipping_address": "6607 Green Alley",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db73"
+  },
+  "order_id": 216,
+  "customer_id": 216,
+  "order_date": "2/26/2023",
+  "product_name": "Watch",
+  "quantity": 3,
+  "unit_price": 61.95,
+  "total_price": 639.55,
+  "shipping_address": "92 Kim Parkway",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db74"
+  },
+  "order_id": 217,
+  "customer_id": 217,
+  "order_date": "11/22/2022",
+  "product_name": "Watch",
+  "quantity": 10,
+  "unit_price": 91.21,
+  "total_price": 158.85,
+  "shipping_address": "05918 Clove Lane",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db75"
+  },
+  "order_id": 218,
+  "customer_id": 218,
+  "order_date": "5/17/2023",
+  "product_name": "Shoes",
+  "quantity": 8,
+  "unit_price": 65.71,
+  "total_price": 284.31,
+  "shipping_address": "472 Rieder Point",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db76"
+  },
+  "order_id": 219,
+  "customer_id": 219,
+  "order_date": "6/10/2023",
+  "product_name": "Jeans",
+  "quantity": 6,
+  "unit_price": 48.04,
+  "total_price": 170.26,
+  "shipping_address": "631 Alpine Court",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db77"
+  },
+  "order_id": 220,
+  "customer_id": 220,
+  "order_date": "7/15/2023",
+  "product_name": "Jeans",
+  "quantity": 10,
+  "unit_price": 75.23,
+  "total_price": 533.26,
+  "shipping_address": "24457 Shasta Junction",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db78"
+  },
+  "order_id": 221,
+  "customer_id": 221,
+  "order_date": "4/23/2023",
+  "product_name": "Watch",
+  "quantity": 7,
+  "unit_price": 55.37,
+  "total_price": 701.23,
+  "shipping_address": "141 Sundown Court",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db79"
+  },
+  "order_id": 222,
+  "customer_id": 222,
+  "order_date": "2/16/2023",
+  "product_name": "Hat",
+  "quantity": 4,
+  "unit_price": 12.89,
+  "total_price": 822.04,
+  "shipping_address": "12 Lawn Plaza",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db7a"
+  },
+  "order_id": 223,
+  "customer_id": 223,
+  "order_date": "4/15/2023",
+  "product_name": "Watch",
+  "quantity": 3,
+  "unit_price": 97.14,
+  "total_price": 687.08,
+  "shipping_address": "00423 Stuart Circle",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db7b"
+  },
+  "order_id": 224,
+  "customer_id": 224,
+  "order_date": "6/17/2023",
+  "product_name": "T-shirt",
+  "quantity": 10,
+  "unit_price": 59.23,
+  "total_price": 668.81,
+  "shipping_address": "269 Manley Road",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db7c"
+  },
+  "order_id": 225,
+  "customer_id": 225,
+  "order_date": "11/11/2023",
+  "product_name": "Watch",
+  "quantity": 7,
+  "unit_price": 94.71,
+  "total_price": 280.27,
+  "shipping_address": "8113 Straubel Court",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db7d"
+  },
+  "order_id": 226,
+  "customer_id": 226,
+  "order_date": "3/25/2023",
+  "product_name": "Watch",
+  "quantity": 5,
+  "unit_price": 70.55,
+  "total_price": 288.84,
+  "shipping_address": "0 Blue Bill Park Park",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db7e"
+  },
+  "order_id": 227,
+  "customer_id": 227,
+  "order_date": "9/1/2023",
+  "product_name": "Watch",
+  "quantity": 7,
+  "unit_price": 40.01,
+  "total_price": 721.73,
+  "shipping_address": "8496 Eastlawn Crossing",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db7f"
+  },
+  "order_id": 228,
+  "customer_id": 228,
+  "order_date": "6/16/2023",
+  "product_name": "T-shirt",
+  "quantity": 9,
+  "unit_price": 50.56,
+  "total_price": 44.46,
+  "shipping_address": "09 Northfield Junction",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db80"
+  },
+  "order_id": 229,
+  "customer_id": 229,
+  "order_date": "2/20/2023",
+  "product_name": "Shoes",
+  "quantity": 1,
+  "unit_price": 59.3,
+  "total_price": 238.15,
+  "shipping_address": "032 Sachs Drive",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db81"
+  },
+  "order_id": 230,
+  "customer_id": 230,
+  "order_date": "2/14/2023",
+  "product_name": "T-shirt",
+  "quantity": 10,
+  "unit_price": 40.84,
+  "total_price": 140.19,
+  "shipping_address": "0462 Morning Parkway",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db82"
+  },
+  "order_id": 231,
+  "customer_id": 231,
+  "order_date": "2/26/2023",
+  "product_name": "T-shirt",
+  "quantity": 3,
+  "unit_price": 76.71,
+  "total_price": 876.67,
+  "shipping_address": "04184 Lerdahl Crossing",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db83"
+  },
+  "order_id": 232,
+  "customer_id": 232,
+  "order_date": "4/19/2023",
+  "product_name": "Watch",
+  "quantity": 9,
+  "unit_price": 52.08,
+  "total_price": 641.09,
+  "shipping_address": "963 Carberry Crossing",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db84"
+  },
+  "order_id": 233,
+  "customer_id": 233,
+  "order_date": "10/11/2023",
+  "product_name": "Jeans",
+  "quantity": 5,
+  "unit_price": 47.8,
+  "total_price": 742.48,
+  "shipping_address": "55 Milwaukee Avenue",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db85"
+  },
+  "order_id": 234,
+  "customer_id": 234,
+  "order_date": "4/19/2023",
+  "product_name": "Jeans",
+  "quantity": 1,
+  "unit_price": 50.51,
+  "total_price": 64.95,
+  "shipping_address": "3 Schlimgen Court",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db86"
+  },
+  "order_id": 235,
+  "customer_id": 235,
+  "order_date": "8/11/2023",
+  "product_name": "T-shirt",
+  "quantity": 3,
+  "unit_price": 80.43,
+  "total_price": 552.99,
+  "shipping_address": "39 Melrose Point",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db87"
+  },
+  "order_id": 236,
+  "customer_id": 236,
+  "order_date": "6/2/2023",
+  "product_name": "Jeans",
+  "quantity": 5,
+  "unit_price": 60.08,
+  "total_price": 959.07,
+  "shipping_address": "14 Merry Avenue",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db88"
+  },
+  "order_id": 237,
+  "customer_id": 237,
+  "order_date": "12/15/2022",
+  "product_name": "Watch",
+  "quantity": 4,
+  "unit_price": 20.7,
+  "total_price": 231.84,
+  "shipping_address": "7974 Lotheville Trail",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db89"
+  },
+  "order_id": 238,
+  "customer_id": 238,
+  "order_date": "4/21/2023",
+  "product_name": "Jeans",
+  "quantity": 2,
+  "unit_price": 36.95,
+  "total_price": 612.65,
+  "shipping_address": "556 Sundown Park",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db8a"
+  },
+  "order_id": 239,
+  "customer_id": 239,
+  "order_date": "11/16/2023",
+  "product_name": "Hat",
+  "quantity": 6,
+  "unit_price": 25.22,
+  "total_price": 981.43,
+  "shipping_address": "4 Summerview Plaza",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db8b"
+  },
+  "order_id": 240,
+  "customer_id": 240,
+  "order_date": "9/29/2023",
+  "product_name": "Watch",
+  "quantity": 1,
+  "unit_price": 11.57,
+  "total_price": 884.7,
+  "shipping_address": "7705 Schiller Point",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db8c"
+  },
+  "order_id": 241,
+  "customer_id": 241,
+  "order_date": "6/7/2023",
+  "product_name": "Shoes",
+  "quantity": 7,
+  "unit_price": 83.82,
+  "total_price": 931.14,
+  "shipping_address": "0675 Milwaukee Pass",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db8d"
+  },
+  "order_id": 242,
+  "customer_id": 242,
+  "order_date": "4/15/2023",
+  "product_name": "T-shirt",
+  "quantity": 4,
+  "unit_price": 50.21,
+  "total_price": 911.27,
+  "shipping_address": "3 Novick Lane",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db8e"
+  },
+  "order_id": 243,
+  "customer_id": 243,
+  "order_date": "7/6/2023",
+  "product_name": "Shoes",
+  "quantity": 3,
+  "unit_price": 74.63,
+  "total_price": 823.45,
+  "shipping_address": "451 Center Street",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db8f"
+  },
+  "order_id": 244,
+  "customer_id": 244,
+  "order_date": "1/8/2023",
+  "product_name": "Jeans",
+  "quantity": 1,
+  "unit_price": 90.55,
+  "total_price": 377.94,
+  "shipping_address": "5 Michigan Avenue",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db90"
+  },
+  "order_id": 245,
+  "customer_id": 245,
+  "order_date": "8/25/2023",
+  "product_name": "Shoes",
+  "quantity": 7,
+  "unit_price": 52.83,
+  "total_price": 538.58,
+  "shipping_address": "13888 Lotheville Place",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db91"
+  },
+  "order_id": 246,
+  "customer_id": 246,
+  "order_date": "6/24/2023",
+  "product_name": "Shoes",
+  "quantity": 7,
+  "unit_price": 83.72,
+  "total_price": 289.41,
+  "shipping_address": "412 Sheridan Terrace",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db92"
+  },
+  "order_id": 247,
+  "customer_id": 247,
+  "order_date": "3/13/2023",
+  "product_name": "T-shirt",
+  "quantity": 4,
+  "unit_price": 32.86,
+  "total_price": 627.14,
+  "shipping_address": "32793 Springview Way",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db93"
+  },
+  "order_id": 248,
+  "customer_id": 248,
+  "order_date": "3/30/2023",
+  "product_name": "Jeans",
+  "quantity": 4,
+  "unit_price": 61.38,
+  "total_price": 225.94,
+  "shipping_address": "929 Susan Street",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db94"
+  },
+  "order_id": 249,
+  "customer_id": 249,
+  "order_date": "1/5/2023",
+  "product_name": "Hat",
+  "quantity": 10,
+  "unit_price": 39.05,
+  "total_price": 785.69,
+  "shipping_address": "388 Maryland Terrace",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db95"
+  },
+  "order_id": 250,
+  "customer_id": 250,
+  "order_date": "1/18/2023",
+  "product_name": "T-shirt",
+  "quantity": 8,
+  "unit_price": 83.5,
+  "total_price": 445.83,
+  "shipping_address": "5 Oak Court",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db96"
+  },
+  "order_id": 251,
+  "customer_id": 251,
+  "order_date": "1/12/2023",
+  "product_name": "Shoes",
+  "quantity": 5,
+  "unit_price": 86.66,
+  "total_price": 926.32,
+  "shipping_address": "00116 Elka Avenue",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db97"
+  },
+  "order_id": 252,
+  "customer_id": 252,
+  "order_date": "2/12/2023",
+  "product_name": "Watch",
+  "quantity": 1,
+  "unit_price": 35.11,
+  "total_price": 705.16,
+  "shipping_address": "18 Drewry Avenue",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db98"
+  },
+  "order_id": 253,
+  "customer_id": 253,
+  "order_date": "5/22/2023",
+  "product_name": "Watch",
+  "quantity": 4,
+  "unit_price": 61.04,
+  "total_price": 666.12,
+  "shipping_address": "334 Talisman Road",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db99"
+  },
+  "order_id": 254,
+  "customer_id": 254,
+  "order_date": "5/20/2023",
+  "product_name": "Jeans",
+  "quantity": 5,
+  "unit_price": 15.66,
+  "total_price": 751.06,
+  "shipping_address": "1214 Lukken Center",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db9a"
+  },
+  "order_id": 255,
+  "customer_id": 255,
+  "order_date": "5/10/2023",
+  "product_name": "Watch",
+  "quantity": 8,
+  "unit_price": 39.65,
+  "total_price": 296.85,
+  "shipping_address": "7526 Carioca Lane",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db9b"
+  },
+  "order_id": 256,
+  "customer_id": 256,
+  "order_date": "11/28/2022",
+  "product_name": "Shoes",
+  "quantity": 9,
+  "unit_price": 18.64,
+  "total_price": 955.77,
+  "shipping_address": "384 Northland Way",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db9c"
+  },
+  "order_id": 257,
+  "customer_id": 257,
+  "order_date": "6/24/2023",
+  "product_name": "Watch",
+  "quantity": 7,
+  "unit_price": 44.77,
+  "total_price": 500.62,
+  "shipping_address": "10391 Daystar Plaza",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db9d"
+  },
+  "order_id": 258,
+  "customer_id": 258,
+  "order_date": "6/3/2023",
+  "product_name": "T-shirt",
+  "quantity": 5,
+  "unit_price": 24.59,
+  "total_price": 735.04,
+  "shipping_address": "6802 Hoard Trail",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db9e"
+  },
+  "order_id": 259,
+  "customer_id": 259,
+  "order_date": "7/31/2023",
+  "product_name": "Jeans",
+  "quantity": 9,
+  "unit_price": 51.46,
+  "total_price": 930.58,
+  "shipping_address": "25 Monterey Court",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50db9f"
+  },
+  "order_id": 260,
+  "customer_id": 260,
+  "order_date": "7/21/2023",
+  "product_name": "Watch",
+  "quantity": 7,
+  "unit_price": 99.46,
+  "total_price": 137.27,
+  "shipping_address": "896 Hagan Drive",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dba0"
+  },
+  "order_id": 261,
+  "customer_id": 261,
+  "order_date": "12/12/2022",
+  "product_name": "T-shirt",
+  "quantity": 7,
+  "unit_price": 23.28,
+  "total_price": 899.58,
+  "shipping_address": "51031 La Follette Hill",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dba1"
+  },
+  "order_id": 262,
+  "customer_id": 262,
+  "order_date": "4/15/2023",
+  "product_name": "Shoes",
+  "quantity": 3,
+  "unit_price": 87.17,
+  "total_price": 55.06,
+  "shipping_address": "76462 Prairie Rose Trail",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dba2"
+  },
+  "order_id": 263,
+  "customer_id": 263,
+  "order_date": "7/25/2023",
+  "product_name": "Hat",
+  "quantity": 10,
+  "unit_price": 18.83,
+  "total_price": 266.96,
+  "shipping_address": "5599 Packers Pass",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dba3"
+  },
+  "order_id": 264,
+  "customer_id": 264,
+  "order_date": "6/11/2023",
+  "product_name": "Jeans",
+  "quantity": 2,
+  "unit_price": 58.42,
+  "total_price": 946.6,
+  "shipping_address": "87 Rusk Place",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dba4"
+  },
+  "order_id": 265,
+  "customer_id": 265,
+  "order_date": "11/30/2022",
+  "product_name": "Watch",
+  "quantity": 3,
+  "unit_price": 86.19,
+  "total_price": 58.23,
+  "shipping_address": "479 Dayton Drive",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dba5"
+  },
+  "order_id": 266,
+  "customer_id": 266,
+  "order_date": "9/15/2023",
+  "product_name": "T-shirt",
+  "quantity": 9,
+  "unit_price": 15.36,
+  "total_price": 688.29,
+  "shipping_address": "658 Sunbrook Plaza",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dba6"
+  },
+  "order_id": 267,
+  "customer_id": 267,
+  "order_date": "5/24/2023",
+  "product_name": "T-shirt",
+  "quantity": 4,
+  "unit_price": 80.47,
+  "total_price": 90.6,
+  "shipping_address": "84412 Elmside Street",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dba7"
+  },
+  "order_id": 268,
+  "customer_id": 268,
+  "order_date": "1/12/2023",
+  "product_name": "Watch",
+  "quantity": 7,
+  "unit_price": 74.99,
+  "total_price": 428.79,
+  "shipping_address": "48 Fairfield Circle",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dba8"
+  },
+  "order_id": 269,
+  "customer_id": 269,
+  "order_date": "2/24/2023",
+  "product_name": "Shoes",
+  "quantity": 3,
+  "unit_price": 30.65,
+  "total_price": 997.79,
+  "shipping_address": "7 Katie Pass",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dba9"
+  },
+  "order_id": 270,
+  "customer_id": 270,
+  "order_date": "10/21/2023",
+  "product_name": "Jeans",
+  "quantity": 3,
+  "unit_price": 33.56,
+  "total_price": 729.2,
+  "shipping_address": "67 Sycamore Circle",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbaa"
+  },
+  "order_id": 271,
+  "customer_id": 271,
+  "order_date": "10/12/2023",
+  "product_name": "Watch",
+  "quantity": 6,
+  "unit_price": 54.16,
+  "total_price": 336.97,
+  "shipping_address": "9422 Reindahl Court",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbab"
+  },
+  "order_id": 272,
+  "customer_id": 272,
+  "order_date": "7/6/2023",
+  "product_name": "Jeans",
+  "quantity": 9,
+  "unit_price": 26.6,
+  "total_price": 894.98,
+  "shipping_address": "05173 Algoma Court",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbac"
+  },
+  "order_id": 273,
+  "customer_id": 273,
+  "order_date": "7/28/2023",
+  "product_name": "Hat",
+  "quantity": 7,
+  "unit_price": 84.08,
+  "total_price": 852.27,
+  "shipping_address": "7 Artisan Parkway",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbad"
+  },
+  "order_id": 274,
+  "customer_id": 274,
+  "order_date": "7/14/2023",
+  "product_name": "Hat",
+  "quantity": 7,
+  "unit_price": 90.16,
+  "total_price": 326.49,
+  "shipping_address": "4483 Florence Alley",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbae"
+  },
+  "order_id": 275,
+  "customer_id": 275,
+  "order_date": "8/11/2023",
+  "product_name": "Hat",
+  "quantity": 4,
+  "unit_price": 14.07,
+  "total_price": 62.28,
+  "shipping_address": "71306 Kenwood Pass",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbaf"
+  },
+  "order_id": 276,
+  "customer_id": 276,
+  "order_date": "12/8/2022",
+  "product_name": "Watch",
+  "quantity": 8,
+  "unit_price": 94.54,
+  "total_price": 580.1,
+  "shipping_address": "13726 Hintze Circle",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbb0"
+  },
+  "order_id": 277,
+  "customer_id": 277,
+  "order_date": "2/4/2023",
+  "product_name": "Jeans",
+  "quantity": 4,
+  "unit_price": 81.77,
+  "total_price": 680.23,
+  "shipping_address": "0755 Vahlen Alley",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbb1"
+  },
+  "order_id": 278,
+  "customer_id": 278,
+  "order_date": "9/12/2023",
+  "product_name": "T-shirt",
+  "quantity": 1,
+  "unit_price": 62.56,
+  "total_price": 614.67,
+  "shipping_address": "1 Spaight Hill",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbb2"
+  },
+  "order_id": 279,
+  "customer_id": 279,
+  "order_date": "1/2/2023",
+  "product_name": "Shoes",
+  "quantity": 8,
+  "unit_price": 32.2,
+  "total_price": 633.68,
+  "shipping_address": "25 Commercial Court",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbb3"
+  },
+  "order_id": 280,
+  "customer_id": 280,
+  "order_date": "6/16/2023",
+  "product_name": "T-shirt",
+  "quantity": 6,
+  "unit_price": 17.61,
+  "total_price": 149.15,
+  "shipping_address": "81 Hansons Circle",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbb4"
+  },
+  "order_id": 281,
+  "customer_id": 281,
+  "order_date": "9/12/2023",
+  "product_name": "Watch",
+  "quantity": 5,
+  "unit_price": 97.14,
+  "total_price": 806.53,
+  "shipping_address": "00 Summerview Center",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbb5"
+  },
+  "order_id": 282,
+  "customer_id": 282,
+  "order_date": "1/12/2023",
+  "product_name": "Jeans",
+  "quantity": 8,
+  "unit_price": 78.26,
+  "total_price": 292.3,
+  "shipping_address": "2 Moland Circle",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbb6"
+  },
+  "order_id": 283,
+  "customer_id": 283,
+  "order_date": "10/26/2023",
+  "product_name": "Hat",
+  "quantity": 3,
+  "unit_price": 20.16,
+  "total_price": 751.33,
+  "shipping_address": "3342 Kedzie Court",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbb7"
+  },
+  "order_id": 284,
+  "customer_id": 284,
+  "order_date": "1/5/2023",
+  "product_name": "Shoes",
+  "quantity": 6,
+  "unit_price": 36.6,
+  "total_price": 566.75,
+  "shipping_address": "7258 Mariners Cove Crossing",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbb8"
+  },
+  "order_id": 285,
+  "customer_id": 285,
+  "order_date": "9/13/2023",
+  "product_name": "Watch",
+  "quantity": 10,
+  "unit_price": 94.76,
+  "total_price": 577.81,
+  "shipping_address": "222 Orin Alley",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbb9"
+  },
+  "order_id": 286,
+  "customer_id": 286,
+  "order_date": "12/17/2022",
+  "product_name": "Hat",
+  "quantity": 2,
+  "unit_price": 86.9,
+  "total_price": 666.04,
+  "shipping_address": "2284 Havey Drive",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbba"
+  },
+  "order_id": 287,
+  "customer_id": 287,
+  "order_date": "12/12/2022",
+  "product_name": "Shoes",
+  "quantity": 7,
+  "unit_price": 25.66,
+  "total_price": 851.62,
+  "shipping_address": "5308 Bonner Center",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbbb"
+  },
+  "order_id": 288,
+  "customer_id": 288,
+  "order_date": "4/18/2023",
+  "product_name": "Hat",
+  "quantity": 2,
+  "unit_price": 42.02,
+  "total_price": 554.18,
+  "shipping_address": "0 Acker Street",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbbc"
+  },
+  "order_id": 289,
+  "customer_id": 289,
+  "order_date": "3/1/2023",
+  "product_name": "T-shirt",
+  "quantity": 1,
+  "unit_price": 18.19,
+  "total_price": 650.08,
+  "shipping_address": "3527 Sunfield Court",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbbd"
+  },
+  "order_id": 290,
+  "customer_id": 290,
+  "order_date": "8/27/2023",
+  "product_name": "Jeans",
+  "quantity": 6,
+  "unit_price": 40.67,
+  "total_price": 322.81,
+  "shipping_address": "27 Chive Parkway",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbbe"
+  },
+  "order_id": 291,
+  "customer_id": 291,
+  "order_date": "3/25/2023",
+  "product_name": "Watch",
+  "quantity": 7,
+  "unit_price": 78.66,
+  "total_price": 17.51,
+  "shipping_address": "82 Marquette Park",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbbf"
+  },
+  "order_id": 292,
+  "customer_id": 292,
+  "order_date": "6/20/2023",
+  "product_name": "T-shirt",
+  "quantity": 4,
+  "unit_price": 51.02,
+  "total_price": 17.19,
+  "shipping_address": "0 Sunnyside Way",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbc0"
+  },
+  "order_id": 293,
+  "customer_id": 293,
+  "order_date": "3/21/2023",
+  "product_name": "Shoes",
+  "quantity": 10,
+  "unit_price": 64.38,
+  "total_price": 782.07,
+  "shipping_address": "5 Lindbergh Alley",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbc1"
+  },
+  "order_id": 294,
+  "customer_id": 294,
+  "order_date": "8/14/2023",
+  "product_name": "T-shirt",
+  "quantity": 7,
+  "unit_price": 72.36,
+  "total_price": 637.62,
+  "shipping_address": "3849 Stoughton Road",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbc2"
+  },
+  "order_id": 295,
+  "customer_id": 295,
+  "order_date": "10/21/2023",
+  "product_name": "Watch",
+  "quantity": 4,
+  "unit_price": 20.34,
+  "total_price": 414.1,
+  "shipping_address": "834 Glendale Hill",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbc3"
+  },
+  "order_id": 296,
+  "customer_id": 296,
+  "order_date": "3/13/2023",
+  "product_name": "Hat",
+  "quantity": 3,
+  "unit_price": 22.16,
+  "total_price": 119.56,
+  "shipping_address": "9218 Waxwing Avenue",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbc4"
+  },
+  "order_id": 297,
+  "customer_id": 297,
+  "order_date": "1/23/2023",
+  "product_name": "T-shirt",
+  "quantity": 7,
+  "unit_price": 70.77,
+  "total_price": 943.55,
+  "shipping_address": "742 Cascade Drive",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbc5"
+  },
+  "order_id": 298,
+  "customer_id": 298,
+  "order_date": "8/2/2023",
+  "product_name": "Watch",
+  "quantity": 3,
+  "unit_price": 79.87,
+  "total_price": 228.58,
+  "shipping_address": "32135 7th Trail",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbc6"
+  },
+  "order_id": 299,
+  "customer_id": 299,
+  "order_date": "4/24/2023",
+  "product_name": "Jeans",
+  "quantity": 7,
+  "unit_price": 20.9,
+  "total_price": 421.01,
+  "shipping_address": "88585 Stuart Alley",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbc7"
+  },
+  "order_id": 300,
+  "customer_id": 300,
+  "order_date": "3/28/2023",
+  "product_name": "Watch",
+  "quantity": 10,
+  "unit_price": 18.76,
+  "total_price": 813.1,
+  "shipping_address": "28 Washington Terrace",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbc8"
+  },
+  "order_id": 301,
+  "customer_id": 301,
+  "order_date": "8/14/2023",
+  "product_name": "Jeans",
+  "quantity": 3,
+  "unit_price": 71.14,
+  "total_price": 698.03,
+  "shipping_address": "2 Sachs Terrace",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbc9"
+  },
+  "order_id": 302,
+  "customer_id": 302,
+  "order_date": "12/4/2022",
+  "product_name": "Watch",
+  "quantity": 9,
+  "unit_price": 33.11,
+  "total_price": 984.04,
+  "shipping_address": "7 Stang Parkway",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbca"
+  },
+  "order_id": 303,
+  "customer_id": 303,
+  "order_date": "2/4/2023",
+  "product_name": "T-shirt",
+  "quantity": 8,
+  "unit_price": 40.32,
+  "total_price": 56.6,
+  "shipping_address": "473 Sunnyside Place",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbcb"
+  },
+  "order_id": 304,
+  "customer_id": 304,
+  "order_date": "1/29/2023",
+  "product_name": "Shoes",
+  "quantity": 5,
+  "unit_price": 97.67,
+  "total_price": 828.3,
+  "shipping_address": "25205 Talisman Circle",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbcc"
+  },
+  "order_id": 305,
+  "customer_id": 305,
+  "order_date": "3/24/2023",
+  "product_name": "Jeans",
+  "quantity": 3,
+  "unit_price": 48.37,
+  "total_price": 846.54,
+  "shipping_address": "14209 Crescent Oaks Parkway",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbcd"
+  },
+  "order_id": 306,
+  "customer_id": 306,
+  "order_date": "9/11/2023",
+  "product_name": "Shoes",
+  "quantity": 2,
+  "unit_price": 11.99,
+  "total_price": 817.05,
+  "shipping_address": "89305 Truax Parkway",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbce"
+  },
+  "order_id": 307,
+  "customer_id": 307,
+  "order_date": "5/31/2023",
+  "product_name": "Hat",
+  "quantity": 3,
+  "unit_price": 20.67,
+  "total_price": 180.78,
+  "shipping_address": "19 Dixon Terrace",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbcf"
+  },
+  "order_id": 308,
+  "customer_id": 308,
+  "order_date": "12/23/2022",
+  "product_name": "Shoes",
+  "quantity": 8,
+  "unit_price": 59.79,
+  "total_price": 534.88,
+  "shipping_address": "619 7th Street",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbd0"
+  },
+  "order_id": 309,
+  "customer_id": 309,
+  "order_date": "10/7/2023",
+  "product_name": "Shoes",
+  "quantity": 2,
+  "unit_price": 81.61,
+  "total_price": 451.82,
+  "shipping_address": "63 Jana Trail",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbd1"
+  },
+  "order_id": 310,
+  "customer_id": 310,
+  "order_date": "3/19/2023",
+  "product_name": "Shoes",
+  "quantity": 6,
+  "unit_price": 69.59,
+  "total_price": 323.97,
+  "shipping_address": "64407 Monica Place",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbd2"
+  },
+  "order_id": 311,
+  "customer_id": 311,
+  "order_date": "3/4/2023",
+  "product_name": "T-shirt",
+  "quantity": 10,
+  "unit_price": 98.86,
+  "total_price": 849.2,
+  "shipping_address": "89 Gulseth Point",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbd3"
+  },
+  "order_id": 312,
+  "customer_id": 312,
+  "order_date": "1/28/2023",
+  "product_name": "Hat",
+  "quantity": 5,
+  "unit_price": 98.56,
+  "total_price": 624.91,
+  "shipping_address": "08 Warbler Alley",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbd4"
+  },
+  "order_id": 313,
+  "customer_id": 313,
+  "order_date": "2/1/2023",
+  "product_name": "Hat",
+  "quantity": 3,
+  "unit_price": 21.5,
+  "total_price": 426.3,
+  "shipping_address": "6854 Erie Way",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbd5"
+  },
+  "order_id": 314,
+  "customer_id": 314,
+  "order_date": "7/30/2023",
+  "product_name": "Shoes",
+  "quantity": 6,
+  "unit_price": 27.86,
+  "total_price": 425.89,
+  "shipping_address": "304 Sommers Park",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbd6"
+  },
+  "order_id": 315,
+  "customer_id": 315,
+  "order_date": "1/14/2023",
+  "product_name": "Watch",
+  "quantity": 6,
+  "unit_price": 55.79,
+  "total_price": 948.77,
+  "shipping_address": "839 Gina Center",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbd7"
+  },
+  "order_id": 316,
+  "customer_id": 316,
+  "order_date": "10/3/2023",
+  "product_name": "Hat",
+  "quantity": 8,
+  "unit_price": 60.79,
+  "total_price": 248.27,
+  "shipping_address": "6397 Springs Park",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbd8"
+  },
+  "order_id": 317,
+  "customer_id": 317,
+  "order_date": "12/29/2022",
+  "product_name": "Watch",
+  "quantity": 4,
+  "unit_price": 41.99,
+  "total_price": 570.68,
+  "shipping_address": "9458 Mallard Place",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbd9"
+  },
+  "order_id": 318,
+  "customer_id": 318,
+  "order_date": "5/11/2023",
+  "product_name": "T-shirt",
+  "quantity": 7,
+  "unit_price": 58.65,
+  "total_price": 365.15,
+  "shipping_address": "07292 Stone Corner Alley",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbda"
+  },
+  "order_id": 319,
+  "customer_id": 319,
+  "order_date": "12/19/2022",
+  "product_name": "Shoes",
+  "quantity": 9,
+  "unit_price": 45.24,
+  "total_price": 636.16,
+  "shipping_address": "077 Eastlawn Lane",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbdb"
+  },
+  "order_id": 320,
+  "customer_id": 320,
+  "order_date": "12/29/2022",
+  "product_name": "Watch",
+  "quantity": 9,
+  "unit_price": 63.24,
+  "total_price": 505.94,
+  "shipping_address": "57842 Becker Pass",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbdc"
+  },
+  "order_id": 321,
+  "customer_id": 321,
+  "order_date": "4/8/2023",
+  "product_name": "T-shirt",
+  "quantity": 5,
+  "unit_price": 98.57,
+  "total_price": 47.86,
+  "shipping_address": "7175 Scoville Way",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbdd"
+  },
+  "order_id": 322,
+  "customer_id": 322,
+  "order_date": "7/14/2023",
+  "product_name": "Jeans",
+  "quantity": 7,
+  "unit_price": 18.81,
+  "total_price": 147.17,
+  "shipping_address": "77 Vera Pass",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbde"
+  },
+  "order_id": 323,
+  "customer_id": 323,
+  "order_date": "10/28/2023",
+  "product_name": "Jeans",
+  "quantity": 4,
+  "unit_price": 47.8,
+  "total_price": 714.85,
+  "shipping_address": "6365 Algoma Avenue",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbdf"
+  },
+  "order_id": 324,
+  "customer_id": 324,
+  "order_date": "9/15/2023",
+  "product_name": "Jeans",
+  "quantity": 3,
+  "unit_price": 78.93,
+  "total_price": 622.79,
+  "shipping_address": "9 Morningstar Junction",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbe0"
+  },
+  "order_id": 325,
+  "customer_id": 325,
+  "order_date": "9/15/2023",
+  "product_name": "Jeans",
+  "quantity": 7,
+  "unit_price": 69.88,
+  "total_price": 311.02,
+  "shipping_address": "3 Glendale Park",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbe1"
+  },
+  "order_id": 326,
+  "customer_id": 326,
+  "order_date": "2/1/2023",
+  "product_name": "Shoes",
+  "quantity": 10,
+  "unit_price": 17.02,
+  "total_price": 372.1,
+  "shipping_address": "4 Dryden Parkway",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbe2"
+  },
+  "order_id": 327,
+  "customer_id": 327,
+  "order_date": "8/26/2023",
+  "product_name": "Shoes",
+  "quantity": 1,
+  "unit_price": 63.2,
+  "total_price": 440.8,
+  "shipping_address": "0 Division Alley",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbe3"
+  },
+  "order_id": 328,
+  "customer_id": 328,
+  "order_date": "2/5/2023",
+  "product_name": "T-shirt",
+  "quantity": 2,
+  "unit_price": 30.7,
+  "total_price": 983.06,
+  "shipping_address": "426 Oak Parkway",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbe4"
+  },
+  "order_id": 329,
+  "customer_id": 329,
+  "order_date": "7/13/2023",
+  "product_name": "Jeans",
+  "quantity": 9,
+  "unit_price": 42.19,
+  "total_price": 769.12,
+  "shipping_address": "2 Melrose Pass",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbe5"
+  },
+  "order_id": 330,
+  "customer_id": 330,
+  "order_date": "10/27/2023",
+  "product_name": "Hat",
+  "quantity": 5,
+  "unit_price": 60.18,
+  "total_price": 700.5,
+  "shipping_address": "3918 Bellgrove Circle",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbe6"
+  },
+  "order_id": 331,
+  "customer_id": 331,
+  "order_date": "12/9/2022",
+  "product_name": "Jeans",
+  "quantity": 4,
+  "unit_price": 49.67,
+  "total_price": 873.95,
+  "shipping_address": "58 Moulton Lane",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbe7"
+  },
+  "order_id": 332,
+  "customer_id": 332,
+  "order_date": "11/11/2023",
+  "product_name": "Hat",
+  "quantity": 10,
+  "unit_price": 74.12,
+  "total_price": 783.55,
+  "shipping_address": "952 Milwaukee Way",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbe8"
+  },
+  "order_id": 333,
+  "customer_id": 333,
+  "order_date": "9/23/2023",
+  "product_name": "T-shirt",
+  "quantity": 5,
+  "unit_price": 64.25,
+  "total_price": 410.52,
+  "shipping_address": "75408 Fairview Way",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbe9"
+  },
+  "order_id": 334,
+  "customer_id": 334,
+  "order_date": "3/8/2023",
+  "product_name": "Hat",
+  "quantity": 4,
+  "unit_price": 31.06,
+  "total_price": 488.66,
+  "shipping_address": "6 Vidon Lane",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbea"
+  },
+  "order_id": 335,
+  "customer_id": 335,
+  "order_date": "2/25/2023",
+  "product_name": "Hat",
+  "quantity": 8,
+  "unit_price": 28.07,
+  "total_price": 191.19,
+  "shipping_address": "8552 Lukken Plaza",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbeb"
+  },
+  "order_id": 336,
+  "customer_id": 336,
+  "order_date": "9/19/2023",
+  "product_name": "Jeans",
+  "quantity": 7,
+  "unit_price": 99.18,
+  "total_price": 806.86,
+  "shipping_address": "05 Warner Point",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbec"
+  },
+  "order_id": 337,
+  "customer_id": 337,
+  "order_date": "1/21/2023",
+  "product_name": "T-shirt",
+  "quantity": 4,
+  "unit_price": 46.43,
+  "total_price": 716.56,
+  "shipping_address": "1 Melody Avenue",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbed"
+  },
+  "order_id": 338,
+  "customer_id": 338,
+  "order_date": "12/9/2022",
+  "product_name": "Jeans",
+  "quantity": 9,
+  "unit_price": 95.25,
+  "total_price": 663.99,
+  "shipping_address": "357 Waxwing Terrace",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbee"
+  },
+  "order_id": 339,
+  "customer_id": 339,
+  "order_date": "5/14/2023",
+  "product_name": "Hat",
+  "quantity": 10,
+  "unit_price": 88.89,
+  "total_price": 175.41,
+  "shipping_address": "0842 Crowley Court",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbef"
+  },
+  "order_id": 340,
+  "customer_id": 340,
+  "order_date": "10/14/2023",
+  "product_name": "T-shirt",
+  "quantity": 2,
+  "unit_price": 12.95,
+  "total_price": 659.09,
+  "shipping_address": "8991 Clarendon Street",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbf0"
+  },
+  "order_id": 341,
+  "customer_id": 341,
+  "order_date": "3/3/2023",
+  "product_name": "Watch",
+  "quantity": 10,
+  "unit_price": 54.87,
+  "total_price": 405.54,
+  "shipping_address": "667 Colorado Crossing",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbf1"
+  },
+  "order_id": 342,
+  "customer_id": 342,
+  "order_date": "8/26/2023",
+  "product_name": "Watch",
+  "quantity": 1,
+  "unit_price": 32.79,
+  "total_price": 947.69,
+  "shipping_address": "9 Monument Drive",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbf2"
+  },
+  "order_id": 343,
+  "customer_id": 343,
+  "order_date": "6/8/2023",
+  "product_name": "Shoes",
+  "quantity": 7,
+  "unit_price": 43.34,
+  "total_price": 118.1,
+  "shipping_address": "8 Hermina Junction",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbf3"
+  },
+  "order_id": 344,
+  "customer_id": 344,
+  "order_date": "5/10/2023",
+  "product_name": "Shoes",
+  "quantity": 2,
+  "unit_price": 79.72,
+  "total_price": 888.56,
+  "shipping_address": "89 Sachtjen Alley",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbf4"
+  },
+  "order_id": 345,
+  "customer_id": 345,
+  "order_date": "11/15/2023",
+  "product_name": "Shoes",
+  "quantity": 3,
+  "unit_price": 25.85,
+  "total_price": 264.3,
+  "shipping_address": "429 Clyde Gallagher Crossing",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbf5"
+  },
+  "order_id": 346,
+  "customer_id": 346,
+  "order_date": "6/19/2023",
+  "product_name": "T-shirt",
+  "quantity": 9,
+  "unit_price": 23.92,
+  "total_price": 119.86,
+  "shipping_address": "32511 Pawling Street",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbf6"
+  },
+  "order_id": 347,
+  "customer_id": 347,
+  "order_date": "4/26/2023",
+  "product_name": "T-shirt",
+  "quantity": 10,
+  "unit_price": 15.99,
+  "total_price": 539.95,
+  "shipping_address": "015 Dorton Pass",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbf7"
+  },
+  "order_id": 348,
+  "customer_id": 348,
+  "order_date": "9/13/2023",
+  "product_name": "Hat",
+  "quantity": 6,
+  "unit_price": 12.15,
+  "total_price": 797.37,
+  "shipping_address": "02 Truax Trail",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbf8"
+  },
+  "order_id": 349,
+  "customer_id": 349,
+  "order_date": "4/27/2023",
+  "product_name": "Jeans",
+  "quantity": 3,
+  "unit_price": 50.61,
+  "total_price": 900.17,
+  "shipping_address": "53 Pond Street",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbf9"
+  },
+  "order_id": 350,
+  "customer_id": 350,
+  "order_date": "2/12/2023",
+  "product_name": "Jeans",
+  "quantity": 5,
+  "unit_price": 47.1,
+  "total_price": 812.82,
+  "shipping_address": "0970 Blue Bill Park Junction",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbfa"
+  },
+  "order_id": 351,
+  "customer_id": 351,
+  "order_date": "5/15/2023",
+  "product_name": "T-shirt",
+  "quantity": 6,
+  "unit_price": 28.77,
+  "total_price": 592.96,
+  "shipping_address": "75 Nevada Way",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbfb"
+  },
+  "order_id": 352,
+  "customer_id": 352,
+  "order_date": "10/20/2023",
+  "product_name": "Shoes",
+  "quantity": 1,
+  "unit_price": 37.04,
+  "total_price": 409.65,
+  "shipping_address": "8 Troy Junction",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbfc"
+  },
+  "order_id": 353,
+  "customer_id": 353,
+  "order_date": "9/6/2023",
+  "product_name": "Hat",
+  "quantity": 7,
+  "unit_price": 76.93,
+  "total_price": 194.88,
+  "shipping_address": "07 Scoville Crossing",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbfd"
+  },
+  "order_id": 354,
+  "customer_id": 354,
+  "order_date": "5/21/2023",
+  "product_name": "Shoes",
+  "quantity": 8,
+  "unit_price": 62.05,
+  "total_price": 968.49,
+  "shipping_address": "07 4th Center",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbfe"
+  },
+  "order_id": 355,
+  "customer_id": 355,
+  "order_date": "1/9/2023",
+  "product_name": "Shoes",
+  "quantity": 10,
+  "unit_price": 91.63,
+  "total_price": 939.49,
+  "shipping_address": "2 Mccormick Pass",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dbff"
+  },
+  "order_id": 356,
+  "customer_id": 356,
+  "order_date": "1/11/2023",
+  "product_name": "Jeans",
+  "quantity": 10,
+  "unit_price": 24.5,
+  "total_price": 472.53,
+  "shipping_address": "39525 Tomscot Crossing",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc00"
+  },
+  "order_id": 357,
+  "customer_id": 357,
+  "order_date": "11/8/2023",
+  "product_name": "Shoes",
+  "quantity": 8,
+  "unit_price": 20.13,
+  "total_price": 753.81,
+  "shipping_address": "92992 Crownhardt Junction",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc01"
+  },
+  "order_id": 358,
+  "customer_id": 358,
+  "order_date": "8/27/2023",
+  "product_name": "Hat",
+  "quantity": 5,
+  "unit_price": 14.09,
+  "total_price": 524.07,
+  "shipping_address": "98289 Eastlawn Circle",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc02"
+  },
+  "order_id": 359,
+  "customer_id": 359,
+  "order_date": "7/25/2023",
+  "product_name": "T-shirt",
+  "quantity": 4,
+  "unit_price": 95.95,
+  "total_price": 746.87,
+  "shipping_address": "2 Fair Oaks Circle",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc03"
+  },
+  "order_id": 360,
+  "customer_id": 360,
+  "order_date": "9/21/2023",
+  "product_name": "Jeans",
+  "quantity": 6,
+  "unit_price": 25.75,
+  "total_price": 24.09,
+  "shipping_address": "28 Di Loreto Avenue",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc04"
+  },
+  "order_id": 361,
+  "customer_id": 361,
+  "order_date": "9/4/2023",
+  "product_name": "Watch",
+  "quantity": 1,
+  "unit_price": 43.34,
+  "total_price": 898.89,
+  "shipping_address": "491 Fallview Place",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc05"
+  },
+  "order_id": 362,
+  "customer_id": 362,
+  "order_date": "6/12/2023",
+  "product_name": "T-shirt",
+  "quantity": 2,
+  "unit_price": 28.78,
+  "total_price": 29.76,
+  "shipping_address": "85 Oak Court",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc06"
+  },
+  "order_id": 363,
+  "customer_id": 363,
+  "order_date": "11/21/2022",
+  "product_name": "Hat",
+  "quantity": 3,
+  "unit_price": 31.62,
+  "total_price": 782.47,
+  "shipping_address": "5376 Eastwood Avenue",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc07"
+  },
+  "order_id": 364,
+  "customer_id": 364,
+  "order_date": "6/18/2023",
+  "product_name": "Hat",
+  "quantity": 2,
+  "unit_price": 29.24,
+  "total_price": 515.93,
+  "shipping_address": "41 Gerald Hill",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc08"
+  },
+  "order_id": 365,
+  "customer_id": 365,
+  "order_date": "7/27/2023",
+  "product_name": "Hat",
+  "quantity": 5,
+  "unit_price": 85.52,
+  "total_price": 106.52,
+  "shipping_address": "4041 Monument Terrace",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc09"
+  },
+  "order_id": 366,
+  "customer_id": 366,
+  "order_date": "1/7/2023",
+  "product_name": "Hat",
+  "quantity": 7,
+  "unit_price": 62.86,
+  "total_price": 274.38,
+  "shipping_address": "68 Helena Way",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc0a"
+  },
+  "order_id": 367,
+  "customer_id": 367,
+  "order_date": "2/27/2023",
+  "product_name": "Hat",
+  "quantity": 6,
+  "unit_price": 36.78,
+  "total_price": 952.89,
+  "shipping_address": "51584 Shasta Street",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc0b"
+  },
+  "order_id": 368,
+  "customer_id": 368,
+  "order_date": "6/30/2023",
+  "product_name": "Hat",
+  "quantity": 5,
+  "unit_price": 11.05,
+  "total_price": 304.02,
+  "shipping_address": "55 Mifflin Way",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc0c"
+  },
+  "order_id": 369,
+  "customer_id": 369,
+  "order_date": "1/13/2023",
+  "product_name": "Watch",
+  "quantity": 1,
+  "unit_price": 76.17,
+  "total_price": 728.01,
+  "shipping_address": "193 Green Junction",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc0d"
+  },
+  "order_id": 370,
+  "customer_id": 370,
+  "order_date": "9/12/2023",
+  "product_name": "Hat",
+  "quantity": 7,
+  "unit_price": 87.24,
+  "total_price": 49.67,
+  "shipping_address": "63645 Carpenter Center",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc0e"
+  },
+  "order_id": 371,
+  "customer_id": 371,
+  "order_date": "4/7/2023",
+  "product_name": "T-shirt",
+  "quantity": 7,
+  "unit_price": 32.28,
+  "total_price": 375.03,
+  "shipping_address": "95 Hoepker Pass",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc0f"
+  },
+  "order_id": 372,
+  "customer_id": 372,
+  "order_date": "10/1/2023",
+  "product_name": "Shoes",
+  "quantity": 7,
+  "unit_price": 48.25,
+  "total_price": 987.98,
+  "shipping_address": "3607 Almo Junction",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc10"
+  },
+  "order_id": 373,
+  "customer_id": 373,
+  "order_date": "2/21/2023",
+  "product_name": "Watch",
+  "quantity": 6,
+  "unit_price": 37.1,
+  "total_price": 28.02,
+  "shipping_address": "807 Dwight Place",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc11"
+  },
+  "order_id": 374,
+  "customer_id": 374,
+  "order_date": "6/19/2023",
+  "product_name": "Watch",
+  "quantity": 5,
+  "unit_price": 15.79,
+  "total_price": 965.17,
+  "shipping_address": "8187 Dexter Court",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc12"
+  },
+  "order_id": 375,
+  "customer_id": 375,
+  "order_date": "12/2/2022",
+  "product_name": "Shoes",
+  "quantity": 4,
+  "unit_price": 66.62,
+  "total_price": 601.84,
+  "shipping_address": "7 Boyd Lane",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc13"
+  },
+  "order_id": 376,
+  "customer_id": 376,
+  "order_date": "12/17/2022",
+  "product_name": "Watch",
+  "quantity": 7,
+  "unit_price": 10.54,
+  "total_price": 909.2,
+  "shipping_address": "523 Morningstar Parkway",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc14"
+  },
+  "order_id": 377,
+  "customer_id": 377,
+  "order_date": "9/22/2023",
+  "product_name": "Jeans",
+  "quantity": 5,
+  "unit_price": 99.88,
+  "total_price": 714.28,
+  "shipping_address": "14 Mitchell Crossing",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc15"
+  },
+  "order_id": 378,
+  "customer_id": 378,
+  "order_date": "1/11/2023",
+  "product_name": "Shoes",
+  "quantity": 2,
+  "unit_price": 54.09,
+  "total_price": 108.8,
+  "shipping_address": "66 Forest Point",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc16"
+  },
+  "order_id": 379,
+  "customer_id": 379,
+  "order_date": "12/9/2022",
+  "product_name": "Shoes",
+  "quantity": 10,
+  "unit_price": 82.9,
+  "total_price": 300.35,
+  "shipping_address": "9601 Milwaukee Lane",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc17"
+  },
+  "order_id": 380,
+  "customer_id": 380,
+  "order_date": "3/16/2023",
+  "product_name": "T-shirt",
+  "quantity": 1,
+  "unit_price": 37.14,
+  "total_price": 109.9,
+  "shipping_address": "922 Northridge Hill",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc18"
+  },
+  "order_id": 381,
+  "customer_id": 381,
+  "order_date": "10/10/2023",
+  "product_name": "Shoes",
+  "quantity": 4,
+  "unit_price": 65.73,
+  "total_price": 110.06,
+  "shipping_address": "9 Meadow Ridge Drive",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc19"
+  },
+  "order_id": 382,
+  "customer_id": 382,
+  "order_date": "4/11/2023",
+  "product_name": "Shoes",
+  "quantity": 9,
+  "unit_price": 15.92,
+  "total_price": 709.43,
+  "shipping_address": "7 Basil Court",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc1a"
+  },
+  "order_id": 383,
+  "customer_id": 383,
+  "order_date": "1/21/2023",
+  "product_name": "Hat",
+  "quantity": 5,
+  "unit_price": 94.07,
+  "total_price": 427.3,
+  "shipping_address": "27 Bluejay Hill",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc1b"
+  },
+  "order_id": 384,
+  "customer_id": 384,
+  "order_date": "9/26/2023",
+  "product_name": "Watch",
+  "quantity": 6,
+  "unit_price": 48.25,
+  "total_price": 858.28,
+  "shipping_address": "43 Green Ridge Place",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc1c"
+  },
+  "order_id": 385,
+  "customer_id": 385,
+  "order_date": "4/3/2023",
+  "product_name": "Watch",
+  "quantity": 9,
+  "unit_price": 74.92,
+  "total_price": 568.66,
+  "shipping_address": "68638 Kim Center",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc1d"
+  },
+  "order_id": 386,
+  "customer_id": 386,
+  "order_date": "7/29/2023",
+  "product_name": "T-shirt",
+  "quantity": 9,
+  "unit_price": 74.84,
+  "total_price": 521.05,
+  "shipping_address": "90 Dottie Terrace",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc1e"
+  },
+  "order_id": 387,
+  "customer_id": 387,
+  "order_date": "10/30/2023",
+  "product_name": "T-shirt",
+  "quantity": 5,
+  "unit_price": 46.92,
+  "total_price": 648.81,
+  "shipping_address": "8625 Oxford Park",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc1f"
+  },
+  "order_id": 388,
+  "customer_id": 388,
+  "order_date": "5/12/2023",
+  "product_name": "Jeans",
+  "quantity": 2,
+  "unit_price": 85.87,
+  "total_price": 638.45,
+  "shipping_address": "968 Northridge Drive",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc20"
+  },
+  "order_id": 389,
+  "customer_id": 389,
+  "order_date": "7/25/2023",
+  "product_name": "Watch",
+  "quantity": 9,
+  "unit_price": 20.35,
+  "total_price": 555.96,
+  "shipping_address": "5 Crest Line Pass",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc21"
+  },
+  "order_id": 390,
+  "customer_id": 390,
+  "order_date": "6/19/2023",
+  "product_name": "T-shirt",
+  "quantity": 10,
+  "unit_price": 55.37,
+  "total_price": 332.32,
+  "shipping_address": "43718 Hooker Parkway",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc22"
+  },
+  "order_id": 391,
+  "customer_id": 391,
+  "order_date": "11/29/2022",
+  "product_name": "Jeans",
+  "quantity": 9,
+  "unit_price": 34.09,
+  "total_price": 822.45,
+  "shipping_address": "58 Sheridan Terrace",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc23"
+  },
+  "order_id": 392,
+  "customer_id": 392,
+  "order_date": "8/22/2023",
+  "product_name": "Shoes",
+  "quantity": 1,
+  "unit_price": 51.4,
+  "total_price": 415.12,
+  "shipping_address": "56979 Troy Circle",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc24"
+  },
+  "order_id": 393,
+  "customer_id": 393,
+  "order_date": "1/21/2023",
+  "product_name": "Jeans",
+  "quantity": 9,
+  "unit_price": 36.24,
+  "total_price": 886.44,
+  "shipping_address": "99277 Coolidge Alley",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc25"
+  },
+  "order_id": 394,
+  "customer_id": 394,
+  "order_date": "9/17/2023",
+  "product_name": "Watch",
+  "quantity": 9,
+  "unit_price": 36.07,
+  "total_price": 748.74,
+  "shipping_address": "3 Golf View Pass",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc26"
+  },
+  "order_id": 395,
+  "customer_id": 395,
+  "order_date": "7/31/2023",
+  "product_name": "Watch",
+  "quantity": 8,
+  "unit_price": 43.46,
+  "total_price": 560.18,
+  "shipping_address": "96175 3rd Trail",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc27"
+  },
+  "order_id": 396,
+  "customer_id": 396,
+  "order_date": "5/17/2023",
+  "product_name": "Jeans",
+  "quantity": 10,
+  "unit_price": 93.55,
+  "total_price": 444.07,
+  "shipping_address": "56 Alpine Point",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc28"
+  },
+  "order_id": 397,
+  "customer_id": 397,
+  "order_date": "9/7/2023",
+  "product_name": "Jeans",
+  "quantity": 7,
+  "unit_price": 42.16,
+  "total_price": 750.84,
+  "shipping_address": "2 Drewry Circle",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc29"
+  },
+  "order_id": 398,
+  "customer_id": 398,
+  "order_date": "5/19/2023",
+  "product_name": "T-shirt",
+  "quantity": 8,
+  "unit_price": 69.18,
+  "total_price": 478.08,
+  "shipping_address": "1903 Hooker Pass",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc2a"
+  },
+  "order_id": 399,
+  "customer_id": 399,
+  "order_date": "11/8/2023",
+  "product_name": "Hat",
+  "quantity": 6,
+  "unit_price": 24.48,
+  "total_price": 927.02,
+  "shipping_address": "16 Manley Park",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc2b"
+  },
+  "order_id": 400,
+  "customer_id": 400,
+  "order_date": "8/1/2023",
+  "product_name": "Jeans",
+  "quantity": 7,
+  "unit_price": 59.26,
+  "total_price": 965.59,
+  "shipping_address": "94 Northport Place",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc2c"
+  },
+  "order_id": 401,
+  "customer_id": 401,
+  "order_date": "11/11/2023",
+  "product_name": "Watch",
+  "quantity": 10,
+  "unit_price": 87.77,
+  "total_price": 437.05,
+  "shipping_address": "40 Saint Paul Pass",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc2d"
+  },
+  "order_id": 402,
+  "customer_id": 402,
+  "order_date": "12/29/2022",
+  "product_name": "T-shirt",
+  "quantity": 7,
+  "unit_price": 81.74,
+  "total_price": 972.33,
+  "shipping_address": "8509 Montana Plaza",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc2e"
+  },
+  "order_id": 403,
+  "customer_id": 403,
+  "order_date": "2/23/2023",
+  "product_name": "T-shirt",
+  "quantity": 9,
+  "unit_price": 59.85,
+  "total_price": 360.98,
+  "shipping_address": "1 Gina Parkway",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc2f"
+  },
+  "order_id": 404,
+  "customer_id": 404,
+  "order_date": "10/29/2023",
+  "product_name": "T-shirt",
+  "quantity": 1,
+  "unit_price": 11.6,
+  "total_price": 896.22,
+  "shipping_address": "9995 Mallory Drive",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc30"
+  },
+  "order_id": 405,
+  "customer_id": 405,
+  "order_date": "3/21/2023",
+  "product_name": "T-shirt",
+  "quantity": 8,
+  "unit_price": 18.26,
+  "total_price": 451.9,
+  "shipping_address": "5 Dixon Plaza",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc31"
+  },
+  "order_id": 406,
+  "customer_id": 406,
+  "order_date": "3/3/2023",
+  "product_name": "T-shirt",
+  "quantity": 3,
+  "unit_price": 54.57,
+  "total_price": 16.98,
+  "shipping_address": "943 Schurz Plaza",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc32"
+  },
+  "order_id": 407,
+  "customer_id": 407,
+  "order_date": "7/20/2023",
+  "product_name": "Shoes",
+  "quantity": 8,
+  "unit_price": 33.39,
+  "total_price": 472.03,
+  "shipping_address": "14 Commercial Court",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc33"
+  },
+  "order_id": 408,
+  "customer_id": 408,
+  "order_date": "9/13/2023",
+  "product_name": "T-shirt",
+  "quantity": 2,
+  "unit_price": 64.57,
+  "total_price": 205.15,
+  "shipping_address": "8 5th Point",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc34"
+  },
+  "order_id": 409,
+  "customer_id": 409,
+  "order_date": "11/30/2022",
+  "product_name": "Jeans",
+  "quantity": 2,
+  "unit_price": 78.22,
+  "total_price": 18.26,
+  "shipping_address": "58668 Mitchell Pass",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc35"
+  },
+  "order_id": 410,
+  "customer_id": 410,
+  "order_date": "10/9/2023",
+  "product_name": "Shoes",
+  "quantity": 6,
+  "unit_price": 44.78,
+  "total_price": 463.75,
+  "shipping_address": "445 Starling Lane",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc36"
+  },
+  "order_id": 411,
+  "customer_id": 411,
+  "order_date": "1/9/2023",
+  "product_name": "Hat",
+  "quantity": 6,
+  "unit_price": 67.11,
+  "total_price": 799.12,
+  "shipping_address": "1 Eastwood Place",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc37"
+  },
+  "order_id": 412,
+  "customer_id": 412,
+  "order_date": "4/6/2023",
+  "product_name": "Watch",
+  "quantity": 1,
+  "unit_price": 76.09,
+  "total_price": 246.58,
+  "shipping_address": "83297 Mesta Place",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc38"
+  },
+  "order_id": 413,
+  "customer_id": 413,
+  "order_date": "11/11/2023",
+  "product_name": "Hat",
+  "quantity": 6,
+  "unit_price": 66.16,
+  "total_price": 35.96,
+  "shipping_address": "18354 Iowa Plaza",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc39"
+  },
+  "order_id": 414,
+  "customer_id": 414,
+  "order_date": "6/27/2023",
+  "product_name": "Shoes",
+  "quantity": 2,
+  "unit_price": 67.16,
+  "total_price": 304.51,
+  "shipping_address": "9 Maywood Place",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc3a"
+  },
+  "order_id": 415,
+  "customer_id": 415,
+  "order_date": "3/28/2023",
+  "product_name": "Jeans",
+  "quantity": 10,
+  "unit_price": 55.12,
+  "total_price": 72.24,
+  "shipping_address": "2578 Fairfield Circle",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc3b"
+  },
+  "order_id": 416,
+  "customer_id": 416,
+  "order_date": "3/27/2023",
+  "product_name": "Hat",
+  "quantity": 9,
+  "unit_price": 26.82,
+  "total_price": 647.94,
+  "shipping_address": "08008 Gulseth Way",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc3c"
+  },
+  "order_id": 417,
+  "customer_id": 417,
+  "order_date": "1/21/2023",
+  "product_name": "Jeans",
+  "quantity": 6,
+  "unit_price": 91.38,
+  "total_price": 992.72,
+  "shipping_address": "94832 Sheridan Court",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc3d"
+  },
+  "order_id": 418,
+  "customer_id": 418,
+  "order_date": "7/25/2023",
+  "product_name": "T-shirt",
+  "quantity": 7,
+  "unit_price": 72.19,
+  "total_price": 747.22,
+  "shipping_address": "94949 Harper Pass",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc3e"
+  },
+  "order_id": 419,
+  "customer_id": 419,
+  "order_date": "4/24/2023",
+  "product_name": "T-shirt",
+  "quantity": 6,
+  "unit_price": 67.91,
+  "total_price": 550.94,
+  "shipping_address": "2859 Fairview Park",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc3f"
+  },
+  "order_id": 420,
+  "customer_id": 420,
+  "order_date": "7/18/2023",
+  "product_name": "Shoes",
+  "quantity": 3,
+  "unit_price": 45.98,
+  "total_price": 768.42,
+  "shipping_address": "6 Carpenter Center",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc40"
+  },
+  "order_id": 421,
+  "customer_id": 421,
+  "order_date": "10/2/2023",
+  "product_name": "Hat",
+  "quantity": 8,
+  "unit_price": 47.75,
+  "total_price": 266.95,
+  "shipping_address": "48 Moland Pass",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc41"
+  },
+  "order_id": 422,
+  "customer_id": 422,
+  "order_date": "12/5/2022",
+  "product_name": "Jeans",
+  "quantity": 5,
+  "unit_price": 92.81,
+  "total_price": 184.37,
+  "shipping_address": "2 Paget Alley",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc42"
+  },
+  "order_id": 423,
+  "customer_id": 423,
+  "order_date": "6/7/2023",
+  "product_name": "Shoes",
+  "quantity": 10,
+  "unit_price": 82.19,
+  "total_price": 981.18,
+  "shipping_address": "2333 Spenser Plaza",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc43"
+  },
+  "order_id": 424,
+  "customer_id": 424,
+  "order_date": "6/6/2023",
+  "product_name": "Watch",
+  "quantity": 3,
+  "unit_price": 86.12,
+  "total_price": 718.94,
+  "shipping_address": "6 Shelley Drive",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc44"
+  },
+  "order_id": 425,
+  "customer_id": 425,
+  "order_date": "2/23/2023",
+  "product_name": "Jeans",
+  "quantity": 7,
+  "unit_price": 95.44,
+  "total_price": 97.09,
+  "shipping_address": "75483 Schiller Way",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc45"
+  },
+  "order_id": 426,
+  "customer_id": 426,
+  "order_date": "5/6/2023",
+  "product_name": "Hat",
+  "quantity": 4,
+  "unit_price": 76.04,
+  "total_price": 655.12,
+  "shipping_address": "77 Tony Crossing",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc46"
+  },
+  "order_id": 427,
+  "customer_id": 427,
+  "order_date": "10/17/2023",
+  "product_name": "Hat",
+  "quantity": 9,
+  "unit_price": 32.3,
+  "total_price": 907.31,
+  "shipping_address": "6 Warbler Park",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc47"
+  },
+  "order_id": 428,
+  "customer_id": 428,
+  "order_date": "6/17/2023",
+  "product_name": "Watch",
+  "quantity": 4,
+  "unit_price": 61.16,
+  "total_price": 705.68,
+  "shipping_address": "961 Dakota Terrace",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc48"
+  },
+  "order_id": 429,
+  "customer_id": 429,
+  "order_date": "7/21/2023",
+  "product_name": "Hat",
+  "quantity": 9,
+  "unit_price": 18.63,
+  "total_price": 16.24,
+  "shipping_address": "0 Barnett Pass",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc49"
+  },
+  "order_id": 430,
+  "customer_id": 430,
+  "order_date": "3/1/2023",
+  "product_name": "Watch",
+  "quantity": 6,
+  "unit_price": 43.56,
+  "total_price": 222.92,
+  "shipping_address": "81 Novick Road",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc4a"
+  },
+  "order_id": 431,
+  "customer_id": 431,
+  "order_date": "3/8/2023",
+  "product_name": "Watch",
+  "quantity": 5,
+  "unit_price": 68.89,
+  "total_price": 207.7,
+  "shipping_address": "54 Longview Avenue",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc4b"
+  },
+  "order_id": 432,
+  "customer_id": 432,
+  "order_date": "10/12/2023",
+  "product_name": "Watch",
+  "quantity": 1,
+  "unit_price": 36.01,
+  "total_price": 164.18,
+  "shipping_address": "8 Monica Drive",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc4c"
+  },
+  "order_id": 433,
+  "customer_id": 433,
+  "order_date": "10/22/2023",
+  "product_name": "Watch",
+  "quantity": 1,
+  "unit_price": 96.51,
+  "total_price": 725.11,
+  "shipping_address": "0896 Eagan Trail",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc4d"
+  },
+  "order_id": 434,
+  "customer_id": 434,
+  "order_date": "3/25/2023",
+  "product_name": "Watch",
+  "quantity": 8,
+  "unit_price": 99.45,
+  "total_price": 93.63,
+  "shipping_address": "682 Monterey Street",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc4e"
+  },
+  "order_id": 435,
+  "customer_id": 435,
+  "order_date": "10/18/2023",
+  "product_name": "Watch",
+  "quantity": 2,
+  "unit_price": 92.27,
+  "total_price": 163.47,
+  "shipping_address": "33 Grover Road",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc4f"
+  },
+  "order_id": 436,
+  "customer_id": 436,
+  "order_date": "11/13/2023",
+  "product_name": "Shoes",
+  "quantity": 2,
+  "unit_price": 20.71,
+  "total_price": 204.22,
+  "shipping_address": "468 Jenna Park",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc50"
+  },
+  "order_id": 437,
+  "customer_id": 437,
+  "order_date": "3/14/2023",
+  "product_name": "T-shirt",
+  "quantity": 6,
+  "unit_price": 31.53,
+  "total_price": 80.9,
+  "shipping_address": "28259 Bayside Street",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc51"
+  },
+  "order_id": 438,
+  "customer_id": 438,
+  "order_date": "4/24/2023",
+  "product_name": "Jeans",
+  "quantity": 2,
+  "unit_price": 91.2,
+  "total_price": 268.46,
+  "shipping_address": "2 Paget Court",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc52"
+  },
+  "order_id": 439,
+  "customer_id": 439,
+  "order_date": "3/7/2023",
+  "product_name": "T-shirt",
+  "quantity": 1,
+  "unit_price": 95.54,
+  "total_price": 980.72,
+  "shipping_address": "9087 Sheridan Hill",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc53"
+  },
+  "order_id": 440,
+  "customer_id": 440,
+  "order_date": "10/7/2023",
+  "product_name": "T-shirt",
+  "quantity": 1,
+  "unit_price": 58.77,
+  "total_price": 502.44,
+  "shipping_address": "19537 Fremont Parkway",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc54"
+  },
+  "order_id": 441,
+  "customer_id": 441,
+  "order_date": "4/9/2023",
+  "product_name": "Watch",
+  "quantity": 8,
+  "unit_price": 68.29,
+  "total_price": 229.4,
+  "shipping_address": "5 Beilfuss Center",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc55"
+  },
+  "order_id": 442,
+  "customer_id": 442,
+  "order_date": "9/13/2023",
+  "product_name": "Hat",
+  "quantity": 9,
+  "unit_price": 56.5,
+  "total_price": 627.02,
+  "shipping_address": "3 Village Green Pass",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc56"
+  },
+  "order_id": 443,
+  "customer_id": 443,
+  "order_date": "2/14/2023",
+  "product_name": "Hat",
+  "quantity": 7,
+  "unit_price": 90.85,
+  "total_price": 100.1,
+  "shipping_address": "7137 Northfield Pass",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc57"
+  },
+  "order_id": 444,
+  "customer_id": 444,
+  "order_date": "6/2/2023",
+  "product_name": "Hat",
+  "quantity": 3,
+  "unit_price": 72.07,
+  "total_price": 843.3,
+  "shipping_address": "2110 Dottie Junction",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc58"
+  },
+  "order_id": 445,
+  "customer_id": 445,
+  "order_date": "9/21/2023",
+  "product_name": "Watch",
+  "quantity": 7,
+  "unit_price": 22.86,
+  "total_price": 172.76,
+  "shipping_address": "629 Thierer Park",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc59"
+  },
+  "order_id": 446,
+  "customer_id": 446,
+  "order_date": "5/3/2023",
+  "product_name": "Shoes",
+  "quantity": 5,
+  "unit_price": 12.35,
+  "total_price": 538.05,
+  "shipping_address": "1 Fisk Plaza",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc5a"
+  },
+  "order_id": 447,
+  "customer_id": 447,
+  "order_date": "1/3/2023",
+  "product_name": "Jeans",
+  "quantity": 10,
+  "unit_price": 95.93,
+  "total_price": 723.87,
+  "shipping_address": "2135 Blaine Center",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc5b"
+  },
+  "order_id": 448,
+  "customer_id": 448,
+  "order_date": "9/18/2023",
+  "product_name": "Watch",
+  "quantity": 4,
+  "unit_price": 59.24,
+  "total_price": 397.46,
+  "shipping_address": "349 Doe Crossing Drive",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc5c"
+  },
+  "order_id": 449,
+  "customer_id": 449,
+  "order_date": "2/4/2023",
+  "product_name": "Hat",
+  "quantity": 2,
+  "unit_price": 32.99,
+  "total_price": 63.41,
+  "shipping_address": "4180 Menomonie Pass",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc5d"
+  },
+  "order_id": 450,
+  "customer_id": 450,
+  "order_date": "8/5/2023",
+  "product_name": "Shoes",
+  "quantity": 3,
+  "unit_price": 38.95,
+  "total_price": 961.28,
+  "shipping_address": "1779 Thompson Trail",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc5e"
+  },
+  "order_id": 451,
+  "customer_id": 451,
+  "order_date": "4/21/2023",
+  "product_name": "Hat",
+  "quantity": 5,
+  "unit_price": 80.55,
+  "total_price": 592.04,
+  "shipping_address": "77805 Delladonna Lane",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc5f"
+  },
+  "order_id": 452,
+  "customer_id": 452,
+  "order_date": "3/13/2023",
+  "product_name": "T-shirt",
+  "quantity": 7,
+  "unit_price": 70.91,
+  "total_price": 910.9,
+  "shipping_address": "54035 Chive Plaza",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc60"
+  },
+  "order_id": 453,
+  "customer_id": 453,
+  "order_date": "5/25/2023",
+  "product_name": "Jeans",
+  "quantity": 6,
+  "unit_price": 67.49,
+  "total_price": 936.64,
+  "shipping_address": "52 Di Loreto Park",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc61"
+  },
+  "order_id": 454,
+  "customer_id": 454,
+  "order_date": "12/10/2022",
+  "product_name": "Watch",
+  "quantity": 6,
+  "unit_price": 76.13,
+  "total_price": 496.93,
+  "shipping_address": "9 Farragut Pass",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc62"
+  },
+  "order_id": 455,
+  "customer_id": 455,
+  "order_date": "9/20/2023",
+  "product_name": "T-shirt",
+  "quantity": 8,
+  "unit_price": 52.99,
+  "total_price": 652.04,
+  "shipping_address": "7 Park Meadow Parkway",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc63"
+  },
+  "order_id": 456,
+  "customer_id": 456,
+  "order_date": "2/9/2023",
+  "product_name": "Shoes",
+  "quantity": 10,
+  "unit_price": 62.71,
+  "total_price": 158.87,
+  "shipping_address": "54467 Straubel Avenue",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc64"
+  },
+  "order_id": 457,
+  "customer_id": 457,
+  "order_date": "1/15/2023",
+  "product_name": "Watch",
+  "quantity": 7,
+  "unit_price": 12.69,
+  "total_price": 56.2,
+  "shipping_address": "8490 Quincy Terrace",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc65"
+  },
+  "order_id": 458,
+  "customer_id": 458,
+  "order_date": "11/7/2023",
+  "product_name": "Shoes",
+  "quantity": 5,
+  "unit_price": 84.89,
+  "total_price": 315.88,
+  "shipping_address": "53933 Weeping Birch Pass",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc66"
+  },
+  "order_id": 459,
+  "customer_id": 459,
+  "order_date": "11/16/2023",
+  "product_name": "Shoes",
+  "quantity": 7,
+  "unit_price": 94.74,
+  "total_price": 689.23,
+  "shipping_address": "51 Wayridge Circle",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc67"
+  },
+  "order_id": 460,
+  "customer_id": 460,
+  "order_date": "1/15/2023",
+  "product_name": "Watch",
+  "quantity": 3,
+  "unit_price": 20.56,
+  "total_price": 821.94,
+  "shipping_address": "323 Straubel Street",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc68"
+  },
+  "order_id": 461,
+  "customer_id": 461,
+  "order_date": "5/3/2023",
+  "product_name": "Jeans",
+  "quantity": 1,
+  "unit_price": 74.96,
+  "total_price": 88.4,
+  "shipping_address": "76 Welch Lane",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc69"
+  },
+  "order_id": 462,
+  "customer_id": 462,
+  "order_date": "10/20/2023",
+  "product_name": "Shoes",
+  "quantity": 9,
+  "unit_price": 66.95,
+  "total_price": 362.61,
+  "shipping_address": "887 Norway Maple Crossing",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc6a"
+  },
+  "order_id": 463,
+  "customer_id": 463,
+  "order_date": "1/8/2023",
+  "product_name": "Watch",
+  "quantity": 3,
+  "unit_price": 52.37,
+  "total_price": 490.77,
+  "shipping_address": "624 Sycamore Street",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc6b"
+  },
+  "order_id": 464,
+  "customer_id": 464,
+  "order_date": "9/16/2023",
+  "product_name": "Hat",
+  "quantity": 8,
+  "unit_price": 88.26,
+  "total_price": 237.52,
+  "shipping_address": "1763 Sugar Park",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc6c"
+  },
+  "order_id": 465,
+  "customer_id": 465,
+  "order_date": "5/2/2023",
+  "product_name": "Jeans",
+  "quantity": 9,
+  "unit_price": 89.83,
+  "total_price": 543.01,
+  "shipping_address": "814 Cascade Pass",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc6d"
+  },
+  "order_id": 466,
+  "customer_id": 466,
+  "order_date": "2/27/2023",
+  "product_name": "Shoes",
+  "quantity": 9,
+  "unit_price": 31.97,
+  "total_price": 301.11,
+  "shipping_address": "777 3rd Court",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc6e"
+  },
+  "order_id": 467,
+  "customer_id": 467,
+  "order_date": "3/14/2023",
+  "product_name": "T-shirt",
+  "quantity": 5,
+  "unit_price": 76.64,
+  "total_price": 465.89,
+  "shipping_address": "34441 Nancy Park",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc6f"
+  },
+  "order_id": 468,
+  "customer_id": 468,
+  "order_date": "11/30/2022",
+  "product_name": "Shoes",
+  "quantity": 5,
+  "unit_price": 35.53,
+  "total_price": 246.71,
+  "shipping_address": "2 Debra Junction",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc70"
+  },
+  "order_id": 469,
+  "customer_id": 469,
+  "order_date": "9/9/2023",
+  "product_name": "T-shirt",
+  "quantity": 5,
+  "unit_price": 74.76,
+  "total_price": 302.28,
+  "shipping_address": "382 Briar Crest Plaza",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc71"
+  },
+  "order_id": 470,
+  "customer_id": 470,
+  "order_date": "7/18/2023",
+  "product_name": "Jeans",
+  "quantity": 2,
+  "unit_price": 90.47,
+  "total_price": 419.44,
+  "shipping_address": "55251 Lillian Drive",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc72"
+  },
+  "order_id": 471,
+  "customer_id": 471,
+  "order_date": "7/29/2023",
+  "product_name": "Watch",
+  "quantity": 1,
+  "unit_price": 32.49,
+  "total_price": 388.63,
+  "shipping_address": "76 Ohio Court",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc73"
+  },
+  "order_id": 472,
+  "customer_id": 472,
+  "order_date": "6/18/2023",
+  "product_name": "T-shirt",
+  "quantity": 9,
+  "unit_price": 20.75,
+  "total_price": 559.19,
+  "shipping_address": "3 Atwood Alley",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc74"
+  },
+  "order_id": 473,
+  "customer_id": 473,
+  "order_date": "6/15/2023",
+  "product_name": "Watch",
+  "quantity": 9,
+  "unit_price": 52.7,
+  "total_price": 385.12,
+  "shipping_address": "3887 Derek Trail",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc75"
+  },
+  "order_id": 474,
+  "customer_id": 474,
+  "order_date": "6/5/2023",
+  "product_name": "Watch",
+  "quantity": 2,
+  "unit_price": 74.48,
+  "total_price": 552.3,
+  "shipping_address": "303 Elmside Lane",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc76"
+  },
+  "order_id": 475,
+  "customer_id": 475,
+  "order_date": "9/25/2023",
+  "product_name": "Jeans",
+  "quantity": 1,
+  "unit_price": 25.44,
+  "total_price": 917.13,
+  "shipping_address": "9674 Mayfield Road",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc77"
+  },
+  "order_id": 476,
+  "customer_id": 476,
+  "order_date": "3/25/2023",
+  "product_name": "T-shirt",
+  "quantity": 9,
+  "unit_price": 31.35,
+  "total_price": 39.83,
+  "shipping_address": "5276 Merry Center",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc78"
+  },
+  "order_id": 477,
+  "customer_id": 477,
+  "order_date": "7/14/2023",
+  "product_name": "Hat",
+  "quantity": 9,
+  "unit_price": 43.45,
+  "total_price": 560.82,
+  "shipping_address": "480 Sutteridge Court",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc79"
+  },
+  "order_id": 478,
+  "customer_id": 478,
+  "order_date": "11/20/2022",
+  "product_name": "Jeans",
+  "quantity": 9,
+  "unit_price": 24.24,
+  "total_price": 255.75,
+  "shipping_address": "1815 Barby Drive",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc7a"
+  },
+  "order_id": 479,
+  "customer_id": 479,
+  "order_date": "8/17/2023",
+  "product_name": "Watch",
+  "quantity": 4,
+  "unit_price": 89.91,
+  "total_price": 516.37,
+  "shipping_address": "99 Holmberg Parkway",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc7b"
+  },
+  "order_id": 480,
+  "customer_id": 480,
+  "order_date": "2/22/2023",
+  "product_name": "Watch",
+  "quantity": 10,
+  "unit_price": 58.13,
+  "total_price": 25.07,
+  "shipping_address": "92 Ronald Regan Road",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc7c"
+  },
+  "order_id": 481,
+  "customer_id": 481,
+  "order_date": "6/3/2023",
+  "product_name": "Shoes",
+  "quantity": 4,
+  "unit_price": 80.05,
+  "total_price": 430.15,
+  "shipping_address": "0 Hollow Ridge Trail",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc7d"
+  },
+  "order_id": 482,
+  "customer_id": 482,
+  "order_date": "1/31/2023",
+  "product_name": "Shoes",
+  "quantity": 8,
+  "unit_price": 70.2,
+  "total_price": 808.04,
+  "shipping_address": "82 Washington Plaza",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc7e"
+  },
+  "order_id": 483,
+  "customer_id": 483,
+  "order_date": "6/6/2023",
+  "product_name": "Watch",
+  "quantity": 3,
+  "unit_price": 74.76,
+  "total_price": 642.58,
+  "shipping_address": "7 Vahlen Way",
+  "payment_method": "Cash on Delivery",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc7f"
+  },
+  "order_id": 484,
+  "customer_id": 484,
+  "order_date": "6/8/2023",
+  "product_name": "T-shirt",
+  "quantity": 7,
+  "unit_price": 42.11,
+  "total_price": 550.39,
+  "shipping_address": "88100 Graedel Place",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc80"
+  },
+  "order_id": 485,
+  "customer_id": 485,
+  "order_date": "1/20/2023",
+  "product_name": "Watch",
+  "quantity": 2,
+  "unit_price": 19.42,
+  "total_price": 922.14,
+  "shipping_address": "1 Raven Trail",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc81"
+  },
+  "order_id": 486,
+  "customer_id": 486,
+  "order_date": "3/9/2023",
+  "product_name": "Watch",
+  "quantity": 10,
+  "unit_price": 50.33,
+  "total_price": 617.3,
+  "shipping_address": "10887 Almo Way",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc82"
+  },
+  "order_id": 487,
+  "customer_id": 487,
+  "order_date": "6/27/2023",
+  "product_name": "Hat",
+  "quantity": 8,
+  "unit_price": 35.87,
+  "total_price": 707.39,
+  "shipping_address": "40 Kropf Terrace",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc83"
+  },
+  "order_id": 488,
+  "customer_id": 488,
+  "order_date": "5/3/2023",
+  "product_name": "Shoes",
+  "quantity": 3,
+  "unit_price": 98.72,
+  "total_price": 115.24,
+  "shipping_address": "97832 Di Loreto Point",
+  "payment_method": "PayPal",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc84"
+  },
+  "order_id": 489,
+  "customer_id": 489,
+  "order_date": "1/27/2023",
+  "product_name": "Hat",
+  "quantity": 2,
+  "unit_price": 34.52,
+  "total_price": 499.32,
+  "shipping_address": "0 Tomscot Plaza",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc85"
+  },
+  "order_id": 490,
+  "customer_id": 490,
+  "order_date": "10/19/2023",
+  "product_name": "Watch",
+  "quantity": 10,
+  "unit_price": 70.07,
+  "total_price": 966.24,
+  "shipping_address": "5899 Clyde Gallagher Way",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc86"
+  },
+  "order_id": 491,
+  "customer_id": 491,
+  "order_date": "2/8/2023",
+  "product_name": "Jeans",
+  "quantity": 2,
+  "unit_price": 44.86,
+  "total_price": 901.59,
+  "shipping_address": "12 American Pass",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc87"
+  },
+  "order_id": 492,
+  "customer_id": 492,
+  "order_date": "2/7/2023",
+  "product_name": "Jeans",
+  "quantity": 5,
+  "unit_price": 78.93,
+  "total_price": 834.79,
+  "shipping_address": "45 Wayridge Junction",
+  "payment_method": "Credit Card",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc88"
+  },
+  "order_id": 493,
+  "customer_id": 493,
+  "order_date": "6/22/2023",
+  "product_name": "Hat",
+  "quantity": 8,
+  "unit_price": 65.74,
+  "total_price": 46.92,
+  "shipping_address": "65354 Manley Crossing",
+  "payment_method": "Credit Card",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc89"
+  },
+  "order_id": 494,
+  "customer_id": 494,
+  "order_date": "5/30/2023",
+  "product_name": "T-shirt",
+  "quantity": 8,
+  "unit_price": 21.3,
+  "total_price": 201.07,
+  "shipping_address": "2549 Maple Place",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc8a"
+  },
+  "order_id": 495,
+  "customer_id": 495,
+  "order_date": "6/2/2023",
+  "product_name": "Jeans",
+  "quantity": 5,
+  "unit_price": 88.63,
+  "total_price": 501.7,
+  "shipping_address": "6911 Thackeray Junction",
+  "payment_method": "PayPal",
+  "status": "Shipped"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc8b"
+  },
+  "order_id": 496,
+  "customer_id": 496,
+  "order_date": "12/17/2022",
+  "product_name": "Watch",
+  "quantity": 8,
+  "unit_price": 94.86,
+  "total_price": 745.75,
+  "shipping_address": "31 Lyons Parkway",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc8c"
+  },
+  "order_id": 497,
+  "customer_id": 497,
+  "order_date": "9/16/2023",
+  "product_name": "Jeans",
+  "quantity": 4,
+  "unit_price": 81.02,
+  "total_price": 323.32,
+  "shipping_address": "295 Harbort Crossing",
+  "payment_method": "Cash on Delivery",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc8d"
+  },
+  "order_id": 498,
+  "customer_id": 498,
+  "order_date": "7/14/2023",
+  "product_name": "Jeans",
+  "quantity": 3,
+  "unit_price": 87.19,
+  "total_price": 463.2,
+  "shipping_address": "13 Fair Oaks Terrace",
+  "payment_method": "Cash on Delivery",
+  "status": "Pending"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc8e"
+  },
+  "order_id": 499,
+  "customer_id": 499,
+  "order_date": "2/8/2023",
+  "product_name": "Hat",
+  "quantity": 7,
+  "unit_price": 20.25,
+  "total_price": 19.82,
+  "shipping_address": "96 Bayside Road",
+  "payment_method": "PayPal",
+  "status": "Delivered"
+},
+{
+  "_id": {
+    "$oid": "655bb8110b1f2f122d50dc8f"
+  },
+  "order_id": 500,
+  "customer_id": 500,
+  "order_date": "11/25/2022",
+  "product_name": "Shoes",
+  "quantity": 6,
+  "unit_price": 19.31,
+  "total_price": 105.17,
+  "shipping_address": "4981 Beilfuss Road",
+  "payment_method": "Credit Card",
+  "status": "Shipped"
+}]

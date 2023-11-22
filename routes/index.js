@@ -7,7 +7,9 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/shop-nam', function (req, res, next) {
+
   res.render('user/shop_nam', { title: 'Giày dép nam', layout: 'user_layout.hbs' });
+  
 });
 
 router.get('/shop-nu', function (req, res, next) {
