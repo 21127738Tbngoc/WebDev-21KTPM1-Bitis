@@ -31,7 +31,7 @@
                 <!-- Nav -->
                 <ul class="nav col-6">
                     <li class="nav-item"><a href="user_home.html" class="nav-link link-dark">Trang chủ</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-dark">Về Biti's</a></li>
+                    <li class="nav-item"><a href="user_about.html" class="nav-link link-dark">Về Biti's</a></li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link link-secondary dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sản phẩm</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown" data-bs-popper="none">
@@ -45,20 +45,90 @@
                                 <hr class="dropdown-divider">
                             </li>
                             <li>
-                                <a class="dropdown-item" href="user_shop_nu.html">Phụ kiện</a>
+                                <a class="dropdown-item" href="#">Phụ kiện</a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item"><a href="user_contact.html" class="nav-link link-dark">Liên hệ</a></li>
                 </ul>
-
                 <!-- Loginbag -->
                 <div class="loginbag col-4">
                     <button type="button" class="loginbag-btn ms-5 me-1"><i class="la la-search loginbag-icon"></i></button>
                     <button type="button" class="loginbag-btn me-3"><i class="la la-shopping-bag loginbag-icon"></i></button>
-                    <button type="button" class="btn outline-button me-3">Đăng nhập</button>
-                    <button type="button" class="btn primary-button ">Đăng ký</button>
+                    <button type="button" class="btn outline-button me-3" id="loginBtn" onclick="openLoginModal()">Đăng nhập</button>
+                    <button type="button" class="btn primary-button" id="signupBtn" onclick="openSignupModal()">Đăng ký</button>
                 </div>
+                <!-- Login modal -->
+                <div class="overlay" id="loginOverlay"></div>
+                <div class="modal" id="loginModal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeLoginModal()">&times;</span>
+                        <img src="img/logo.png" style="width: 25%;margin-top: 1em;">
+                        <h4>Đăng nhập</h4>
+                        <form>
+                            <label for="username">Email/Số điện thoại</label>
+                            <input type="text" id="username" name="username" placeholder="nguyenvana@gmail.com" required>
+                            <label for="password">Mật khẩu</label>
+                            <input type="password" id="password" name="username" placeholder="••••••••••••••••" required>
+                            <p class="additional-text">Quên mật khẩu?</p>
+                            <button type="submit" class="btn primary-button">Đăng nhập</button><br>
+                            <p>Chưa có tài khoản? <a class="link-button-small" href="#">Đăng ký ngay</a></p>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Javascript Login modal-->
+                <script>
+                    // Open the login modal
+                    document.getElementById('loginBtn').addEventListener('click', openLoginModal);
+                    // Close the login modal
+                    function closeLoginModal() {
+                        document.getElementById('loginModal').style.display = 'none';
+                        document.getElementById('loginOverlay').style.display = 'none';
+                    }
+                    // Open the login modal
+                    function openLoginModal() {
+                        document.getElementById('loginModal').style.display = 'block';
+                        document.getElementById('loginOverlay').style.display = 'block';
+                    }
+                </script>
+
+                <!-- Sign up modal -->
+                <div class="overlay" id="signupOverlay"></div>
+                <div class="modal" id="signupModal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeSignupModal()">&times;</span>
+                        <img src="img/logo.png" style="width: 25%;margin-top: 1em;">
+                        <h4>Đăng ký</h4>
+                        <form>
+                            <label for="username">Email/Số điện thoại</label>
+                            <input type="text" id="username" name="username" placeholder="nguyenvana@gmail.com" required>
+                            <label for="password">Mật khẩu</label>
+                            <input type="password" id="password" name="username" placeholder="••••••••••••••••" required>
+                            <p class="additional-text">Quên mật khẩu?</p>
+                            <button type="submit" class="btn primary-button">Đăng ký</button><br>
+                            <p>Đã có tài khoản? <a class="link-button-small" href="#">Đăng nhập ngay</a></p>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Javascript Sign up modal-->
+                <script>
+                    // Open the sign up modal
+                    document.getElementById('signupBtn').addEventListener('click', openSignupModal);
+                    // Close the sign up modal
+                    function closeSignupModal() {
+                        document.getElementById('signupModal').style.display = 'none';
+                        document.getElementById('signupOverlay').style.display = 'none';
+                    }
+                    // Open the signup modal
+                    function openSignupModal() {
+                        document.getElementById('signupModal').style.display = 'block';
+                        document.getElementById('signupOverlay').style.display = 'block';
+                    }
+                </script>
+
+                
             </div>
         </div>
     </div>
@@ -85,13 +155,14 @@
                 <!--------- Products filter --------->
                 <div class="col-3 product-filter">
                     <h6 class="py-2 mb-3 border-bottom"><i class="las la-filter" style="font-size: 20px;"></i>&nbsp;&nbsp;Kiểu giày</h6>
-                    <img src="img/GiayNam/GiayNamLabel/hunter-nam.svg" alt="hunter" class="product-types me-3">
-                    <img src="img/GiayNam/GiayNamLabel/giay-the-thao-nam.svg" alt="thethao" class="product-types me-3">
-                    <img src="img/GiayNam/GiayNamLabel/giay-da-banh.svg" alt="dabanh" class="product-types me-3">
-                    <img src="img/GiayNam/GiayNamLabel/hunter-running-nam.svg" alt="chaybo" class="product-types">
-                    <img src="img/GiayNam/GiayNamLabel/sandal-nam.svg" alt="sandal" class="product-types me-3">
-                    <img src="img/GiayNam/GiayNamLabel/giay-tay-nam.svg" alt="giaytay" class="product-types me-3">
-                    <img src="img/GiayNam/GiayNamLabel/dep-nam.svg" alt="giaytay" class="product-types">
+                    <img src="img/GiayNu/GiayNuLabel/hunter-nu.svg" alt="hunter" class="product-types me-3">
+                    <img src="img/GiayNu/GiayNuLabel/giay-the-thao-nu.svg" alt="thethao" class="product-types me-3">
+                    <img src="img/GiayNu/GiayNuLabel/giay-bup-be-nu.svg" alt="dabanh" class="product-types me-3">
+                    <img src="img/GiayNu/GiayNuLabel/giay-thoi-trang-nu-1.svg" alt="chaybo" class="product-types">
+                    <img src="img/GiayNu/GiayNuLabel/gosto.svg" alt="sandal" class="product-types me-3">
+                    <img src="img/GiayNu/GiayNuLabel/hunter-running-jogging.svg" alt="giaytay" class="product-types me-3">
+                    <img src="img/GiayNu/GiayNuLabel/sandal-nu-1.svg" alt="giaytay" class="product-types me-3">
+                    <img src="img/GiayNu/GiayNuLabel/tui-xach.svg" alt="giaytay" class="product-types">
                     <h6 class="py-2 mb-3 border-bottom"><i class="la la-palette" style="font-size: 20px;"></i>&nbsp;&nbsp;Màu sắc</h6>
                     <a href="#" class="color-option me-2" style="background-color:#000"></a>
                     <a href="#" class="color-option me-2" style="background-color:gray"></a>
@@ -111,12 +182,6 @@
                     <a href="#" class="size-option me-2">37</a>
                     <a href="#" class="size-option me-2">38</a>
                     <a href="#" class="size-option">39</a>
-                    <a href="#" class="size-option me-2">40</a>
-                    <a href="#" class="size-option me-2">41</a>
-                    <a href="#" class="size-option me-2">42</a>
-                    <a href="#" class="size-option me-2">43</a>
-                    <a href="#" class="size-option">44</a>
-                    <a href="#" class="size-option me-2">45</a>
                 </div>
                 <!--------- Products row 1 --------->
                 <!-- Product card 1 -->
@@ -165,8 +230,8 @@
                                 <div class="icon-wishlist"></div>
                             </div>
                             <div class="figure">
-                                <img class="Sirv image-main" src="https://ngoc-tran.sirv.com/GiayNam/HSM001400/HSM001400MAIN.jpg" data-src="https://ngoc-tran.sirv.com/GiayNam/HSM001400/HSM001400MAIN.jpg">
-                                <img class="Sirv image-hover" data-src="https://ngoc-tran.sirv.com/GiayNam/HSM001400/HSM001400HOVER.jpg">
+                                <img class="Sirv image-main" src="https://ngoc-tran.sirv.com/GiayNu/HSW002300/HSW002300_1.jpg" data-src="https://ngoc-tran.sirv.com/GiayNu/HSW002300/HSW002300_1.jpg">
+                                <img class="Sirv image-hover" data-src="https://ngoc-tran.sirv.com/GiayNu/HSW002300/HSW002300_2.jpg">
                             </div>
                         </div>
                         <!-- Info -->
@@ -178,7 +243,7 @@
                             </div>
                             <!-- Title -->
                             <div class="product-name">
-                                <a href="#">Giày Thể Thao Nam Biti's Hunter X Wavy Collection HSM001400</a>
+                                <a href="#">Giày Thể Thao Nữ Biti's Hunter X Wavy Collection HSM001400</a>
                             </div>
                             <!-- Price -->
                             <div class="product-price d-flex align-items-center">981,000 ₫</div>
@@ -201,8 +266,8 @@
                                 <div class="icon-wishlist"></div>
                             </div>
                             <div class="figure">
-                                <img class="Sirv image-main" src="https://ngoc-tran.sirv.com/GiayNam/HSM002900/HSM002900MAIN.jpg" data-src="https://ngoc-tran.sirv.com/GiayNam/HSM002900/HSM002900MAIN.jpg">
-                                <img class="Sirv image-hover" data-src="https://ngoc-tran.sirv.com/GiayNam/HSM002900/HSM002900HOVER.jpg">
+                                <img class="Sirv image-main" src="https://ngoc-tran.sirv.com/GiayNu/BSW001600/BSW001600_1.jpg" data-src="https://ngoc-tran.sirv.com/GiayNu/BSW001600/BSW001600_1.jpg">
+                                <img class="Sirv image-hover" data-src="https://ngoc-tran.sirv.com/GiayNu/BSW001600/BSW001600_2.jpg">
                             </div>
                         </div>
                         <!-- Info -->
@@ -214,16 +279,15 @@
                             </div>
                             <!-- Title -->
                             <div class="product-name">
-                                <a href="#">Giày Thể Thao Nam Biti’s Hunter HSM002900</a>
+                                <a href="#">Giày Thể Thao Nữ Biti’s Hunter HSM002900</a>
                             </div>
                             <!-- Price -->
                             <div class="product-price d-flex align-items-center"><del>1,305,000 ₫</del>&nbsp 899,000 ₫</div>
                             <!-- Swatch -->
                             <div class="w-100 product-colors d-flex align-items-center justify-content-center flex-wrap">		
-                                <img src="https://ngoc-tran.sirv.com/GiayNam/HSM002900/HSM002900MAIN.jpg" alt="XNH" class="active">
-                                <img src="https://ngoc-tran.sirv.com/GiayNam/HSM002900/HSM002900KEM.jpg" alt="KEM">
-                                <img src="https://ngoc-tran.sirv.com/GiayNam/HSM002900/HSM002900TRG.jpg" alt="TRG">
-                                <img src="https://ngoc-tran.sirv.com/GiayNam/HSM002900/HSM002900DEN.jpg" alt="DEN">
+                                <img src="https://ngoc-tran.sirv.com/GiayNu/BSW001600/BSW001600_1.jpg" alt="XNH" class="active">
+                                <img src="https://ngoc-tran.sirv.com/GiayNu/BSW001600/BSW001600KEM1.jpg" alt="KEM">
+                                <img src="https://ngoc-tran.sirv.com/GiayNu/BSW001600/BSW001600TRG1.jpg" alt="TRG">
                             </div>
                         </div>
                     </div>
@@ -241,7 +305,7 @@
                                 <div class="icon-wishlist"></div>
                             </div>
                             <div class="figure">
-                                <img class="Sirv image-main" src="https://ngoc-tran.sirv.com/GiayNam/BSM000600/BSM000600MAIN.jpg" data-src="https://ngoc-tran.sirv.com/GiayNam/BSM000600/BSM000600MAIN.jpg">
+                                <img class="Sirv image-main" src="https://ngoc-tran.sirv.com/GiayNu/HSW002400/HSW002400_1.jpg" data-src="https://ngoc-tran.sirv.com/GiayNam/BSM000600/BSM000600MAIN.jpg">
                                 <img class="Sirv image-hover" data-src="https://ngoc-tran.sirv.com/GiayNam/BSM000600/BSM000600HOVER.jpg">
                             </div>
                         </div>
@@ -254,7 +318,7 @@
                             </div>
                             <!-- Title -->
                             <div class="product-name">
-                                <a href="#">Giày Thể Thao Thông Dụng Nam Biti's Basic BSM000600</a>
+                                <a href="#">Giày Thể Thao Thông Dụng Nữ Biti's Basic BSM000600</a>
                             </div>
                             <!-- Price -->
                             <div class="product-price d-flex align-items-center">368,000 ₫</div>
@@ -289,7 +353,7 @@
                             </div>
                             <!-- Title -->
                             <div class="product-name">
-                                <a href="#">Giày Thể Thao Nam Biti's Hunter Tennis HSM000200</a>
+                                <a href="#">Giày Thể Thao Nữ Biti's Hunter Tennis HSM000200</a>
                             </div>
                             <!-- Price -->
                             <div class="product-price d-flex align-items-center">853,000 ₫</div>
@@ -325,7 +389,7 @@
                             </div>
                             <!-- Title -->
                             <div class="product-name">
-                                <a href="#">Giày Thể Thao Nam Biti's Hunter Core HSM000500</a>
+                                <a href="#">Giày Thể Thao Nữ Biti's Hunter Core HSM000500</a>
                             </div>
                             <!-- Price -->
                             <div class="product-price d-flex align-items-center">853,000 ₫</div>
@@ -363,7 +427,7 @@
                             </div>
                             <!-- Title -->
                             <div class="product-name">
-                                <a href="#">Giày Thể Thao Nam Hunter Core - Meteor Collection DSMH10800</a>
+                                <a href="#">Giày Thể Thao Nữ Hunter Core - Meteor Collection DSMH10800</a>
                             </div>
                             <!-- Price -->
                             <div class="product-price d-flex align-items-center">736,000 ₫</div>
@@ -398,7 +462,7 @@
                             </div>
                             <!-- Title -->
                             <div class="product-name">
-                                <a href="#">Giày Thể Thao Nam Hunter X - Dune OTP HSM001200</a>
+                                <a href="#">Giày Thể Thao Nữ Hunter X - Dune OTP HSM001200</a>
                             </div>
                             <!-- Price -->
                             <div class="product-price d-flex align-items-center"><del>1,305,000 ₫</del>&nbsp 799,000 ₫</div>
@@ -432,7 +496,7 @@
                             </div>
                             <!-- Title -->
                             <div class="product-name">
-                                <a href="#">Giày Thể Thao Nam Hunter X - Dune OTP Real White HSM001201</a>
+                                <a href="#">Giày Thể Thao Nữ Hunter X - Dune OTP Real White HSM001201</a>
                             </div>
                             <!-- Price -->
                             <div class="product-price d-flex align-items-center"><del>1,305,000 ₫</del>&nbsp 799,000 ₫</div>
@@ -469,7 +533,7 @@
                             </div>
                             <!-- Title -->
                             <div class="product-name">
-                                <a href="#">Giày Thể Thao Nam Biti's Hunter X HSM003100</a>
+                                <a href="#">Giày Thể Thao Nữ Biti's Hunter X HSM003100</a>
                             </div>
                             <!-- Price -->
                             <div class="product-price d-flex align-items-center">981,000 ₫</div>
@@ -505,7 +569,7 @@
                             </div>
                             <!-- Title -->
                             <div class="product-name">
-                                <a href="#">Giày Thể Thao Nam Biti's Hunter X HSM004400</a>
+                                <a href="#">Giày Thể Thao Nữ Biti's Hunter X HSM004400</a>
                             </div>
                             <!-- Price -->
                             <div class="product-price d-flex align-items-center">981,000 ₫</div>
@@ -541,7 +605,7 @@
                             </div>
                             <!-- Title -->
                             <div class="product-name">
-                                <a href="#">Giày Thể Thao Nam Biti's Hunter BSM001100</a>
+                                <a href="#">Giày Thể Thao Nữ Biti's Hunter BSM001100</a>
                             </div>
                             <!-- Price -->
                             <div class="product-price d-flex align-items-center"><del>1,305,000 ₫</del>&nbsp 799,000 ₫</div>
@@ -580,7 +644,7 @@
                             </div>
                             <!-- Title -->
                             <div class="product-name">
-                                <a href="#">Giày Thể Thao Nam Biti's Hunter Core HSM002400</a>
+                                <a href="#">Giày Thể Thao Nữ Biti's Hunter Core HSM002400</a>
                             </div>
                             <!-- Price -->
                             <div class="product-price d-flex align-items-center">736,000 ₫</div>
@@ -615,7 +679,7 @@
                             </div>
                             <!-- Title -->
                             <div class="product-name">
-                                <a href="#">Giày Thể Thao Nam Biti's Hunter X HSM004400</a>
+                                <a href="#">Giày Thể Thao Nữ Biti's Hunter X HSM004400</a>
                             </div>
                             <!-- Price -->
                             <div class="product-price d-flex align-items-center">981,000 ₫</div>
@@ -652,7 +716,7 @@
                             </div>
                             <!-- Title -->
                             <div class="product-name">
-                                <a href="#">Giày Thể Thao Nam Biti's Hunter BSM001100</a>
+                                <a href="#">Giày Thể Thao Nữ Biti's Hunter BSM001100</a>
                             </div>
                             <!-- Price -->
                             <div class="product-price d-flex align-items-center"><del>1,305,000 ₫</del>&nbsp 799,000 ₫</div>
@@ -665,4 +729,105 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------- Footer --------->
+    <div class="container-fluid border-top mt-5">
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <!-- Về bitis -->
+                    <div class="col mb-3">
+                        <h6 class="title mb-4">VỀ BITI'S</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"> 
+                                <a href="#" class="nav-link p-0 text-muted" style="padding: 0;margin-left: 0;">Về Biti's</a>
+                            </li>
+                            <li class="nav-item mb-2"> 
+                                <a href="#" class="nav-link p-0 text-muted" style="padding: 0;margin-left: 0;">Câu chuyện Biti's</a>
+                            </li>
+                            <li class="nav-item mb-2"> 
+                                <a href="#" class="nav-link p-0 text-muted" style="padding: 0;margin-left: 0;">Bước tiến phát triển</a>
+                            </li>
+                            <li class="nav-item mb-2"> 
+                                <a href="#" class="nav-link p-0 text-muted" style="padding: 0;margin-left: 0;">Hoạt động</a>
+                            </li>
+                            <li class="nav-item mb-2"> 
+                                <a href="#" class="nav-link p-0 text-muted" style="padding: 0;margin-left: 0;">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Thông tin -->
+                    <div class="col mb-3">
+                        <h6 class="title mb-4">THÔNG TIN</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"> 
+                                <a href="#" class="nav-link p-0 text-muted" style="padding: 0;margin-left: 0;">Trạng thái đơn hàng</a>
+                            </li>
+                            <li class="nav-item mb-2"> 
+                                <a href="#" class="nav-link p-0 text-muted" style="padding: 0;margin-left: 0;">Hình thức giao hàng</a>
+                            </li>
+                            <li class="nav-item mb-2"> 
+                                <a href="#" class="nav-link p-0 text-muted" style="padding: 0;margin-left: 0;">Hình thức thanh toán</a>
+                            </li>
+                            <li class="nav-item mb-2"> 
+                                <a href="#" class="nav-link p-0 text-muted" style="padding: 0;margin-left: 0;">Hướng dẫn cách chọn size</a>
+                            </li>
+                            <li class="nav-item mb-2"> 
+                                <a href="#" class="nav-link p-0 text-muted" style="padding: 0;margin-left: 0;">Chính sách đổi trả</a>
+                            </li>
+                            <li class="nav-item mb-2"> 
+                                <a href="#" class="nav-link p-0 text-muted" style="padding: 0;margin-left: 0;">Chính sách bảo hành</a>
+                            </li>
+                            <li class="nav-item mb-2"> 
+                                <a href="#" class="nav-link p-0 text-muted" style="padding: 0;margin-left: 0;">Chính sách khách hàng thân thiết</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Trợ giúp -->
+                    <div class="col mb-3">
+                        <h6 class="title mb-4">TRỢ GIÚP</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"> 
+                                <a href="#" class="nav-link p-0 text-muted" style="padding: 0;margin-left: 0;">Tuyển dụng</a>
+                            </li>
+                            <li class="nav-item mb-2"> 
+                                <a href="#" class="nav-link p-0 text-muted" style="padding: 0;margin-left: 0;">Hệ thống cửa hàng</a>
+                            </li>
+                            <li class="nav-item mb-2"> 
+                                <a href="#" class="nav-link p-0 text-muted" style="padding: 0;margin-left: 0;">Liên hệ hợp tác</a>
+                            </li>
+                            <li class="nav-item mb-2"> 
+                                <a href="#" class="nav-link p-0 text-muted" style="padding: 0;margin-left: 0;">Q&A</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Email -->
+                    <div class="col-4 mb-3">
+                        <img class="mb-4 footer-logo" src="img/logo.png" style="width: 40%">
+                        <h6 class="title mb-4">CÔNG TY TNHH SẢN XUẤT HÀNG TIÊU DÙNG BÌNH TIÊN</h5>
+                        <p><strong>Địa chỉ:</strong> 22 Lý Chiêu Hoàng, Phường 10, Quận 6, TP. Hồ Chí Minh<br>
+                        <strong>Điện thoại:</strong> (028) 38 753 443<br>
+                        <strong>Email:</strong> chamsockhachhang@bitis.com.vn<br>
+                        <strong>Hotline:</strong> 0966158666<br>
+                        <strong>Thời gian tư vấn:</strong> 8h – 21h30 các ngày trong tuần (trừ ngày Lễ, Tết)</p>
+                    </div>
+                </div>
+                <div class="row justify-content-between border-top pt-4">
+                    <div class="col">
+                        <p>Copyright © 2023 Biti's. All rights reserved.</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="img/footer.png" style="height: 3rem;">
+                    </div>
+                    <div class="col-4">
+                        <p>Giấy CNĐKDN: 0301340497 được cấp ngày 20/01/1992, được sửa đổi lần thứ 20 ngày 28/12/2015 bởi Sở Kế hoạch và Đầu tư TPHCM</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
     
