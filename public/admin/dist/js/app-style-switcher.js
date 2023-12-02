@@ -6,7 +6,7 @@ $(function () {
             var logobgskin = $(this).attr("data-logobg");
             $('.topbar .top-navbar .navbar-header').attr("data-logobg", logobgskin);
         });
-    };
+    }
     handlelogobg();
 
     //****************************
@@ -36,7 +36,7 @@ $(function () {
             }
         });
 
-    };
+    }
     handlenavbarbg();
 
     //****************************
@@ -48,7 +48,7 @@ $(function () {
             $('.left-sidebar').attr("data-sidebarbg", sidebarbgskin);
             $('.scroll-sidebar').attr("data-sidebarbg", sidebarbgskin);
         });
-    };
+    }
     handlesidebarbg();
 
     //****************************
@@ -64,7 +64,7 @@ $(function () {
                 $('.topbar .top-navbar .navbar-header').attr("data-navheader", 'relative');
             }
         });
-    };
+    }
     handlesidebarposition();
 
     //****************************
@@ -78,7 +78,7 @@ $(function () {
                 $('#main-wrapper').attr("data-header-position", 'relative');
             }
         });
-    };
+    }
     handleheaderposition();
 
     //****************************
@@ -93,7 +93,7 @@ $(function () {
             }
         });
 
-    };
+    }
     handleboxedlayout();
 
     //****************************
@@ -107,7 +107,7 @@ $(function () {
                 $('body').attr("data-theme", 'light');
             }
         });
-    };
+    }
     handlethemeview();
 
     var setsidebartype = function () {
