@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const PassportLocalMongoose = require("passport-local-mongoose");
-const findOrCreate = require("mongoose-findorcreate");
 
 const CustomerSchema = new mongoose.Schema(
     {
@@ -36,6 +35,8 @@ const CustomerSchema = new mongoose.Schema(
     { timestamps: true }
 )
 CustomerSchema.plugin(PassportLocalMongoose);
-CustomerSchema.plugin(findOrCreate);
 
-module.exports = mongoose.model("Customer", CustomerSchema);
+const User = mongoose.model("User", CustomerSchema);
+
+module.exports = User;
+

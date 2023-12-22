@@ -11,6 +11,7 @@
     "dotenv": "^16.3.1",
     "express": "~4.16.1",
     "hbs": "~4.0.4",
+    "http-error": "^0.0.6",
     "http-errors": "~1.6.3",
     "mongoose": "^8.0.2",
     "mongoose-findorcreate": "^4.0.0",

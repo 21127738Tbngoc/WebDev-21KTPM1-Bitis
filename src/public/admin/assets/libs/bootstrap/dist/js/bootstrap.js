@@ -604,7 +604,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.3.0-alpha1): util/config.js
+   * Bootstrap (v5.3.0-alpha1): util/cloudinaryConfig.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
