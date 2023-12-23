@@ -1,0 +1,202 @@
+@charset "utf-8";
+@import url("../common.css");
+
+button {
+    border-radius: 4px;
+    font-family: semibold-font;
+    text-align: center;
+}
+/*---------Button---------*/
+/*--- Size ---*/
+.btn-nm {
+    font-size: 18px;
+    padding: 20px 24px;
+}
+
+.btn-md {
+    font-size: 16px;
+    padding: 15px 24px;
+}
+
+.btn-sm {
+    font-size: 14px;
+    padding: 13px 24px;
+}
+
+/* Button hierarchy */
+.prim-btn {
+    background-color: var(--tone-primary-40);
+    color: var(--tone-primary-99);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.sec-btn {
+    background-color: var(--tone-secondary-90);
+    color: var(--tone-secondary-30);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.tert-btn {
+    background-color: var(--tone-tertiary-80);
+    color: var(--tone-tertiary-30);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.outline-btn {
+    background-color: transparent;
+    color: var(--tone-primary-40);
+    border: 1.5px solid var(--tone-primary-40);
+    transition: background-color 0.3s ease;
+}
+
+a.link-nm{
+    color: var(--tone-primary-40);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a.link-md{
+    color: var(--tone-primary-40);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+a.link-sm{
+    color: var(--tone-primary-40);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/*--- States ---*/
+.prim-btn:hover {
+    background: var(--tone-primary-30);
+    cursor: pointer;
+}
+
+.sec-btn:hover {
+    background: var(--tone-secondary-80);
+    cursor: pointer;
+}
+
+.tert-btn:hover {
+    background: var(--tone-tertiary-50);
+    color: var(--tone-tertiary-99);
+    cursor: pointer;
+}
+
+.outline-btn:hover {
+    background: var(--tone-primary-40);
+    color: var(--tone-tertiary-99);
+    cursor: pointer;
+}
+
+.btn-nm:disabled, 
+.btn-md:disabled,
+.btn-sm:disabled {
+    color: var(--tone-neutral-90);
+    background: var(--tone-neutral-80);
+    border: none;
+}
+
+.link-disabled {
+    color: var(--tone-neutral-80) !important;
+    cursor: default !important;
+}
+
+/*---------Icon btn---------*/
+/*--- Size ---*/
+.i-btn-nm {
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    border: none;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-btn-md {
+    border-radius: 100%;
+    height: 48px;
+    width: 48px;
+    border: none;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-btn-sm {
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    border: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/*--- Hierarchy---*/
+.prim-i-btn {
+    background: var(--tone-primary-40);
+    color: var(--tone-primary-99);
+    transition: background-color 0.3s ease;
+}
+
+.sec-i-btn {
+    background: var(--tone-secondary-80);
+    color: var(--tone-secondary-30);
+    transition: background-color 0.3s ease;
+}
+
+.tert-i-btn {
+    background: var(--tone-tertiary-80);
+    color: var(--tone-tertiary-30);
+    transition: background-color 0.3s ease;
+}
+
+.outline-i-btn {
+    background: none;
+    border: 1.5px solid var(--tone-primary-40);
+    transition: background-color 0.3s ease;
+}
+
+.noborder-i-btn {
+    background: none;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/*--- State ---*/
+.prim-i-btn:hover {
+    background: var(--tone-primary-30);
+    transition: .4s;
+}
+
+.sec-i-btn:hover {
+    background: var(--tone-secondary-30);
+    transition: .4s;
+}
+
+.tert-i-btn:hover {
+    background: var(--tone-tertiary-40);
+    transition: .4s;
+}
+
+.outline-i-btn:hover {
+    background: var(--tone-secondary-90);
+    border: none;
+    transition: .4s;
+}
+
+.noborder-i-btn:hover {
+    background: none;
+    border: 1.5px solid var(--tone-primary-40);
+    transition: .4s;
+}

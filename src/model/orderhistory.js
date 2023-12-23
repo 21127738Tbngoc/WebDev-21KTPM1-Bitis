@@ -22,6 +22,7 @@ const OrderHistory = new mongoose.model('OrderHistory', new mongoose.Schema(
         subtotal: { type: Number, required: true },
         address: { type: Number, required: true },
         status: { type: String, default: "pending" },
+        time: {type: Date, required: true}
     },
     { timestamps: true },
 ));

@@ -1,19 +1,20 @@
 import Router from "express";
 import uploadImages from "../controller/images";
-import {CloudinaryStorage} from "multer-storage-cloudinary";
-import cloudinaryConfig from "../config/cloudinaryConfig";
+import cloudinary from "../config/cloudinaryConfig";
 
 const routerImages = Router();
 
-const storage = CloudinaryStorage(
-    {
-        cloudinary: cloudinaryConfig,
-        params: {
+routerImages.get("/get-signature", (req, res) => {
+    const timestamp = Math.round(new Date().getTime() / 1000)
+    const signature = cloudinary.utils.api_sign_request(
+        {
+            timestamp: timestamp
+        },
+        process.env.CLOUDINARY_API_SECRET
+    )
+    res.json({ timestamp, signature })
+})
 
-        }
-    }
-)
-
-routerImages.post("/upload", uploadImages);
+//routerImages.post("/upload", uploadImages);
 
 export default routerImages;

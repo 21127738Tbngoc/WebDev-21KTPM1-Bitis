@@ -10,22 +10,6 @@ const CustomerSchema = new mongoose.Schema(
         password: { type: String, required: true },
         address: { type: String },
         phone: { type: String },
-        orders: [
-            {
-                productId: {
-                    type: String,
-                },
-                variant: {
-                    color: { type: String },
-                    size: { type: String },
-                    pattern: { String },
-                },
-                quantity: {
-                    type: Number,
-                    default: 1,
-                },
-            },
-        ],
         isAdmin: {
             type: Boolean,
             default: false,

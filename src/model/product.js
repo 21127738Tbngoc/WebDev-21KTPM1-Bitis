@@ -9,9 +9,10 @@ const Product = new mongoose.model("Product", new mongoose.Schema(
         images: { type: Array, required: true },
         categories: { type: Array },
         brand: { type: String },
-        size: { type: String },
-        color: { type: String },
-        pattern: { type: String },
+        quantity: {type: JSON}
+        // size: { type: Array },
+        // color: { type: String },
+        // pattern: { type: String },
         feedback: [
             {
                 user: { type: Object },

@@ -1,0 +1,142 @@
+@charset "utf-8";
+@import url('../common.css');
+@import url('../button/buttons.css');
+
+* {
+    box-sizing: border-box;
+}
+
+/*--Hero banner--*/
+.hero-banner {
+    width: 100%;
+    width: 100%;
+    height: 662px;
+    object-fit: cover;
+}
+
+#hero-display {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--tone-primary-99);
+    text-align: center;
+}
+
+.hero-btn {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 180px;
+    transform: translate(-50%, -50%);
+}
+
+/*--Shop--*/
+.shop-bg {
+    width: 100%;
+    margin-top: 4em;
+}
+
+#shop-display, .shop-text {
+    position: absolute;
+}
+
+#shop-display {
+    margin-top: 450px;
+    color: var(--scheme-on-background);
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.shop-text {
+    top: 1324px;
+    color: var(--tone-neutral-variant-50);
+    left: 50%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.shop-btn {
+    position: absolute;
+    top: 1450px;
+    width: 180px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*--Category--*/
+#category-display {
+    text-align: center;
+    border-bottom: 1px solid var(--scheme-outline);
+    border-top: 1px solid var(--scheme-outline);
+    padding: 16px 0;
+    margin-top: 64px;
+}
+
+.category-section {
+    border-right: 1px solid var(--scheme-outline);
+    padding: 50px 0 0 72px;
+    height: 662px;
+    position: relative;
+}
+
+#bath-room {
+    border: none;
+}
+
+.category-text {
+    color: var(--tone-secondary-60);
+    margin-top: 1em;
+}
+
+.category-num {
+    color: var(--tone-primary-40);
+    font-family: display-font;
+    width: 100%;
+    text-align: right;
+    font-size: 250px;
+    line-height: 200px;
+    margin-top: 46px;
+    padding-right: 64px;
+}
+
+#bathroom-num {
+    margin-top: 160px;
+}
+
+.category-img {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    margin-left: -72px;
+    object-fit: contain;
+    top: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}   
+
+/*.category-section:hover .category-img {
+    opacity: 1;
+}*/
+
+.slide-border{
+    display: block;
+}
+
+/*--Featured products--*/
+#featured-display {
+    color: var(--scheme-on-primary);
+    padding: 24px 0;
+    border-bottom: 1px solid var(--scheme-on-primary);
+    border-top: 1px solid var(--scheme-on-primary);
+}
+
+.featured-section {
+    background: var(--tone-primary-40);
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
