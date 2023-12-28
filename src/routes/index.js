@@ -4,23 +4,23 @@ const router = express.Router();
 /* GET home page. USER router*/
 
 router.get('/', function (req, res, next) {
-    res.render('index', {title: 'Biti\'s', layout: 'user_layout.hbs'});
+    res.render('index', {title: 'Biti\'s', layout: 'main.hbs'});
 });
 
 router.get('/shop-nam', function (req, res, next) {
-    res.render('user/shop_nam', {title: 'Giày dép nam', layout: 'user_layout.hbs'});
+    res.render('user/shop_nam', {title: 'Giày dép nam', layout: 'main.hbs'});
 });
 
 router.get('/shop-nu', function (req, res, next) {
-    res.render('user/shop_nu', {title: 'Giày dép nữ', layout: 'user_layout.hbs'});
+    res.render('user/shop_nu', {title: 'Giày dép nữ', layout: 'main.hbs'});
 });
 
 router.get('/contact', function (req, res, next) {
-    res.render('user/contact', {title: 'Thông tin liên hệ', layout: 'user_layout.hbs'});
+    res.render('user/contact', {title: 'Thông tin liên hệ', layout: 'main.hbs'});
 });
 
 router.get('/about-us', function (req, res, next) {
-    res.render('user/about_us', {title: 'Thông tin liên hệ', layout: 'user_layout.hbs'});
+    res.render('user/about_us', {title: 'Thông tin liên hệ', layout: 'main.hbs'});
 });
 
 // ADMIN router

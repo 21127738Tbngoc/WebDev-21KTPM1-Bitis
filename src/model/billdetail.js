@@ -1,12 +1,16 @@
 const mongoose = require('mongoose');
 
-const BillDetail = new mongoose.Schema(
+const BillDetail = mongoose.model('BillDetail', new mongoose.Schema(
     {
-        order_id: Number,
-        bill_date: Date,
-        customer_id: Number,
-        detail: [mongoose.Schema.Types.Mixed],
+        id: {type: Number, required: true, unique: true},
+        user_id: {type: String, required: true, unique: true},
+        name: String,
+        address: String,
+        detail: Array,
+        shipping_cost: Number,
+        total_cost: Number,
+        date: Date,
     }
-);
+));
 
-module.exports = mongoose.model('BillDetail', BillDetail);
+module.exports = BillDetail;

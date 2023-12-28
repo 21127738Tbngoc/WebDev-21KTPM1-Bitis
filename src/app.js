@@ -4,57 +4,65 @@ const app = express();
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-import {create} from 'express-handlebars';
 const session = require("express-session");
-const passport = require('passport');
-const mongoose = require("mongoose");
-const dotenv = require("dotenv")
+const {mongoose} = require("mongoose");
+const dotenv= require("dotenv")
+const {engine} = require("express-handlebars");
+const cors = require("cors");
 
+const MainRouter = require('./routes/index.js');
+const AuthRouter = require("./routes/auth");
+const ProductRouter = require("./routes/product");
+const AdminRouter = require("./routes/user");
 
-const Router = require('./routes/index.js');
-const AuthRouter = require('./routes/auth.js');
+// Router implementations
+app.use('/', MainRouter);
+app.use('/auth/',AuthRouter);
+app.use('/product/', ProductRouter);
+app.use('/admin/',AdminRouter);
 
 dotenv.config();
 
 mongoose
     .connect(process.env.DB_URI)
-    .then(() => console.log("DB Connection Successfull!"))
+    .then(() => console.log("DB Connection Successfully!"))
     .catch((err) => {
         console.log(err);
     });
 
+app.engine('hbs', engine(
+    {
+        extname: '.hbs',
+        defaultLayout: 'main.hbs',
+        layoutsDir: path.join(__dirname,'views/layouts'),
+        partialsDir: path.join(__dirname,'views/partials'),
+    }
+));
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
+require("dotenv").config()
+
 app.set('view engine', 'hbs');
+app.set('views', 'views');
+app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
-app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/', Router);
 
 
 //Setup session
 app.use(session({
     resave: false,
-    saveUninitialized: false
-}));
+    saveUninitialized: false,
+}))
 
+//
+// //Initialize passport
+// app.use(passport.initialize());
+//
+// //Use passport to deal with session
+// app.use(passport.session());
 
-//Initialize passport
-app.use(passport.initialize());
-
-//Use passport to deal with session
-app.use(passport.session());
-
-const hbs = create({
-    // Uses multiple partials dirs, templates in "shared/templates/" are shared
-    // with the client-side of the app (see below).
-    partialsDir: [
-        "views/partials/",
-    ],
-});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -72,4 +80,7 @@ app.use(function (err, req, res, next) {
     res.render('error');
 });
 
-module.exports = app;
+app.listen(process.env.PORT || 3000, () => {
+    console.log("Listening on port 3000!");
+
+});
