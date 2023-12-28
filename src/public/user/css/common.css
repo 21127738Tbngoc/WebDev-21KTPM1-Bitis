@@ -166,6 +166,7 @@ p {
 }
 .loginbag-btn {
     border: none;
+    background: none;
 }
 
 .nav-link:hover {
@@ -349,7 +350,6 @@ ul.breadcrumb {
     margin: 0.5em 0;
     padding: 10px 0;
     list-style: none;
-    background-color: #eee;
 }
 ul.breadcrumb li {
     display: inline;
@@ -460,4 +460,8 @@ input, textarea {
 }
 .footer-logo {
     margin-top: -20px; 
+}
+
+ul {
+    list-style-type: none;
 }
