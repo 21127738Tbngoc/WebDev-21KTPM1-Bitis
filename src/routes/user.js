@@ -53,12 +53,7 @@ router.get("/find/:id", async (req, res) => {
             return res.status(e.code).json(e.message)
         }
     }
-    try {
-        const product = await User.findOne({id: req.body.id});
-        res.status(200).json(product);
-    } catch (err) {
-        res.status(500).json(err.message);
-    }
+
 });
 
 //FIND ALL USERS (OR WITH FILTER)

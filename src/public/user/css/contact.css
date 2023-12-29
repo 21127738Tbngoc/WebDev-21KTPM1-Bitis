@@ -19,7 +19,7 @@
 }
 
 /*--- Contact info ---*/
-.info-list, .info-list li {
+.info-list, .info-list li, .info-list ul {
     list-style-type: none;
     margin: 0.5em 0 0 0;
     padding: 0;
@@ -81,8 +81,6 @@ input, textarea {
     transform: translateY(-50%);
     cursor: pointer;
 }
-
-
 
 
 
