@@ -53,7 +53,6 @@ router.get("/find/:id", async (req, res) => {
             return res.status(e.code).json(e.message)
         }
     }
-
 });
 
 //FIND ALL USERS (OR WITH FILTER)
