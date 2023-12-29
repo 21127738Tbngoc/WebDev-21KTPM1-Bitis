@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
+const findOrCreate = require('mongoose-findorcreate');
+
 const User = mongoose.model("User", new mongoose.Schema(
     {
-        id: {type: Number},
+        id: { type: Number },
         avatar: { type: String },
         name: { type: String },
         username: { type: String, required: true, unique: true },
@@ -13,9 +15,12 @@ const User = mongoose.model("User", new mongoose.Schema(
             type: Boolean,
             default: false,
         },
-
     },
     { timestamps: true }
-));
+).plugin(findOrCreate));
+
 module.exports = User;
+
+
+
 

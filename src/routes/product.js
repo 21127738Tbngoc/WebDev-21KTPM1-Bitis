@@ -41,7 +41,7 @@ router.delete("/delete/:id", async (req, res) => {
 //GET PRODUCT
 router.get("/find/:id", async (req, res) => {
     try {
-        const product = await Product.findOne({id: req.body.id});
+        const product = await Product.findOne({id: req.params.id});
         res.status(200).json(product);
     } catch (err) {
         res.status(500).json(err.message);
@@ -49,31 +49,32 @@ router.get("/find/:id", async (req, res) => {
 });
 
 //GET ALL PRODUCTS
-router.get("/", async (req, res) => {
-    const qNew = req.body.new;
-    const qCategory = req.body.categories;
-    try {
-        let products;
-        if (qNew) {
-            products = await Product.find().sort({date: -1}).limit(4);
-        } else if (qCategory) {
-            products = await Product.find({
-                categories: {
-                    $in: [qCategory],
-                },
-            }).catch((err) => {
-                console.log(err.code)
-            });
-        } else {
-            products = await Product.find();
-        }
-        res.status(200).json(products);
-    } catch
-        (err) {
-        res.status(500).json(err);
-    }
-
-})
-;
+router.post("/", async (req, res) => {
+    
+    // const qNew = req.body.isNew;
+    // const qCategory = req.body.categories;
+    // try {
+    //     let products;
+    //     if (qNew) {
+    //         products = await Product.find().sort({date: -1}).limit(4);
+    //     } else if (qCategory) {
+    //         products = await Product.find({
+    //             categories: {
+    //                 $in: [qCategory],
+    //             },
+    //         }).catch((err) => {
+    //             console.log(err.code)
+    //         });
+    //     } else {
+    //         products = await Product.find();
+    //     }
+    //     res.status(200).json(products);
+    // } catch
+    //     (err) {
+    //     res.status(500).json(err);
+    // }
+    console.log(req.query)
+    res.status(200).json("post thanh cong")
+});
 
 module.exports = router;

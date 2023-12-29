@@ -3,6 +3,7 @@ import axios from 'axios';
 
 export const AddProductHandler = async (data) => {
     data.preventDefault();
+
     try {
         const files = data.files.map(file => file.path);
         console.log(files);
@@ -11,7 +12,8 @@ export const AddProductHandler = async (data) => {
             console.log("No files selected for upload");
             return;
         }
-        const newPhotoArray = uploadImages(files)
+
+        const newPhotoArray = uploadImages(files);
 
         const product = {
             id: data.id,
@@ -26,9 +28,12 @@ export const AddProductHandler = async (data) => {
             quantity: data.quantity,
             date: Date.now(),
             status: data.status,
-        }
+        };
+
         console.log(product);
-        return await axios.post("https://localhost:3000/admin/add-product", product)
+
+        return await axios.post("https://localhost:3000/admin/add-product", product);
+        
     } catch (err) {
         return err.message;
     }

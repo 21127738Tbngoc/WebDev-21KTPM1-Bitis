@@ -9,9 +9,10 @@ const {mongoose} = require("mongoose");
 const dotenv= require("dotenv")
 const {engine} = require("express-handlebars");
 const cors = require("cors");
+const MongoStore = require('connect-mongo');
 
 const MainRouter = require('./routes/index.js');
-const AuthRouter = require("./routes/auth");
+const AuthRouter = require("./routes/__auth.js");
 const ProductRouter = require("./routes/product");
 const AdminRouter = require("./routes/user");
 
@@ -54,12 +55,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
     resave: false,
     saveUninitialized: false,
+    store: new SQLiteStore({ db: 'sessions.db', dir: './var/db' })
 }))
 
-//
-// //Initialize passport
-// app.use(passport.initialize());
-//
+
+//Initialize passport
+app.use(passport.initialize());
+
 // //Use passport to deal with session
 // app.use(passport.session());
 
@@ -84,3 +86,5 @@ app.listen(process.env.PORT || 3000, () => {
     console.log("Listening on port 3000!");
 
 });
+
+module.exports = app;
