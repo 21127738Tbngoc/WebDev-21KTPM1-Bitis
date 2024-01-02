@@ -47,6 +47,21 @@
 
             quantityInput.value = currentQuantity + 1;
         }
+
+        //Product variants
+        function selectSize(sizeButton) {
+            const sizeButtons = document.querySelectorAll('.product-sizes button');
+            sizeButtons.forEach(button => button.style.border = 'none');
+            sizeButton.style.border = '2px solid black';
+            console.log("Selected size: " + sizeButton.textContent);
+        }
+
+        function selectColor(colorButton) {
+            const colorButtons = document.querySelectorAll('.product-color button');
+            colorButtons.forEach(button => button.style.border = 'none');
+            colorButton.style.border = '2px solid black';
+            console.log("Selected color: " + colorButton.style.backgroundColor);
+        }
     </script>
 
     
@@ -123,7 +138,7 @@
     <!--Product rating & reviews-->
     <div class="container-fluid">
         <div class="container">
-            
+
         </div>
     </div>
 
