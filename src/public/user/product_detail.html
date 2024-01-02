@@ -93,7 +93,7 @@
                         <!--Product price-->
                         <h3 class="product-price"> 290,000 ₫</h3>
                         <!--Product stock-->
-                        <p>Tình trạng: <a class="product-stock">Còn hàng (20)</span> </a>
+                        <p>Tình trạng: <a class="product-stock"><strong>Còn hàng (32)</strong></a>
                         <!--Product description-->
                         <p class="product-description" style="font-size: 14px;">
                             Nâng tầm mỗi bước chạy với đôi giày chạy bộ hiệu suất cao của chúng tôi! Thiết kế với vật liệu nhẹ và đế đàn hồi, đôi giày này mang lại sự thoải mái và hỗ trợ vô song qua từng dặm đường. Phần upper bằng vải lưới thông thoáng giúp giữ đôi chân mát mẻ trong khi lớp lót đệm hấp thụ lực tác động.
@@ -103,20 +103,20 @@
                             <div class="product-sizes">
                                 <p style="margin: 0;">Kích thước:</p>
                                 <div class="product-size d-flex">
-                                    <button>38</button>
-                                    <button>39</button>
-                                    <button>40</button>
-                                    <button>41</button>
-                                    <button>42</button>
-                                    <button>43</button>
+                                    <button onclick="selectSize(this)">38</button>
+                                    <button onclick="selectSize(this)">39</button>
+                                    <button onclick="selectSize(this)">40</button>
+                                    <button onclick="selectSize(this)">41</button>
+                                    <button onclick="selectSize(this)">42</button>
+                                    <button onclick="selectSize(this)">43</button>
                                 </div>
                             </div>
                             <div class="product-color">
                                 <p style="margin: 0;">Màu sắc:</p>
-                                <div class="">
-                                    <button class="color-option me-2" style="background-color:gray;"></button>
-                                    <button class="color-option me-2" style="background-color:#fff"></button>
-                                    <button class="color-option me-2" style="background-color:#000"></button>
+                                <div class="color-option d-flex">
+                                    <button style="background-color:gray" onclick="selectColor(this)"></button>
+                                    <button style="background-color:rgb(240, 240, 240)" onclick="selectColor(this)"></button>
+                                    <button style="background-color:black" onclick="selectColor(this)"></button>
                                 </div>
                             </div>
                         </div>
