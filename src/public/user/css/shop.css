@@ -37,7 +37,7 @@
     background-color: #ffc008;
 }
 .color-option {
-    border-radius: 50%;
+    border-radius: 0%;
     width: 25px;
     height: 25px;
     display: inline-block;

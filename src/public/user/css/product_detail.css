@@ -1,0 +1,130 @@
+.product-display{
+    display: flex;
+    flex-direction: row;
+}
+
+.left-display{
+    gap: 24px;
+    display: flex;
+    flex-direction: row;
+}
+
+.right-display{
+    margin: 2em 0;
+}
+
+.product-img-list{
+    margin: 2em 0 0 0;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.product-img-list img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s ease-in-out;
+}
+
+/* Add overlay on hover */
+.product-img-list img:hover {
+    filter: brightness(90%);
+}
+
+.product-thumbnail {
+    margin: 2em 0 0 0;
+    width: 100%;
+    height: auto;
+    position: relative; /* Required for z-index stacking */
+}
+
+.product-rating {
+    display: flex;
+    flex-direction: row;
+    height: 24px;
+}
+
+.product-rating p {
+    line-height: 20px;
+    margin: 0 0 0 8px;
+    color: gray;
+}
+
+.product-rating img {
+    height: 20px;
+    width: auto;
+}
+
+.product-price {
+    font-size: 26px;
+}
+
+.product-sizes{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 0;
+}
+
+.product-size button {
+    margin: 0 16px 0 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 0px;
+    border: none;
+}
+
+.product-size button:hover {
+    border: 2px solid black;
+}
+.right-display p {
+    font-size: 12px;
+}
+
+.product-stock {
+    color: #407ee0;
+}
+
+.product-quantity {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 0;
+}
+
+.product-quantity input[type=button], .product-quantity input[type=text] {
+    width: 40px;
+    border-radius: 0;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+}
+
+.product-quantity input[type=text] {
+    border-right: none;
+    border-left: none;
+}
+
+.products-variants{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 2em;
+}
+
+.color-option {
+    border-radius: 0%;
+    margin-right: 16px;
+    width: 39.5px;
+    height: 39.5px;
+    display: inline-block;
+    border: 0.5px solid rgb(186, 186, 186);
+}
+
+.color-option:hover {
+    border: 2px solid black;
+    width: 40px;
+    height: 40px;
+}
