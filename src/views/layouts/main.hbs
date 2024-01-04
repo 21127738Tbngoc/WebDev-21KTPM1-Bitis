@@ -12,6 +12,8 @@
     <link type="text/css" href="user/css/formstyle.css" rel="stylesheet">
     <link href="user/css/common.css" rel="stylesheet">
     <link href="user/css/home.css" rel="stylesheet">
+    <link href="user/css/OrderHistory.css" rel="stylesheet">
+    <link href="user/css/Dashboard.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
     <link href="user/css/shop.css" rel="stylesheet">
@@ -26,10 +28,13 @@
     <title>{{title}}</title>
 </head>
 
-<body>
-{{> navbar}}
+<>
+{{> navbar user=UserData}}
 {{{body}}}
 {{> footer}}
-</body>
 
+<script src="user/js/customJS/form_constraints.js"></script>
+<script src="user/js/customJS/pagination.js"></script>
+<script src="user/js/customJS/DBQuery.js"></script>
+</body>
 </html>

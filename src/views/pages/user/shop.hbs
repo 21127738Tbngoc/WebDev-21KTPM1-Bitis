@@ -1,0 +1,54 @@
+<!--Breadcrumb & Banner-->
+{{#if Nam}}
+    <!--------- Breadcrumb --------->
+    <div class="container-fluid">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="/">TRANG CHỦ</a></li>
+                <li><a href="#">SẢN PHẨM</a></li>
+                <li>GIÀY NAM</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--------- Banner --------->
+    <div class="banner">
+        <img src="user/img/shop_banner_nam.png" alt="banner">
+    </div>
+{{else}}
+    <!--------- Breadcrumb --------->
+    <div class="container-fluid">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="/">TRANG CHỦ</a></li>
+                <li><a href="#">SẢN PHẨM</a></li>
+                <li>GIÀY DÉP NỮ</li>
+            </ul>
+        </div>
+    </div>
+    <!--------- Banner --------->
+    <div class="banner">
+        <img src="user/img/shop_banner_nu.jpg" alt="banner">
+    </div>
+
+{{/if}}
+
+<!--------- Products --------->
+<div class="container-fluid">
+    <div class="container" style="display: flex">
+        <div class="row g-3" id="page-content"  style="flex: 1">
+            {{#if Nam}}
+                {{> filter_nam}}
+            {{else}}
+                {{> filter_nu}}
+            {{/if}}
+
+            <!--------- Products --------->
+            <div id="product-container" style="display: flex; flex:1; flex-wrap: wrap;">
+            {{> paging Products=Products}}
+            </div>
+            <!----- Pagination ----------->
+
+        </div>
+    </div>
+</div>

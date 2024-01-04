@@ -1,5 +1,9 @@
-const Product = require('../model/product.js')
+const Product = require('../../model/product.js')
+const mongoose = require("mongoose");
 const router = require("express").Router();
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 //CREATE
 router.post("/add", async (req, res) => {
@@ -49,32 +53,28 @@ router.get("/find/:id", async (req, res) => {
 });
 
 //GET ALL PRODUCTS
-router.post("/", async (req, res) => {
-    
-    // const qNew = req.body.isNew;
-    // const qCategory = req.body.categories;
-    // try {
-    //     let products;
-    //     if (qNew) {
-    //         products = await Product.find().sort({date: -1}).limit(4);
-    //     } else if (qCategory) {
-    //         products = await Product.find({
-    //             categories: {
-    //                 $in: [qCategory],
-    //             },
-    //         }).catch((err) => {
-    //             console.log(err.code)
-    //         });
-    //     } else {
-    //         products = await Product.find();
-    //     }
-    //     res.status(200).json(products);
-    // } catch
-    //     (err) {
-    //     res.status(500).json(err);
-    // }
+router.get("/", async (req, res) => {
     console.log(req.query)
-    res.status(200).json("post thanh cong")
+    const qFilter = req.query.filter || {};
+    const qSort = req.query.sort || {date: -1};
+    const qLimit = req.query.limit || 2**32;
+
+    try {
+        // Truy van theo yeu cau
+        let products = await Product.find(qFilter).sort(qSort).limit(qLimit);
+        // Trich xuat 1 trang san pham (pagination)
+        // let result = [];
+        // for (let i = process.env.PAGE_SIZE * qPage; i < process.env.PAGE_SIZE * (qPage + 1); i++) {
+        //     if (products[i])
+        //     {
+        //         result.push(products[i])
+        //     }
+        // }
+        res.status(200).json(products);
+    } catch
+        (err) {
+        res.status(500).json(err.message);
+    }
 });
 
 module.exports = router;

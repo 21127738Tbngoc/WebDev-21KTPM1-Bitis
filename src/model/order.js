@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
-const BillDetail = mongoose.model('BillDetail', new mongoose.Schema(
+const Order = mongoose.model('Order', new mongoose.Schema(
     {
         id: {type: Number, required: true, unique: true},
-        user_id: {type: String, required: true, unique: true},
+        user_id: {type: String, required: true},
         name: String,
         address: String,
         detail: Array,
@@ -13,4 +13,4 @@ const BillDetail = mongoose.model('BillDetail', new mongoose.Schema(
     }
 ));
 
-module.exports = BillDetail;
+module.exports = Order;

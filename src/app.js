@@ -6,21 +6,23 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const session = require("express-session");
 const {mongoose} = require("mongoose");
-const dotenv= require("dotenv")
-const {engine} = require("express-handlebars");
+const dotenv = require("dotenv")
+const hbs = require("express-handlebars");
+
 const cors = require("cors");
-const MongoStore = require('connect-mongo');
+const passport = require('passport');
 
 const MainRouter = require('./routes/index.js');
-const AuthRouter = require("./routes/__auth.js");
-const ProductRouter = require("./routes/product");
-const AdminRouter = require("./routes/user");
-
+const AuthRouter = require("./routes/api/auth.js");
+const ProductRouter = require("./routes/api/product.js");
+const AdminRouter = require("./routes/api/user.js");
+const OrderRouter = require('./routes/api/order.js')
 // Router implementations
 app.use('/', MainRouter);
-app.use('/auth/',AuthRouter);
+app.use('/auth/', AuthRouter);
 app.use('/product/', ProductRouter);
-app.use('/admin/',AdminRouter);
+app.use('/admin/', AdminRouter);
+app.use('/order/', OrderRouter);
 
 dotenv.config();
 
@@ -31,16 +33,24 @@ mongoose
         console.log(err);
     });
 
-app.engine('hbs', engine(
+app.engine('hbs', hbs.engine(
     {
         extname: '.hbs',
         defaultLayout: 'main.hbs',
-        layoutsDir: path.join(__dirname,'views/layouts'),
-        partialsDir: path.join(__dirname,'views/partials'),
+        layoutsDir: path.join(__dirname, 'views/layouts'),
+        partialsDir: path.join(__dirname, 'views/partials'),
+        helpers: {
+            page_amount(props) {
+                let pages = []
+                for (let i = 1; i < props.length / 24 + 1; i++) {
+                    pages.push(i);
+                }
+                return pages;
+            }
+        }
     }
 ));
 
-require("dotenv").config()
 
 app.set('view engine', 'hbs');
 app.set('views', 'views');
@@ -49,22 +59,6 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
-
-
-//Setup session
-app.use(session({
-    resave: false,
-    saveUninitialized: false,
-    store: new SQLiteStore({ db: 'sessions.db', dir: './var/db' })
-}))
-
-
-//Initialize passport
-app.use(passport.initialize());
-
-// //Use passport to deal with session
-// app.use(passport.session());
-
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -79,12 +73,7 @@ app.use(function (err, req, res, next) {
 
     // render the error page
     res.status(err.status || 500);
-    res.render('error');
-});
-
-app.listen(process.env.PORT || 3000, () => {
-    console.log("Listening on port 3000!");
-
+    res.render('pages/error');
 });
 
 module.exports = app;

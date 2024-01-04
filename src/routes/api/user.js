@@ -1,4 +1,4 @@
-const User = require('../model/user')
+const User = require('../../model/user')
 const router = require("express").Router();
 
 // //CREATE
@@ -57,23 +57,16 @@ router.get("/find/:id", async (req, res) => {
 
 //FIND ALL USERS (OR WITH FILTER)
 router.get("/", async (req, res) => {
-    const qNew = req.body.new;
-    const filter = req.body.filter;
+    const qFilter = req.query.filter || {};
+    const qSort = req.query.sort || {name:-1};
+    const qLimit = req.query.limit || 2**32;
+
     try {
-        let users;
-        if (qNew) {
-            users = await User.find().sort({date: -1}).limit(4);
-        } else if (filter) {
-            users = await User.find(filter).catch((err) =>
-            {
-                console.log(err.code)
-            });
-        } else {
-            users = await User.find({});
-        }
-        res.status(200).json(users);
-    } catch (err) {
-        res.status(500).json(err);
+        let Users = await User.find(qFilter).sort(qSort).limit(qLimit);
+        res.status(200).json(Users);
+    } catch
+        (err) {
+        res.status(500).json(err.message);
     }
 });
 
