@@ -102,7 +102,7 @@
                         <div class="products-variants mb-3">
                             <div class="product-sizes">
                                 <p style="margin: 0;">Kích thước:</p>
-                                <div class="product-size d-flex">
+                                <div class="size-option d-flex">
                                     <button onclick="selectSize(this)">38</button>
                                     <button onclick="selectSize(this)">39</button>
                                     <button onclick="selectSize(this)">40</button>
@@ -128,7 +128,10 @@
                                 <input type="button" value="+" onclick="plusQuantity()" class="qty-btn">
                             </div>
                         </div>
-                        <button class="primary-button mb-3" onclick="addToCart(productId)">ADD TO CART</button>
+                        <div class="d-flex">
+                            <button class="primary-button mb-3 me-3" onclick="addToCart(productId)">ADD TO CART</button>
+                            <button class="outline-button mb-3" onclick="addToCart(productId)">BUY NOW</button>
+                        </div>    
                     </div> 
                 </div>
             </div>

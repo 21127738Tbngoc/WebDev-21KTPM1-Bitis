@@ -68,7 +68,7 @@
     gap: 0;
 }
 
-.product-size button, .color-option button {
+.size-option button, .color-option button {
     margin: 0 16px 0 0;
     height: 40px;
     width: 40px;
@@ -76,7 +76,7 @@
     border: none;
 }
 
-.product-size button:hover, .color-option button:hover {
+.size-option button:hover, .color-option button:hover {
     border: 2px solid black;
 }
 .right-display p {

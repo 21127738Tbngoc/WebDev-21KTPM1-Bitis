@@ -91,6 +91,7 @@ p {
     padding: 6.5px 20px;
     border-radius: 4px;
     border: 1.5px solid #000;
+    background-color: white;
     cursor: pointer;
     font-family: subtitle;
     font-size: 14px;
