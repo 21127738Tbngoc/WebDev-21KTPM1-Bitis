@@ -9,7 +9,6 @@ const {mongoose} = require("mongoose");
 const dotenv= require("dotenv")
 const {engine} = require("express-handlebars");
 const cors = require("cors");
-const MongoStore = require('connect-mongo');
 
 const MainRouter = require('./routes/index.js');
 const AuthRouter = require("./routes/__auth.js");

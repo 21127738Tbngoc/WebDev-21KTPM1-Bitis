@@ -36,6 +36,12 @@
 .product-filter img:hover {
     background-color: #ffc008;
 }
+.product-filter a {
+    text-decoration: none;
+    color: #1d1d1d;
+    font-family: subtitle;
+    background-color: #e4e7e6;
+}
 .color-option button {
     margin: 0 16px 0 0;
     height: 40px;
@@ -45,10 +51,4 @@
 }
 .color-option button:hover {
     border: 2px solid black;
-}
-.product-filter a {
-    text-decoration: none;
-    color: #1d1d1d;
-    font-family: subtitle;
-    background-color: #e4e7e6;
 }

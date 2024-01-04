@@ -1,18 +1,12 @@
 <script>
-    //Product variants
-    function selectSize(sizeButton) {
-        const sizeButtons = document.querySelectorAll('.product-sizes button');
-        sizeButtons.forEach(button => button.style.border = 'none');
-        sizeButton.style.border = '2px solid black';
-        console.log("Selected size: " + sizeButton.textContent);
-    }
-
+    //Product Filter
     function selectColor(colorButton) {
         const colorButtons = document.querySelectorAll('.product-color button');
         colorButtons.forEach(button => button.style.border = 'none');
         colorButton.style.border = '2px solid black';
         console.log("Selected color: " + colorButton.style.backgroundColor);
     }    
+
 </script>
 
 <div class="col-3 product-filter">
@@ -39,10 +33,19 @@
             <button style="background-color:#178d7c" onclick="selectColor(this)"></button>
             <button style="background-color:#23b551" onclick="selectColor(this)"></button>
             <button style="background-color:#88e23c" onclick="selectColor(this)"></button>
-            <button style="background-color:rgb(240, 240, 240)" onclick="selectColor(this)"></button>
-            
+            <button style="background-color:rgb(240, 240, 240)" onclick="selectColor(this)"></button>   
         </div>
     </div>
     <h6 class="py-2 mb-3 border-bottom"><i class="las la-sort" style="font-size: 20px;"></i>&nbsp;&nbsp;Sắp xếp theo</h6>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown button
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+    </div>
             
 </div>
