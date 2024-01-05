@@ -8,13 +8,13 @@ const session = require("express-session");
 const {mongoose} = require("mongoose");
 const dotenv = require("dotenv")
 const hbs = require("express-handlebars");
-
 const cors = require("cors");
 const MainRouter = require('./routes/index.js');
 const AuthRouter = require("./routes/api/auth.js");
 const ProductRouter = require("./routes/api/product.js");
 const AdminRouter = require("./routes/api/user.js");
 const OrderRouter = require('./routes/api/order.js')
+
 // Router implementations
 app.use('/', MainRouter);
 app.use('/auth/', AuthRouter);
@@ -48,7 +48,6 @@ app.engine('hbs', hbs.engine(
         }
     }
 ));
-
 
 app.set('view engine', 'hbs');
 app.set('views', 'views');
