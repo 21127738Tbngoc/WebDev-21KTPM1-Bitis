@@ -36,29 +36,19 @@
 .product-filter img:hover {
     background-color: #ffc008;
 }
-.color-option {
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-    border: 0.8px solid rgb(186, 186, 186);
-}
-.color-option:hover {
-    border: 1.5px solid #000000;
-    box-shadow: none;
-}
-.size-option {
-    border-radius: 4px;
-    padding: 8px;
-    display: inline-block;
-    margin-bottom: 0.3em;
-}
 .product-filter a {
     text-decoration: none;
     color: #1d1d1d;
     font-family: subtitle;
     background-color: #e4e7e6;
 }
-.size-option:hover {
-    background-color:#ffc008;
+.color-option button {
+    margin: 0 16px 0 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 0px;
+    border: none;
+}
+.color-option button:hover {
+    border: 2px solid black;
 }

@@ -10,8 +10,6 @@ const dotenv = require("dotenv")
 const hbs = require("express-handlebars");
 
 const cors = require("cors");
-const passport = require('passport');
-
 const MainRouter = require('./routes/index.js');
 const AuthRouter = require("./routes/api/auth.js");
 const ProductRouter = require("./routes/api/product.js");
