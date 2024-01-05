@@ -15,7 +15,7 @@
 <!-- Javascript Login modal-->
 <script>
     // Open the login modal
-    document.getElementById('loginBtn').addEventListener('click', openModal);
+    document.getElementById('NavBar-loginBtn').addEventListener('click', openModal);
 
     function closeModal() {
         document.getElementById('loginModal').style.display = 'none';
@@ -73,7 +73,7 @@
     }
 
     console.log("Hello from modal.hbs")
-    const {axios} = require("axios");
+    import {axios} from "axios";
     const User = require("../../../../model/user")
 
     async function dataValidate(Data)
@@ -127,7 +127,7 @@
         document.querySelector('#password-notice').innerHTML = checkPasswordStrength(password)
         document.querySelector('#email-notice').innerHTML = dataValidate({email: email.value})
     }
-    $('#email-notice').HTML = "Email";
+    $('#email-notice').HTML = "Helloooooooo";
 </script>
 
 

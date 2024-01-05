@@ -36,7 +36,7 @@
 <!--------- Products --------->
 <div class="container-fluid">
     <div class="container" style="display: flex">
-        <div class="row g-3" id="page-content"  style="flex: 1">
+        <div class="row g-3" id="page-content"  style=" display: flex; flex: 1">
             {{#if Nam}}
                 {{> filter_nam}}
             {{else}}
@@ -44,11 +44,21 @@
             {{/if}}
 
             <!--------- Products --------->
-            <div id="product-container" style="display: flex; flex:1; flex-wrap: wrap;">
-            {{> paging Products=Products}}
+            <div id="product-container" style="display: flex; flex: 1; flex-wrap: wrap">
+            {{#each Products}}
+                {{> product_card product=this}}
+            {{/each}}
             </div>
             <!----- Pagination ----------->
+            <ul id="page-bar">
+            </ul>
 
         </div>
     </div>
 </div>
+<script>
+    for (let i = 0; i < 10; i++)
+    {
+        $('#page-bar').append($(`<li><button>${i}</button></li>`));
+    }
+</script>

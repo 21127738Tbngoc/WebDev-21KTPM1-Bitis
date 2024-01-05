@@ -7,7 +7,7 @@ const logger = require('morgan');
 const session = require("express-session");
 const {mongoose} = require("mongoose");
 const dotenv = require("dotenv")
-const hbs = require("express-handlebars");
+const hbs = require("./handlebarsConfig");
 const cors = require("cors");
 const MainRouter = require('./routes/index.js');
 const AuthRouter = require("./routes/api/auth.js");
@@ -31,24 +31,7 @@ mongoose
         console.log(err);
     });
 
-app.engine('hbs', hbs.engine(
-    {
-        extname: '.hbs',
-        defaultLayout: 'main.hbs',
-        layoutsDir: path.join(__dirname, 'views/layouts'),
-        partialsDir: path.join(__dirname, 'views/partials'),
-        helpers: {
-            page_amount(props) {
-                let pages = []
-                for (let i = 1; i < props.length / 24 + 1; i++) {
-                    pages.push(i);
-                }
-                return pages;
-            }
-        }
-    }
-));
-
+app.engine('.hbs',hbs)
 app.set('view engine', 'hbs');
 app.set('views', 'views');
 app.use(cors());

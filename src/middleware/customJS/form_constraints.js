@@ -1,4 +1,4 @@
-const User = require("../../../../model/user")
+const User = require("../../model/user")
 
 async function dataValidate(Data)
 {

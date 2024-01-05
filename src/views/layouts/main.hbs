@@ -8,7 +8,6 @@
     <link type="text/css" href="user/bootstrap-5/css/bootstrap.min.css" rel="stylesheet">
     <script src="user/bootstrap-5/js/bootstrap.bundle.min.js"></script>
     <!-- CSS -->
-    <link href="user/css/formstyle.css" rel="stylesheet">
     <link href="user/css/common.css" rel="stylesheet">
     <link href="user/css/home.css" rel="stylesheet">
     <link href="user/css/OrderHistory.css" rel="stylesheet">
@@ -19,23 +18,27 @@
     <!-- Icons -->
     <link type="text/css" rel="stylesheet" href="user/icon/css/line-awesome.min.css">
     <!-- Sirv -->
-<!--    <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>-->
-    <script type="module" src="user/resources/init.js"></script>
+    <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+<!--    <script type="module" src="user/resources/init.js"></script>-->
     <!-- JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <title>{{title}}</title>
+
 </head>
 <body>
 
 {{> navbar user=UserData}}
+<script src="user/js/customJS/form_constraints.js"></script>
+
 {{{body}}}
+
 {{> footer}}
 
+
+<!--<script src="user/js/customJS/pagination.js"></script>-->
+<!--<script src="user/js/customJS/DBQuery.js"></script>-->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="user/js/customJS/form_constraints.js"></script>
-<script src="user/js/customJS/pagination.js"></script>
-<script src="user/js/customJS/DBQuery.js"></script>
 </body>
 </html>

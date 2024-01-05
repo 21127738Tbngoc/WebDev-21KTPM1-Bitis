@@ -3,7 +3,7 @@
     <h3 class="row justify-content-center align-content-center">SẢN PHẨM MỚI</h3>
     <!-- New product cards -->
     {{#each NewProducts}}
-        {{> product_card product=this}}
+        {{> index_product_card product=this}}
     {{/each}}
     <div class="row justify-content-center align-content-center d-flex">
         <a href="/shop-nam" class="link-button">CÒN NHIỀU LẮM, XEM THÊM</a>
@@ -12,10 +12,9 @@
 
     <!--------- Sản phẩm bán chạy --------->
     <h3 class="row justify-content-center align-content-center">BÁN CHẠY</h3>
-    <!-- Product card 1 -->
     {{#each BestSellers}}
-    {{> product_card product=this}}
-{{/each}}
+        {{> index_product_card product=this}}
+    {{/each}}
     <div class="row justify-content-center align-content-center d-flex">
         <a href="/shop-all" class="link-button">CÒN NHIỀU LẮM, XEM THÊM</a>
     </div>
