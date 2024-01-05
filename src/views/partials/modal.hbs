@@ -27,9 +27,53 @@
 </script>
 
 
+<!-- Sign up modal -->
+<div class="overlay" id="signupOverlay"></div>
+<div class="modal" id="signupModal">
+    <div class="modal-content">
+        <span class="close" onclick={closeSignupModal()}>&times;</span>
+        <img src="user/img/logo.png" style="width: 25%;margin-top: 1em;">
+        <h3>Đăng ký</h3>
+        <form id="signup-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="nguyenvana" required >
+            <p id="username-notice"></p>
+        
+            <label for="username">Email</label>
+            <input type="text" id="email" name="username" placeholder="nguyenvana@gmail.com" required >
+            <p id="email-notice">Hello</p>
+
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" name="username" placeholder="••••••••••••••••" required >
+            <p id="password-notice">Hello</p>
+
+            <p class="additional-text">Quên mật khẩu?</p>
+            <button type="submit" class="btn primary-button">Đăng ký</button>
+            <br>
+            <p>Đã có tài khoản? <a class="link-button-small" href="#">Đăng nhập ngay</a></p>
+        </form>
+    </div>
+</div>
+
+<!-- Javascript Sign up modal-->
 <script>
+    // Open the sign up modal
+    document.getElementById('NavBar-signupBtn').addEventListener('click', openSignupModal);
+
+    // Close the sign up modal
+    function closeSignupModal() {
+        document.getElementById('signupModal').style.display = 'none';
+        document.getElementById('signupOverlay').style.display = 'none';
+    }
+
+    // Open the signup modal
+    function openSignupModal() {
+        document.getElementById('signupModal').style.display = 'block';
+        document.getElementById('signupOverlay').style.display = 'block';
+    }
+
     console.log("Hello from modal.hbs")
-    import axios from "axios";
+    const {axios} = require("axios");
     const User = require("../../../../model/user")
 
     async function dataValidate(Data)
@@ -83,50 +127,10 @@
         document.querySelector('#password-notice').innerHTML = checkPasswordStrength(password)
         document.querySelector('#email-notice').innerHTML = dataValidate({email: email.value})
     }
+    $('#email-notice').HTML = "Email";
 </script>
 
-<!-- Sign up modal -->
-<div class="overlay" id="signupOverlay"></div>
-<div class="modal" id="signupModal">
-    <div class="modal-content">
-        <span class="close" onclick={closeSignupModal()}>&times;</span>
-        <img src="user/img/logo.png" style="width: 25%;margin-top: 1em;">
-        <h3>Đăng ký</h3>
-        <form id="signup-form">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="nguyenvana" required >
-            <p id="username-notice"></p>
-        
-            <label for="username">Email</label>
-            <input type="text" id="email" name="username" placeholder="nguyenvana@gmail.com" required >
-            <p id="email-notice"></p>
 
-            <label for="password">Mật khẩu</label>
-            <input type="password" id="password" name="username" placeholder="••••••••••••••••" required >
-            <p id="password-notice"></p>
-
-            <p class="additional-text">Quên mật khẩu?</p>
-            <button type="submit" class="btn primary-button">Đăng ký</button>
-            <br>
-            <p>Đã có tài khoản? <a class="link-button-small" href="#">Đăng nhập ngay</a></p>
-        </form>
-    </div>
-</div>
-
-<!-- Javascript Sign up modal-->
 <script>
-    // Open the sign up modal
-    document.getElementById('NavBar-signupBtn').addEventListener('click', openSignupModal);
 
-    // Close the sign up modal
-    function closeSignupModal() {
-        document.getElementById('signupModal').style.display = 'none';
-        document.getElementById('signupOverlay').style.display = 'none';
-    }
-
-    // Open the signup modal
-    function openSignupModal() {
-        document.getElementById('signupModal').style.display = 'block';
-        document.getElementById('signupOverlay').style.display = 'block';
-    }
 </script>
