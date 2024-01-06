@@ -9,8 +9,18 @@
     </div>
     <div class="container">
         <h4>Hình ảnh</h4>
-        <!--Upload images-->
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="fileInput">Tải lên</span>
+            </div>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputImage"
+                aria-describedby="fileInput" multiple>
+                <label class="custom-file-label" for="inputImage">Chọn ảnh</label>
+            </div>
+        </div>
     </div>
+    
     <div class="container">
         <h4>Thông tin</h4>
         <form>
@@ -21,9 +31,10 @@
                     <input type="text" class="form-control" id="name">
                 </div>
                 <!--Price-->
-                <div class="mb-3">
-                    <label for="price" class="form-label">Giá tiền</label>
+                <div class="input-group mb-3">
+                    <label for="price" class="form-label">Giá</label>
                     <input type="text" class="form-control" id="price">
+                    <span class="input-group-text">đ</span>
                 </div>
             </div>
             <!--Description-->
@@ -106,18 +117,18 @@
                 <label for="size" class="form-label">Màu sắc</label>
                 <div class="product-color">
                     <div class="color-option d-flex">
-                        <button style="background-color:black" onclick="selectColor(this)"></button>
-                        <button style="background-color:gray" onclick="selectColor(this)"></button>
-                        <button style="background-color:#da0020" onclick="selectColor(this)"></button>
-                        <button style="background-color:#1a4ea0" onclick="selectColor(this)"></button>
-                        <button style="background-color:#f36b26" onclick="selectColor(this)"></button>
-                        <button style="background-color:#f23995" onclick="selectColor(this)"></button>
-                        <button style="background-color:#a83280" onclick="selectColor(this)"></button>
-                        <button style="background-color:#781f9f" onclick="selectColor(this)"></button>
-                        <button style="background-color:#178d7c" onclick="selectColor(this)"></button>
-                        <button style="background-color:#23b551" onclick="selectColor(this)"></button>
-                        <button style="background-color:#88e23c" onclick="selectColor(this)"></button>
-                        <button style="background-color:rgb(240, 240, 240)" onclick="selectColor(this)"></button>   
+                        <button style="background-color:#f36b26" onclick="selectColor(this)">CAM</button>
+                        <button style="background-color:black" onclick="selectColor(this)">DEN</button>
+                        <button style="background-color:#da0020" onclick="selectColor(this)">DOO</button>
+                        <button style="background-color:#f23995" onclick="selectColor(this)">HOG</button>
+                        <button style="background-color: rgb(225, 213, 206)" onclick="selectColor(this)">KEM</button>
+                        <button style="background-color: rgb(70, 60, 60)" onclick="selectColor(this)">NAU</button>
+                        <button style="background-color: rgb(34, 51, 34)" onclick="selectColor(this)">REU</button>
+                        <button style="background-color:rgb(240, 240, 240)" onclick="selectColor(this)">TRG</button>   
+                         <button style="background-color:rgb(255, 227, 68)" onclick="selectColor(this)">VAG</button>
+                        <button style="background-color:gray" onclick="selectColor(this)">XAM</button>
+                        <button style="background-color:#1a4ea0" onclick="selectColor(this)">XDG</button>
+                        <button style="background-color:#23b551" onclick="selectColor(this)">XLC</button>
                     </div>
                 </div>
             </div>
@@ -137,7 +148,7 @@
                     </label>
                 </div>
             </div>
-            <!--Category-->
+            <!--Style-->
             {{#if Nam}}
                 <div class="product-filter">
                     <div class="mb-3">
