@@ -9,8 +9,18 @@
     </div>
     <div class="container">
         <h4>Hình ảnh</h4>
-        <!--Upload images-->
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="fileInput">Tải lên</span>
+            </div>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputImage"
+                aria-describedby="fileInput" multiple>
+                <label class="custom-file-label" for="inputImage">Chọn ảnh</label>
+            </div>
+        </div>
     </div>
+    
     <div class="container">
         <h4>Thông tin</h4>
         <form>
@@ -21,9 +31,10 @@
                     <input type="text" class="form-control" id="name">
                 </div>
                 <!--Price-->
-                <div class="mb-3">
-                    <label for="price" class="form-label">Giá tiền</label>
+                <div class="input-group mb-3">
+                    <label for="price" class="form-label">Giá</label>
                     <input type="text" class="form-control" id="price">
+                    <span class="input-group-text">đ</span>
                 </div>
             </div>
             <!--Description-->
