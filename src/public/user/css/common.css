@@ -465,3 +465,19 @@ input, textarea {
 ul {
     list-style-type: none;
 }
+
+/* CSS để tạo button hình tròn với viền màu đen */
+.color-button {
+    width: 50px; /* Đặt kích thước */
+    height: 50px; /* Đặt kích thước */
+    border-radius: 50%; /* Làm cho button trở thành hình tròn */
+    border: 2px solid black; /* Viền màu đen */
+    /*background-color: transparent; !* Nền trong suốt *!*/
+    outline:none; /* Loại bỏ đường viền xung quanh khi được focus */
+}
+
+/* Thêm hiệu ứng khi di chuột qua */
+.color-button:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Một lớp mờ đen khi di chuột qua */
+    cursor: pointer; /* Bật icon con trỏ */
+}

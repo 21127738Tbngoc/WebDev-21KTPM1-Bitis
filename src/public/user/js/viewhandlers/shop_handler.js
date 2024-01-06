@@ -1,9 +1,21 @@
-function createElement(string)
-{
+function createElement(string) {
     let parser = new DOMParser();
-    let HTMLdocument = parser.parseFromString(string,'text/html');
-    return  HTMLdocument.body.firstElementChild;
+    let HTMLdocument = parser.parseFromString(string, 'text/html');
+    return HTMLdocument.body.firstElementChild;
 }
+
+const loadingElement = createElement(`<div id="loading-container" class="justify-content-center" style="display:block; z-index: 9999;">
+    <div class="loading-divider" aria-hidden="true"></div>
+    <p class="loading-text" aria-label="Loading">
+        <span class="loading-letter" aria-hidden="true">L</span>
+        <span class="loading-letter" aria-hidden="true">o</span>
+        <span class="loading-letter" aria-hidden="true">a</span>
+        <span class="loading-letter" aria-hidden="true">d</span>
+        <span class="loading-letter" aria-hidden="true">i</span>
+        <span class="loading-letter" aria-hidden="true">n</span>
+        <span class="loading-letter" aria-hidden="true">g</span>
+    </p>
+</div>`)
 
 async function DataLoading(query) {
     const Filter = query.filter || {};
@@ -26,51 +38,81 @@ async function DataLoading(query) {
 
     let allProducts = []
 
-    for (let i =0; i < Data.length; i++) {
-
-        let data = await $.ajax(
-            {
-                url: 'http://localhost:3000/hbs/partials/',
-                method: 'POST',
-                data:
-                    {
-                        partial: 'product_card',
-                        data: Data[i],
+    for (let i = 0; i < Data.length; i++) {
+        if (Data[i]) {
+            let data = await $.ajax(
+                {
+                    url: 'http://localhost:3000/hbs/partials/',
+                    method: 'POST',
+                    data:
+                        {
+                            partial: 'product_card',
+                            data: Data[i],
+                        },
+                    success: (data, status) => {
+                        return {data: data, status: status}
                     },
-                success: (data, status) => {
-                    return {data: data, status: status}
-                },
-                error: (errors) => errors
-            })
-        // let product_card = html(partial)
-        // let parser = new DOMParser();
-        // let HTMLdocument = parser.parseFromString(data,'text/html');
-        // let partial = HTMLdocument.getElementsByClassName('col-3')[0]
-        let partial = createElement(data)
-        allProducts.push(partial);
-
+                    error: (errors) => errors
+                })
+            let partial = createElement(data)
+            allProducts.push(partial);
+        }
     }
     return allProducts;
 }
 
-async function loadProductPage(query,page)
-{
+async function loadProductPage(query, page) {
+    document.getElementById("product-page").append(loadingElement)
+    let allProducts = await DataLoading(query);
     let container = document.getElementById('product-container');
-    while (container.firstChild) {container.removeChild(container.firstChild)}
-    for (let i = 18*page; i < 18*(page+1); i++)
-    {
-        container.append(allProducts[i])
+    while (container.firstChild) {
+        container.removeChild(container.firstChild)
     }
+    for (let i = 18 * page; i < 18 * (page + 1); i++) {
+        if (allProducts[i])
+        {
+            container.append(allProducts[i])
+        }
+    }
+    document.getElementById("loading-container").remove()
+    container.scrollIntoView({behavior: "smooth"});
 }
 
-async function createPageButtons(query)
-{
+async function createPageButtons(query) {
+    let allProducts = await DataLoading(query);
     let container = document.getElementById('page-bar');
-    while (container.firstChild) {container.removeChild(container.firstChild)}
-    for (let i = 1; i <= allProducts.length/18;i++)
-    {
-        let button = createElement(`<li><button>${i}</button></li>`)
-        button.addEventListener('click', loadProductPage(allProducts,i-1))
+    while (container.firstChild) {
+        container.removeChild(container.firstChild)
+    }
+    for (let i = 0; i <= (allProducts.length / 18); i++) {
+        let button = createElement(`<li><button onclick=loadProductPage(query,${i})>${i+1}</button></li>`)
         container.append(button)
     }
 }
+
+async function filtering(category) {
+    categories[1] = category
+    query.filter.categories = {$all: categories};
+    await createPageButtons(query)
+    await loadProductPage(query, 0)
+}
+
+async function sortOption(option) {
+    switch (option) {
+        case "A-Z":
+            query.sort = {name: "ascending"};
+            break;
+        case "Z-A":
+            query.sort = {name: "descending"};
+            break;
+        case "price+1":
+            query.sort = {price: "ascending"};
+            break;
+        case "price-1":
+            query.sort = {price: "descending"};
+            break;
+    }
+    await createPageButtons(query)
+    await loadProductPage(query, 0)
+}
+

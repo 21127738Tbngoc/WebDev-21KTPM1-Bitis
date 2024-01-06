@@ -61,3 +61,5 @@ async function formControl()
 $('#username').blur(formControl)
 $('#password').blur(formControl)
 $('#email').blur(formControl)
+
+console.log(query)

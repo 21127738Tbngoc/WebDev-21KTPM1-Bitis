@@ -6,22 +6,16 @@
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         <li>
-            <button class="dropdown-item" onclick="">A-Z</button>
+            <button class="dropdown-item" onclick=sortOption("A-Z")>A - Z</button>
         </li>
         <li>
-            <button class="dropdown-item" href="#">Z-A</button>
+            <button class="dropdown-item" onclick=sortOption("Z-A")>Z - A</button>
         </li>
         <li>
-            <button class="dropdown-item" href="#">Giá Thấp -> Cao</button>
+            <button class="dropdown-item" onclick=sortOption("price+1")>Giá Thấp -> Cao</button>
         </li>
         <li>
-            <button class="dropdown-item" href="#">Giá Cao - Thấp</button>
+            <button class="dropdown-item" onclick=sortOption("price-1")>Giá Cao -> Thấp</button>
         </li>
     </ul>
 </div>
-<script src="user/js/viewhandlers/shop_handler.js"></script>
-<script>
-    async function filtering(filter) {
-        let products = await DataLoading({filter});
-    }
-</script>

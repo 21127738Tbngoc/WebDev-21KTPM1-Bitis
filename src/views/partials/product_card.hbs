@@ -1,4 +1,4 @@
-<div class="col-3" style="flex: 1 0 calc(33.33% - 10px)">
+<div class="col-3" style="flex: 0 0 calc(33.33% - 10px)">
     <div class="product-card">
         <!-- Thumbnail -->
         <div class="product-thumbnail">
@@ -7,31 +7,37 @@
                 <div class="icon-wishlist"></div>
             </div>
             <div class="figure">
-                <img class="Sirv image-main" src={{product.images.[0]}}>
+                <img class="Sirv image-main" src='{{product.images.[0]}}' id="active">
                 <img class="Sirv image-hover" data-src={{product.images.[1]}}>
             </div>
         </div>
+
         <!-- Info -->
         <div class="product-info">
+
             <!-- Properties -->
             <div class="product-property d-flex align-items-center justify-content-between">
-                <div class="product-number-size"> 6 Size </div>
+                <div class="product-number-size"> 6 Size</div>
             </div>
+
             <!-- Title -->
-            <div class="product-name" style="height: 3rem">
-                <a href="#">{{product.name}}</a>
+            <div class="product-name border-bottom" style="height: 3rem">
+                <a href="/:{{product._id}}" style=" overflow: auto; text-overflow: ellipsis">{{product.name}}</a>
             </div>
+
             <!-- Price -->
-            <div class="product-price d-flex align-items-center">{{currency product.price}}</div>
+            <div class="product-price d-flex align-items-center justify-content-end">{{currency product.price}}</div>
+
             <!-- Swatch -->
             <div class="w-100 product-colors d-flex align-items-center justify-content-center flex-wrap">
-                <img src={{product.images.[0]}} alt="TRG" class="active">
-                <img src={{product.images.[1]}} alt="XAM">
-                <img src={{product.images.[2]}} alt="DEN">
+                <img src='{{product.images.[0]}}' alt="picture-1" class="active">
+                <img src='{{product.images.[1]}}' alt="picture-2">
+                <img src='{{product.images.[2]}}' alt="picture-3">
             </div>
         </div>
     </div>
 </div>
+
 
 
 

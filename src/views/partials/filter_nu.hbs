@@ -1,39 +1,48 @@
 <script>
     //Product Filter
-    function selectColor(colorButton) {
+    function selectColor(colorButton,color) {
         const colorButtons = document.querySelectorAll('.product-color button');
         colorButtons.forEach(button => button.style.border = 'none');
         colorButton.style.border = '2px solid black';
         console.log("Selected color: " + colorButton.style.backgroundColor);
+        filtering(color)
     }    
 </script>
 
 <div class="col-3 product-filter">
     <h6 class="py-2 mb-3 border-bottom"><i class="las la-filter" style="font-size: 20px;"></i>&nbsp;&nbsp;Kiểu giày</h6>
-        <img src="user/img/GiayNu/GiayNuLabel/hunter-nu.svg" alt="hunter" class="product-types me-3">
-        <img src="user/img/GiayNu/GiayNuLabel/giay-the-thao-nu.svg" alt="thethao" class="product-types me-3">
-        <img src="user/img/GiayNu/GiayNuLabel/giay-bup-be-nu.svg" alt="bupbe" class="product-types me-3">
-        <img src="user/img/GiayNu/GiayNuLabel/hunter-running-jogging.svg" alt="chaybo" class="product-types">
-        <img src="user/img/GiayNu/GiayNuLabel/sandal-nu.svg" alt="sandal" class="product-types me-3">
-        <img src="user/img/GiayNu/GiayNuLabel/giay-thoi-trang.svg" alt="thoitrang" class="product-types me-3">
-        <img src="user/img/GiayNu/GiayNuLabel/tui-xach.svg" alt="tuixach" class="product-types me-3">
-        <img src="user/img/GiayNu/GiayNuLabel/dep-nu.svg" alt="depnu" class="product-types">
+        <img src="user/img/GiayNu/GiayNuLabel/hunter-nu.svg" alt="hunter" class="product-types me-3"
+             onclick=filtering('Hunter')>
+        <img src="user/img/GiayNu/GiayNuLabel/giay-the-thao-nu.svg" alt="thethao" class="product-types me-3"
+             onclick="filtering('Gi\u00e0y Th\u1ec3 Thao')">
+        <img src="user/img/GiayNu/GiayNuLabel/giay-bup-be-nu.svg" alt="bupbe" class="product-types me-3"
+             onclick="filtering('Gi\u00e0y B\u00fap B\u00ea')">
+        <img src="user/img/GiayNu/GiayNuLabel/hunter-running-jogging.svg" alt="chaybo" class="product-types"
+             onclick="filtering('Gi\u00e0y Ch\u1ea1y B\u1ed9')">
+        <img src="user/img/GiayNu/GiayNuLabel/sandal-nu.svg" alt="sandal" class="product-types me-3"
+             onclick="filtering('Sandal')">
+        <img src="user/img/GiayNu/GiayNuLabel/giay-thoi-trang.svg" alt="thoitrang" class="product-types me-3"
+             onclick="filtering('Sandal')">
+        <img src="user/img/GiayNu/GiayNuLabel/tui-xach.svg" alt="tuixach" class="product-types me-3"
+             onclick="filtering('Túi xách')">
+        <img src="user/img/GiayNu/GiayNuLabel/dep-nu.svg" alt="depnu" class="product-types"
+             onclick="filtering('D\u00e9p')">
     <h6 class="py-2 mb-3 border-bottom"><i class="la la-palette" style="font-size: 20px;"></i>&nbsp;&nbsp;Màu sắc</h6>
     <div class="product-color">
-        <div class="color-option d-flex">
-            <button style="background-color:black" onclick="selectColor(this)"></button>
-            <button style="background-color:gray" onclick="selectColor(this)"></button>
-            <button style="background-color:#da0020" onclick="selectColor(this)"></button>
-            <button style="background-color:#1a4ea0" onclick="selectColor(this)"></button>
-            <button style="background-color:#f36b26" onclick="selectColor(this)"></button>
-            <button style="background-color:#f23995" onclick="selectColor(this)"></button>
-            <button style="background-color:#a83280" onclick="selectColor(this)"></button>
-            <button style="background-color:#781f9f" onclick="selectColor(this)"></button>
-            <button style="background-color:#178d7c" onclick="selectColor(this)"></button>
-            <button style="background-color:#23b551" onclick="selectColor(this)"></button>
-            <button style="background-color:#88e23c" onclick="selectColor(this)"></button>
-            <button style="background-color:rgb(240, 240, 240)" onclick="selectColor(this)"></button>   
+        <div class="color-option d-flex-wrap">
+            <button class="color-button" style="background-color:#FFA500" onclick="selectColor(this,'CAM')"></button>
+            <button class="color-button" style="background-color:#000000" onclick="selectColor(this, 'DEN')"></button>
+            <button class="color-button" style="background-color:#FF0000" onclick="selectColor(this, 'DOO')"></button>
+            <button class="color-button" style="background-color:#FFC0CB" onclick="selectColor(this,'HOG')"></button>
+            <button class="color-button" style="background-color: #FFFDD0" onclick="selectColor(this,'KEM')"></button>
+            <button class="color-button" style="background-color:#A52A2A" onclick="selectColor(this, 'NAU')"></button>
+            <button class="color-button" style="background-color:#556B2F" onclick="selectColor(this, 'REU')"></button>
+            <button class="color-button" style="background-color:#FFFFFF" onclick="selectColor(this,'TRG')"></button>
+            <button class="color-button" style="background-color:#FFFF00" onclick="selectColor(this,'VAG')"></button>
+            <button class="color-button" style="background-color: #808080" onclick="selectColor(this,'XAM')"></button>
+            <button class="color-button" style="background-color: #0000FF" onclick="selectColor(this,'XDG')"></button>
+            <button class="color-button" style="background-color:#008000" onclick="selectColor(this,'XLC')"></button>
         </div>
-    </div>  
-    {{> sort}}     
+    </div>
+    {{> sort}}
 </div>

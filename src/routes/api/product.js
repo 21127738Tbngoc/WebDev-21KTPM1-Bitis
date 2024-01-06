@@ -44,8 +44,10 @@ router.delete("/delete/:id", async (req, res) => {
 
 //GET PRODUCT
 router.get("/find/:id", async (req, res) => {
+    console.log(req.params)
+    console.log(req.query)
     try {
-        const product = await Product.findOne({id: req.params.id});
+        const product = await Product.findOne({_id: req.params.id});
         res.status(200).json(product);
     } catch (err) {
         res.status(500).json(err.message);
