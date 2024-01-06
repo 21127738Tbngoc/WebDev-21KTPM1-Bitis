@@ -1,4 +1,8 @@
 <!--Breadcrumb & Banner-->
+<script>
+    var allProducts;
+</script>
+
 {{#if Nam}}
     <!--------- Breadcrumb --------->
     <div class="container-fluid">
@@ -36,29 +40,32 @@
 <!--------- Products --------->
 <div class="container-fluid">
     <div class="container" style="display: flex">
-        <div class="row g-3" id="page-content"  style=" display: flex; flex: 1">
+        <div class="row g-3" id="page-content" style=" display: flex; flex: 1; flex-wrap: wrap">
             {{#if Nam}}
                 {{> filter_nam}}
             {{else}}
                 {{> filter_nu}}
             {{/if}}
-
             <!--------- Products --------->
-            <div id="product-container" style="display: flex; flex: 1; flex-wrap: wrap">
-            {{#each Products}}
-                {{> product_card product=this}}
-            {{/each}}
-            </div>
-            <!----- Pagination ----------->
-            <ul id="page-bar">
-            </ul>
-
+            <div id="product-container" style="display: flex; flex: 1; flex-wrap: wrap"></div>
         </div>
+        <!----- Pagination ----------->
+        <ul class="nav" id="page-bar">
+        </ul>
+
     </div>
 </div>
+<script src="user/js/viewhandlers/shop_handler.js"></script>
 <script>
-    for (let i = 0; i < 10; i++)
+    let query = {};
+    if {{Nam}}
+            {
+                query.filter.categories = {$in: ['Nam']}
+            }
+    else
     {
-        $('#page-bar').append($(`<li><button>${i}</button></li>`));
+        query.filter.categories = {$in: ['Nữ']}
     }
+    loadProductPage(query, 0)
+    createPageButtons(query)
 </script>

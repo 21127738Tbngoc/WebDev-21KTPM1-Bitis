@@ -14,13 +14,7 @@ const AuthRouter = require("./routes/api/auth.js");
 const ProductRouter = require("./routes/api/product.js");
 const AdminRouter = require("./routes/api/user.js");
 const OrderRouter = require('./routes/api/order.js')
-
-// Router implementations
-app.use('/', MainRouter);
-app.use('/auth/', AuthRouter);
-app.use('/product/', ProductRouter);
-app.use('/admin/', AdminRouter);
-app.use('/order/', OrderRouter);
+const HbsRouter = require("./routes/api/hbs_compiler.js")
 
 dotenv.config();
 
@@ -37,8 +31,17 @@ app.set('views', 'views');
 app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, 'public')));
+
+// Router implementations
+app.use('/', MainRouter);
+app.use('/auth/', AuthRouter);
+app.use('/product/', ProductRouter);
+app.use('/admin/', AdminRouter);
+app.use('/order/', OrderRouter);
+app.use('/hbs/',HbsRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

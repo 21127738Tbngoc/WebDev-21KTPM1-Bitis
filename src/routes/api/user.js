@@ -60,7 +60,7 @@ router.get("/", async (req, res) => {
     const qFilter = req.query.filter || {};
     const qSort = req.query.sort || {name:-1};
     const qLimit = req.query.limit || 2**32;
-
+    console.log(req.query)
     try {
         let Users = await User.find(qFilter).sort(qSort).limit(qLimit);
         res.status(200).json(Users);

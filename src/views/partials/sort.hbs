@@ -1,13 +1,27 @@
+<h6 class="py-2 mb-3 border-bottom"><i class="las la-sort" style="font-size: 20px;"></i>&nbsp;&nbsp;Sắp xếp theo</h6>
 <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+            aria-expanded="false">
         Sắp xếp theo
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item" href="#">Giá: Tăng dần</a></li>
-        <li><a class="dropdown-item" href="#">Giá: Giảm dần</a></li>
-        <li><a class="dropdown-item" href="#">Tên: A-Z</a></li>
-        <li><a class="dropdown-item" href="#">Tên: Z-A</a></li>
-        <li><a class="dropdown-item" href="#">Mới nhất</a></li>
-        <li><a class="dropdown-item" href="#">Cũ nhất</a></li>
+        <li>
+            <button class="dropdown-item" onclick="">A-Z</button>
+        </li>
+        <li>
+            <button class="dropdown-item" href="#">Z-A</button>
+        </li>
+        <li>
+            <button class="dropdown-item" href="#">Giá Thấp -> Cao</button>
+        </li>
+        <li>
+            <button class="dropdown-item" href="#">Giá Cao - Thấp</button>
+        </li>
     </ul>
 </div>
+<script src="user/js/viewhandlers/shop_handler.js"></script>
+<script>
+    async function filtering(filter) {
+        let products = await DataLoading({filter});
+    }
+</script>
