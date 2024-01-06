@@ -54,7 +54,6 @@ router.get("/find/:id", async (req, res) => {
 
 //GET ALL PRODUCTS
 router.get("/", async (req, res) => {
-    console.log(req.query)
     const qFilter = req.query.filter || {};
     const qSort = req.query.sort || {date: -1};
     const qLimit = req.query.limit || 2**32;

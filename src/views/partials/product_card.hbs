@@ -1,4 +1,3 @@
-
 <div class="col-3" style="flex: 1 0 calc(33.33% - 10px)">
     <div class="product-card">
         <!-- Thumbnail -->
@@ -9,7 +8,7 @@
             </div>
             <div class="figure">
                 <img class="Sirv image-main" src={{product.images.[0]}}>
-                <img class="Sirv image-hover" src={{product.images.[1]}}>
+                <img class="Sirv image-hover" data-src={{product.images.[1]}}>
             </div>
         </div>
         <!-- Info -->
@@ -23,7 +22,7 @@
                 <a href="#">{{product.name}}</a>
             </div>
             <!-- Price -->
-            <div class="product-price d-flex align-items-center" style="align-content: flex-end">{{currency product.price}}</div>
+            <div class="product-price d-flex align-items-center">{{currency product.price}}</div>
             <!-- Swatch -->
             <div class="w-100 product-colors d-flex align-items-center justify-content-center flex-wrap">
                 <img src={{product.images.[0]}} alt="TRG" class="active">
