@@ -1,0 +1,64 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h4></h4>
+        <h4>Total Number of Products: {{numProducts}}</h4>
+        {{#if loading}}
+          <h4 class="pt-4">Loading......</h4>
+        {{else}}
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Images</th>
+                <th>Name</th>
+                <th>Rating</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Description</th>
+                <th>Size</th>
+                <th>Color</th>
+                <th>Qty</th>
+                <th>Action</th>
+                <th>Edit</th> <!-- New Edit Column -->
+              </tr>
+            </thead>
+            <tbody>
+              {{#each productsData}}
+                <tr>
+                  <td>
+                    {{#each images}}
+                      <img src="{{this}}" alt="product" style="width: 50px; height: 50px;" />
+                    {{/each}}
+                  </td>
+                  <td>{{name}}</td>
+                  <td>{{rating}}</td>
+                  <td>{{price}}</td>
+                  <td>{{stock}}</td>
+                  <td>{{description}}</td>
+                  <td>{{size}}</td>
+                  <td>
+                    {{#each color}}
+                      {{this}} 
+                    {{/each}}
+                  </td>
+                  <td>{{qty}}</td>
+                  <td>
+                    <button class="outline-button" onclick="editProduct('{{_id}}')">
+                        <i class="las la-edit" style="font-size: 24px"></i>
+                    </button>
+                  </td>
+                  <td>
+                    <button class="primary-button" onclick="deleteProduct('{{_id}}')">
+                        XÓA
+                    </button>
+                  </td>
+                </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</section>
