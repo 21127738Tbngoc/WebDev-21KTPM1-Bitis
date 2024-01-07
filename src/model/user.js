@@ -4,7 +4,7 @@ const findOrCreate = require('mongoose-findorcreate');
 const User = mongoose.model("User", new mongoose.Schema(
     {
         id: { type: Number },
-        avatar: { type: String },
+        avartar: { type: String },
         name: { type: String },
         username: { type: String, required: true, unique: true },
         email: { type: String, unique: true },

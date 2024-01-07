@@ -2,19 +2,12 @@ const Order = require('../../model/order')
 const router = require("express").Router();
 
 router.get('/', async (req, res)=> {
-    const sort = parseInt(req.query.sort);
-    const qfilter = req.query.filter;
+    const qFilter = req.query.filter || {};
+    const qSort = req.query.sort || {date: -1};
+    const qLimit = req.query.limit || 2**32;
     try {
-        let orders;
-        if (sort) {
-            orders = await Order.find().sort({date: sort});
-        } else if (qfilter) {
-            orders = await Order.find(qfilter).catch((err) => {
-                console.log(err.message)
-            });
-        } else {
-            orders = await Order.find();
-        }
+        // Truy van theo yeu cau
+        let orders = await Order.find(qFilter).sort(qSort).limit(qLimit);
         res.status(200).json(orders);
     } catch
         (err) {

@@ -14,9 +14,10 @@ const MainRouter = require('./routes/index.js');
 const AuthRouter = require("./routes/api/auth.js");
 const ProductRouter = require("./routes/api/product.js");
 const UserRouter = require("./routes/api/user.js");
-const OrderRouter = require('./routes/api/order.js')
+const OrderRouter = require('./routes/api/order.js');
+const FeedbackRouter = require('./routes/api/feedbacks.js');
 const AdminRouter = require('./routes/admin.js');
-const HbsRouter = require("./routes/api/hbs_compiler.js")
+const HbsRouter = require("./routes/api/hbs_compiler.js");
 
 const MongoStore = require("connect-mongo");
 
@@ -55,10 +56,10 @@ app.use('/', MainRouter);
 app.use('/auth/', AuthRouter);
 app.use('/product/', ProductRouter);
 app.use('/user/',UserRouter);
+app.use('/feedback/',FeedbackRouter)
 app.use('/admin/', AdminRouter);
 app.use('/order/', OrderRouter);
 app.use('/hbs/',HbsRouter);
-
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
