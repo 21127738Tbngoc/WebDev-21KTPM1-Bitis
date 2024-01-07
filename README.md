@@ -8,6 +8,6 @@ Bitis Vietnam's E-commerce Shoes Platform is a dynamic online marketplace dedica
 - **Admin:** Manage products, orders, and user-related aspects.
 
 **Technologies Used:**
-- **Frontend:** HTML, CSS, hbs Handlebars (if using Node.js), JavaScript for interactivity.
-- **Backend:** MongoDB database for storing product, user, and order information.
+- **Frontend:** HTML, CSS, hbs Handlebars (if using Node.js), JavaScript, Bootstrap 5 framework for interactivity.
+- **Backend:** MVC framework, ExpressJS, MongoDB database for storing product, user, and order information.
 - **APIs:** Integration of Facebook and Google OAuth for login, payment gateway API for secure transactions.
