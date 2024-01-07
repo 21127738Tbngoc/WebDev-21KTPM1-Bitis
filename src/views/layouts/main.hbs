@@ -11,7 +11,6 @@
     <link href="/user/css/common.css" rel="stylesheet">
     <link href="/user/css/home.css" rel="stylesheet">
     <link href="/user/css/product_detail.css" rel="stylesheet">
-    <link href="/user/css/Dashboard.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
     <link href="/user/css/shop.css" rel="stylesheet">
@@ -31,8 +30,11 @@
             sort: {name:"ascending"}
         };
         var categories = [];
+        window.addEventListener('beforeunload', function(event) {
+            // Xóa dữ liệu từ localStorage trước khi tab hoặc trình duyệt được đóng
+            localStorage.removeItem('cart');
+        });
     </script>
-
 </head>
 <body>
 

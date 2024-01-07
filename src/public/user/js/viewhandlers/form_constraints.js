@@ -61,5 +61,5 @@ async function formControl()
 document.getElementById('username').blur(formControl)
 document.getElementById('password').blur(formControl)
 document.getElementById('email').blur(formControl)
-
+document.getElementById("submit")
 console.log(query)

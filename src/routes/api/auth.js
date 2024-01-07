@@ -20,7 +20,6 @@ router.post("/login", (req, res) => {
         if (err) {
             console.log(err);
         }
-
         else {
             passport.authenticate("local")(req, res, () => {
                 sessionStorage.setItem("userInfo", JSON.stringify(user));

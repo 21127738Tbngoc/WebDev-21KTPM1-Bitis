@@ -3,7 +3,7 @@
     <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
         <h3>Đăng nhập</h3>
-        <form action="/login" method="POST">
+        <form action="/auth/login" method="POST">
             <label for="username">Tên đăng nhập:</label>
             <input type="text" name="username" required>
             <label for="password">Mật khẩu:</label>
@@ -34,7 +34,7 @@
     <div class="modal-content">
         <span class="close" onclick={closeSignupModal()}>&times;</span>
         <h3>Đăng ký</h3>
-        <form id="signup-form">
+        <form id="signup-form" action="/auth/register", method="POST">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" placeholder="nguyenvana" required >
             <p id="username-notice" style="color: red"></p>

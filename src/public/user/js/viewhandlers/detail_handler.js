@@ -118,6 +118,15 @@ async function sortOption(option) {
 
 function addToCart(product,quantity)
 {
-
+    let dataToPush = {product: product, quantity: quantity}
+    let cart = localStorage.getItem("cart")
+    cart = cart? JSON.parse(cart):[]
+    const existingObj = cart.find(item => item.product._id === dataToPush.product._id);
+    if (existingObj) {
+        existingObj.quantity += dataToPush.quantity;
+    } else {
+        cart.push(dataToPush);
+    }
+    localStorage.setItem("cart",JSON.stringify(cart))
 }
 
