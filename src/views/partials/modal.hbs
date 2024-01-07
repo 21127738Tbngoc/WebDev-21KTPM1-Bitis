@@ -8,6 +8,7 @@
             <input type="text" name="username" required>
             <label for="password">Mật khẩu:</label>
             <input type="password" name="password" required>
+            <p class="additional-text">Quên mật khẩu?</p>
             <button type="submit" class="btn primary-button">Đăng nhập</button>
         </form>
     </div>
@@ -32,7 +33,6 @@
 <div class="modal" id="signupModal">
     <div class="modal-content">
         <span class="close" onclick={closeSignupModal()}>&times;</span>
-        <img src="user/img/logo.png" style="width: 25%;margin-top: 1em;">
         <h3>Đăng ký</h3>
         <form id="signup-form">
             <label for="username">Username</label>
@@ -46,8 +46,6 @@
             <label for="password">Mật khẩu</label>
             <input type="password" id="password" name="username" placeholder="••••••••••••••••" required >
             <p id="password-notice" style="color: red"></p>
-
-            <p class="additional-text">Quên mật khẩu?</p>
             <button type="submit" class="btn primary-button">Đăng ký</button>
             <br>
             <p>Đã có tài khoản? <a class="link-button-small" href="#">Đăng nhập ngay</a></p>

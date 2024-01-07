@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
     <link href="user/css/shop.css" rel="stylesheet">
+    <link href="user/css/loading.css" rel="stylesheet">
     <!-- Icons -->
     <link type="text/css" rel="stylesheet" href="user/icon/css/line-awesome.min.css">
     <!-- Sirv -->
@@ -23,22 +24,25 @@
     <!-- JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
     <title>{{title}}</title>
+    <script>
+        var query = {
+            filter: {},
+            sort: {name:"ascending"}
+        };
+        var categories = [];
+    </script>
 
 </head>
 <body>
 
 {{> navbar user=UserData}}
-<script src="user/js/viewhandlers/form_constraints.js"></script>
-
 {{{body}}}
-
 {{> footer}}
 
-
-<!--<script src="user/js/customJS/pagination.js"></script>-->
-<!--<script src="user/js/customJS/DBQuery.js"></script>-->
+<script src="user/js/viewhandlers/shop_handler.js"></script>
+<script src="user/js/viewhandlers/form_constraints.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 </body>
 </html>

@@ -1,28 +1,24 @@
+<script>
+    //Product Filter
+    function selectColor(colorButton,color) {
+        const colorButtons = document.querySelectorAll('.product-color button');
+        colorButtons.forEach(button => button.style.border = 'none');
+        colorButton.style.border = '2px solid black';
+        console.log("Selected color: " + colorButton.style.backgroundColor);
+        filtering(color)
+    }
+</script>
 <div class="col-3 product-filter">
     <h6 class="py-2 mb-3 border-bottom"><i class="las la-filter" style="font-size: 20px;"></i>&nbsp;&nbsp;Kiểu giày</h6>
-        <img src="user/img/GiayNam/GiayNamLabel/hunter-nam.svg" alt="hunter" class="product-types me-3">
-        <img src="user/img/GiayNam/GiayNamLabel/giay-the-thao-nam.svg" alt="thethao" class="product-types me-3">
-        <img src="user/img/GiayNam/GiayNamLabel/giay-da-banh.svg" alt="dabanh" class="product-types me-3">
-        <img src="user/img/GiayNam/GiayNamLabel/hunter-running-nam.svg" alt="chaybo" class="product-types">
-        <img src="user/img/GiayNam/GiayNamLabel/sandal-nam.svg" alt="sandal" class="product-types me-3">
-        <img src="user/img/GiayNam/GiayNamLabel/giay-tay-nam.svg" alt="giaytay" class="product-types me-3">
-        <img src="user/img/GiayNam/GiayNamLabel/dep-nam.svg" alt="giaytay" class="product-types">
+        <img src="user/img/GiayNam/GiayNamLabel/hunter-nam.svg" alt="hunter" class="product-types me-3" onclick="filtering('Hunter')">
+        <img src="user/img/GiayNam/GiayNamLabel/giay-the-thao-nam.svg" alt="thethao" class="product-types me-3" onclick="filtering('Gi\u00e0y Th\u1ec3 Thao')">
+        <img src="user/img/GiayNam/GiayNamLabel/giay-da-banh.svg" alt="dabanh" class="product-types me-3" onclick="filtering('Gi\u00e0y Th\u1ec3 Thao')">
+        <img src="user/img/GiayNam/GiayNamLabel/hunter-running-nam.svg" alt="chaybo" class="product-types" onclick="filtering('Gi\u00e0y Ch\u1ea1y B\u1ed9')">
+        <img src="user/img/GiayNam/GiayNamLabel/sandal-nam.svg" alt="sandal" class="product-types me-3" onclick="filtering('Sandal')">
+        <img src="user/img/GiayNam/GiayNamLabel/giay-tay-nam.svg" alt="giaytay" class="product-types me-3" onclick="filtering('Gi\u00e0y Tây')">
+        <img src="user/img/GiayNam/GiayNamLabel/dep-nam.svg" alt="giaytay" class="product-types" onclick="filtering('D\u00e9p')">
     <h6 class="py-2 mb-3 border-bottom"><i class="la la-palette" style="font-size: 20px;"></i>&nbsp;&nbsp;Màu sắc</h6>
-    <div class="product-color">
-        <div class="color-option d-flex">
-            <button style="background-color:black" onclick="selectColor(this)"></button>
-            <button style="background-color:gray" onclick="selectColor(this)"></button>
-            <button style="background-color:#da0020" onclick="selectColor(this)"></button>
-            <button style="background-color:#1a4ea0" onclick="selectColor(this)"></button>
-            <button style="background-color:#f36b26" onclick="selectColor(this)"></button>
-            <button style="background-color:#f23995" onclick="selectColor(this)"></button>
-            <button style="background-color:#a83280" onclick="selectColor(this)"></button>
-            <button style="background-color:#781f9f" onclick="selectColor(this)"></button>
-            <button style="background-color:#178d7c" onclick="selectColor(this)"></button>
-            <button style="background-color:#23b551" onclick="selectColor(this)"></button>
-            <button style="background-color:#88e23c" onclick="selectColor(this)"></button>
-            <button style="background-color:rgb(240, 240, 240)" onclick="selectColor(this)"></button>   
-        </div>
-    </div> 
-    {{> sort}} 
+    {{> color}}
+    </div>
+    {{> sort}}
 </div>

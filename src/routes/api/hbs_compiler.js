@@ -3,12 +3,14 @@ const fs = require("fs");
 const router = require("express").Router();
 const dotenv = require('dotenv');
 
-Handlebars.registerHelper('currency', async function (data) {
-    return data.toLocaleString('en-US', {
+Handlebars.registerHelper('currency', function (data) {
+    return parseInt(data).toLocaleString('vi-VN', {
         style: 'currency',
         currency: 'VND'
     });
 });
+
+
 router.post('/partials/', async (req, res) => {
     let html;
     try {

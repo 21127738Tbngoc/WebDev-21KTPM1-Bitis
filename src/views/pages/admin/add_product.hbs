@@ -2,7 +2,7 @@
 <div class="container-fluid">
     <div class="container">
         <ul class="breadcrumb">
-            <li><a href="/">ADMIN</a></li>
+            <li><a href="/admin">ADMIN</a></li>
             <li><a href="#">SẢN PHẨM</a></li>
             <li>THÊM SẢN PHẨM</li>
         </ul>
@@ -125,7 +125,7 @@
                         <button style="background-color: rgb(70, 60, 60)" onclick="selectColor(this)">NAU</button>
                         <button style="background-color: rgb(34, 51, 34)" onclick="selectColor(this)">REU</button>
                         <button style="background-color:rgb(240, 240, 240)" onclick="selectColor(this)">TRG</button>   
-                         <button style="background-color:rgb(255, 227, 68)" onclick="selectColor(this)">VAG</button>
+                        <button style="background-color:rgb(255, 227, 68)" onclick="selectColor(this)">VAG</button>
                         <button style="background-color:gray" onclick="selectColor(this)">XAM</button>
                         <button style="background-color:#1a4ea0" onclick="selectColor(this)">XDG</button>
                         <button style="background-color:#23b551" onclick="selectColor(this)">XLC</button>
@@ -150,32 +150,9 @@
             </div>
             <!--Style-->
             {{#if Nam}}
-                <div class="product-filter">
-                    <div class="mb-3">
-                        <p class="mb-1">Kiểu giày</p>
-                        <img src="../../../public/user/img/GiayNam/GiayNamLabel/hunter-nam.svg" alt="hunter" class="product-types me-3">
-                        <img src="../../../public/user/img/GiayNam/GiayNamLabel/giay-the-thao-nam.svg" alt="thethao" class="product-types me-3">
-                        <img src="../../../public/user/img/GiayNam/GiayNamLabel/giay-da-banh.svg" alt="dabanh" class="product-types me-3">
-                        <img src="../../../public/user/img/GiayNam/GiayNamLabel/hunter-running-nam.svg" alt="chaybo" class="product-types">
-                        <img src="../../../public/user/img/GiayNam/GiayNamLabel/sandal-nam.svg" alt="sandal" class="product-types me-3">
-                        <img src="../../../public/user/img/GiayNam/GiayNamLabel/giay-tay-nam.svg" alt="giaytay" class="product-types me-3">
-                        <img src="../../../public/user/img/GiayNam/GiayNamLabel/dep-nam.svg" alt="giaytay" class="product-types">
-                    </div>
-                </div>
-
+               {{> fillter_nam}}
             {{else}}
-                <div class="product-filter">
-                    <div class="mb-3">
-                        <p class="mb-1">Kiểu giày</p>
-                        <img src="user/img/GiayNu/GiayNuLabel/hunter-nu.svg" alt="hunter" class="product-types me-3">
-                        <img src="user/img/GiayNu/GiayNuLabel/giay-the-thao-nu.svg" alt="thethao" class="product-types me-3">
-                        <img src="user/img/GiayNu/GiayNuLabel/giay-bup-be-nu.svg" alt="bupbe" class="product-types me-3">
-                        <img src="user/img/GiayNu/GiayNuLabel/hunter-running-jogging.svg" alt="chaybo" class="product-types">
-                        <img src="user/img/GiayNu/GiayNuLabel/sandal-nu.svg" alt="sandal" class="product-types me-3">
-                        <img src="user/img/GiayNu/GiayNuLabel/giay-thoi-trang.svg" alt="thoitrang" class="product-types me-3">
-                        <img src="user/img/GiayNu/GiayNuLabel/tui-xach.svg" alt="tuixach" class="product-types me-3">
-                        <img src="user/img/GiayNu/GiayNuLabel/dep-nu.svg" alt="depnu" class="product-types">
-                    </div>
-                </div>
+                {{> filter_nu}}
+             {{/if}}
         </form>
     </div>

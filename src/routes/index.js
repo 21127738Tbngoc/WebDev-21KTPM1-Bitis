@@ -22,28 +22,22 @@ router.get("/", async function (req, res, next) {
     })
 })
 
+// router.get("/:id", async function (req,res)
+// {
+//     let id = req.params.id;
+//     let product = await axios.get(`http://localhost:3000/find/${id}`).then((res) => res.data);
+//     console.log("line 29 running")
+//     res.render('pages/user/product_detail', {
+//         title: 'Thông tin sản phẩm', product: product});
+// });
 
 router.get('/shop-nam', async function (req, res, next) {
-    let giayNam = await axios.get('http://localhost:3000/product/', {
-        params: {
-            "filter": {
-                "categories": {$in: ["Nam"]},
-            }
-        }
-    })
-    res.render('pages/user/shop', {title: 'Giày dép nam', Products: giayNam.data, Nam: true});
-    console.log(giayNam.data.length)
+    res.render('pages/user/shop', {title: 'Giày dép nam', Nam: true});
 });
 
 router.get('/shop-nu', async function (req, res, next) {
-    let giayNu = await axios.get('http://localhost:3000/product/', {
-        params: {
-            "filter": {
-                "categories": {$in: ["Nữ"]},
-            }
-        }
-    })
-    res.render('pages/user/shop', {title: 'Giày dép nữ', Products:giayNu.data});
+
+    res.render('pages/user/shop', {title: 'Giày dép nữ', Nam: false});
 });
 
 router.get('/contact', async function (req, res, next) {
@@ -59,29 +53,6 @@ router.get('/order-history', async function (req,res,next)
     res.render('pages/user/order_history', {title: 'Profile'})
 })
 
-// ADMIN router
-
-// router.get('/admin/', async function (req, res, next) {
-//     res.render('admin/admin', { title: 'Thông tin liên hệ', layout: 'admin.hbs' });
-// });
-
-// router.get('/admin/app-chat', async function (req, res, next) {
-//     res.render('admin/app_chat', { title: 'Thông tin liên hệ', layout: 'admin.hbs' });
-// });
-
-// router.get('/admin/app-calendar', async function (req, res, next) {
-//     res.render('admin/app_calendar', { title: 'Thông tin liên hệ', layout: 'admin.hbs' });
-// });
-
-// router.get('/admin/ticket-list', async function (req, res, next) {
-//     res.render('admin/ticket_list', { title: 'Thông tin liên hệ', layout: 'admin.hbs' });
-// });
-
-// router.get('/admin/about-us', async function (req, res, next) {
-//     res.render('admin/about_us', { title: 'Thông tin liên hệ', layout: 'admin.hbs' });
-// });
-
-// POST methods
 
 
 module.exports = router;
