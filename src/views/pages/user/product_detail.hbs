@@ -110,9 +110,9 @@
                     </div>
                     <div class="d-flex">
                         <button class="primary-button mb-3 me-3"
-                                onclick="addToCart({{Product._id}})">ADD TO CART
+                                onclick="addToCart({{Product}},document.getElementById('quantity').value)">ADD TO CART
                         </button>
-                        <button class="outline-button mb-3" onclick="addToCart({{Product._id}})">BUY NOW</button>
+                        <button class="outline-button mb-3" onclick="addToCart({{Product}},document.getElementById('quantity').value)">BUY NOW</button>
                     </div>
                 </div>
             </div>

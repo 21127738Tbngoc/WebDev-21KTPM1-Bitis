@@ -116,3 +116,8 @@ async function sortOption(option) {
     await loadProductPage(query, 0)
 }
 
+function addToCart(product,quantity)
+{
+
+}
+
