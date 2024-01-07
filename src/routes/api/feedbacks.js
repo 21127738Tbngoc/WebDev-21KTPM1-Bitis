@@ -1,17 +1,15 @@
-const Product = require('../../model/product.js')
-const mongoose = require("mongoose");
+const Feedback = require('../../model/feedback');
 const router = require("express").Router();
 const dotenv = require('dotenv');
 const axios = require("axios");
-
 dotenv.config();
 
 //CREATE
 router.post("/add", async (req, res) => {
-    const newProduct = new Product(req.body);
+    const newFeedback = new Feedback(req.body);
     try {
-        const savedProduct = await newProduct.save();
-        res.status(200).json(savedProduct);
+        const savedFeedback = await newFeedback.save();
+        res.status(200).json(savedFeedback);
     } catch (err) {
         res.status(500).json(err);
     }
@@ -20,14 +18,14 @@ router.post("/add", async (req, res) => {
 //UPDATE
 router.put("/update/:id", async (req, res) => {
     try {
-        const updatedProduct = await Product.findByIdAndUpdate(
+        const updatedFeedback = await Feedback.findByIdAndUpdate(
             req.params.id,
             {
                 $set: req.body,
             },
             {new: true}
         );
-        res.status(200).json(updatedProduct);
+        res.status(200).json(updatedFeedback);
     } catch (err) {
         res.status(500).json(err);
     }
@@ -36,33 +34,23 @@ router.put("/update/:id", async (req, res) => {
 //DELETE
 router.delete("/delete/:id", async (req, res) => {
     try {
-        await Product.findOneAndDelete({id: req.body.id});
-        res.status(200).json("Product has been deleted...");
+        await Feedback.findOneAndDelete({id: req.body.id});
+        res.status(200).json("Feedback has been deleted...");
     } catch (err) {
         res.status(500).json(err);
     }
 });
 
-//GET PRODUCT
-router.get("/find/:id", async (req, res) => {
-    try {
-        const product = await Product.findOne({_id: req.params.id});
-        res.status(200).json(product);
-    } catch (err) {
-        res.status(500).json(err.message);
-    }
-});
 
-//GET ALL PRODUCTS
+//GET ALL FEEDBACKS
 router.get("/", async (req, res) => {
     const qFilter = req.query.filter || {};
     const qSort = req.query.sort || {date: -1};
-    const qLimit = req.query.limit || 2 ** 32;
-
+    const qLimit = req.query.limit || 2**32;
     try {
         // Truy van theo yeu cau
-        let products = await Product.find(qFilter).sort(qSort).limit(qLimit);
-        res.status(200).json(products);
+        let feedbacks = await Feedback.find(qFilter).sort(qSort).limit(qLimit);
+        return res.status(200).json(feedbacks);
     } catch
         (err) {
         res.status(500).json(err.message);

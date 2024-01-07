@@ -44,8 +44,7 @@ router.delete("/delete/:id", async (req, res) => {
 router.get("/find/:id", async (req, res) => {
     const userInfo = JSON.parse(sessionStorage.getItem("userInfo"))
     if (!userInfo) return res.status(400).json("Bad request!");
-    if (userInfo.isAdmin === false)
-    {
+    if (userInfo.isAdmin === false) {
         try {
             const profile = await User.findOne({id: userInfo.id});
             return res.status(200).json(profile);
@@ -55,11 +54,25 @@ router.get("/find/:id", async (req, res) => {
     }
 });
 
+router.get('/avartar/', async (req, res) => {
+        const id = req.query.id;
+        console.log(id)
+        try
+        {
+            const user = await User.findOne({id: id})
+            return res.status(200).json(`"avatar": ${user.avartar}`);
+        } catch (e)
+        {
+            res.status(e.code).json(e.message)
+        }
+    }
+)
+
 //FIND ALL USERS (OR WITH FILTER)
 router.get("/", async (req, res) => {
     const qFilter = req.query.filter || {};
-    const qSort = req.query.sort || {name:-1};
-    const qLimit = req.query.limit || 2**32;
+    const qSort = req.query.sort || {name: -1};
+    const qLimit = req.query.limit || 2 ** 32;
     console.log(req.query)
     try {
         let Users = await User.find(qFilter).sort(qSort).limit(qLimit);
