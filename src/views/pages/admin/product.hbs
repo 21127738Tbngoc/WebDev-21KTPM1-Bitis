@@ -1,3 +1,11 @@
+<script>
+async function deleteProduct()
+{
+
+}
+async function editProduct()
+</script>
+
 <div class="container">
     <div class="row">
         <div class="col">
@@ -41,12 +49,12 @@
                     </td>
                     <td>{{qty}}</td>
                     <td>
-                        <button class="outline-button" style="border: no-border;" onclick="editProduct('{{_id}}')">
+                        <button class="outline-button" style="border: no-border;" onclick="editProduct('{{this}}')">
                             <i class="las la-edit" style="font-size: 24px"></i>
                         </button>
                     </td>
                     <td>
-                        <button class="primary-button" onclick="deleteProduct('{{_id}}')">
+                        <button class="primary-button" onclick="deleteProduct('{{this}}')">
                             XÓA
                         </button>
                     </td>
