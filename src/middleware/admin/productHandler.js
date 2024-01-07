@@ -1,4 +1,4 @@
-import {uploadImages} from "./images"
+import {uploadImages} from "./cloudinary"
 import axios from 'axios';
 
 export const AddProductHandler = async (data) => {
@@ -16,7 +16,6 @@ export const AddProductHandler = async (data) => {
         const newPhotoArray = uploadImages(files);
 
         const product = {
-            id: data.id,
             name: data.name,
             price: data.price,
             desc: data.description,

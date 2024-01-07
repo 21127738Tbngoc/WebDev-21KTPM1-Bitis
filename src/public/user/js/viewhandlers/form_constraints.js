@@ -58,8 +58,8 @@ async function formControl()
     document.getElementById('email-notice').innerText = notice;
 }
 
-$('#username').blur(formControl)
-$('#password').blur(formControl)
-$('#email').blur(formControl)
+document.getElementById('username').input(formControl)
+document.getElementById('password').input(formControl)
+document.getElementById('email').input(formControl)
 
 console.log(query)

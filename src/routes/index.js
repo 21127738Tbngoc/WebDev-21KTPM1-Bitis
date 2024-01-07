@@ -54,29 +54,5 @@ router.get('/order-history', async function (req,res,next)
 })
 
 
-// ADMIN router
-
-// router.get('/admin/', async function (req, res, next) {
-//     res.render('admin/admin', { title: 'Thông tin liên hệ', layout: 'admin.hbs' });
-// });
-
-// router.get('/admin/app-chat', async function (req, res, next) {
-//     res.render('admin/app_chat', { title: 'Thông tin liên hệ', layout: 'admin.hbs' });
-// });
-
-// router.get('/admin/app-calendar', async function (req, res, next) {
-//     res.render('admin/app_calendar', { title: 'Thông tin liên hệ', layout: 'admin.hbs' });
-// });
-
-// router.get('/admin/ticket-list', async function (req, res, next) {
-//     res.render('admin/ticket_list', { title: 'Thông tin liên hệ', layout: 'admin.hbs' });
-// });
-
-// router.get('/admin/about-us', async function (req, res, next) {
-//     res.render('admin/about_us', { title: 'Thông tin liên hệ', layout: 'admin.hbs' });
-// });
-
-// POST methods
-
 
 module.exports = router;

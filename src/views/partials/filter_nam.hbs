@@ -18,21 +18,7 @@
         <img src="user/img/GiayNam/GiayNamLabel/giay-tay-nam.svg" alt="giaytay" class="product-types me-3" onclick="filtering('Gi\u00e0y Tây')">
         <img src="user/img/GiayNam/GiayNamLabel/dep-nam.svg" alt="giaytay" class="product-types" onclick="filtering('D\u00e9p')">
     <h6 class="py-2 mb-3 border-bottom"><i class="la la-palette" style="font-size: 20px;"></i>&nbsp;&nbsp;Màu sắc</h6>
-    <div class="product-color">
-        <div class="color-option d-flex-wrap">
-            <button class="color-button" style="background-color:#FFA500" onclick="selectColor(this,'CAM')"></button>
-            <button class="color-button" style="background-color:#000000" onclick="selectColor(this, 'DEN')"></button>
-            <button class="color-button" style="background-color:#FF0000" onclick="selectColor(this, 'DOO')"></button>
-            <button class="color-button" style="background-color:#FFC0CB" onclick="selectColor(this,'HOG')"></button>
-            <button class="color-button" style="background-color: #FFFDD0" onclick="selectColor(this,'KEM')"></button>
-            <button class="color-button" style="background-color:#A52A2A" onclick="selectColor(this, 'NAU')"></button>
-            <button class="color-button" style="background-color:#556B2F" onclick="selectColor(this, 'REU')"></button>
-            <button class="color-button" style="background-color:#FFFFFF" onclick="selectColor(this,'TRG')"></button>
-            <button class="color-button" style="background-color:#FFFF00" onclick="selectColor(this,'VAG')"></button>
-            <button class="color-button" style="background-color: #808080" onclick="selectColor(this,'XAM')"></button>
-            <button class="color-button" style="background-color: #0000FF" onclick="selectColor(this,'XDG')"></button>
-            <button class="color-button" style="background-color:#008000" onclick="selectColor(this,'XLC')"></button>
-        </div>
+    {{> color}}
     </div>
     {{> sort}}
 </div>
