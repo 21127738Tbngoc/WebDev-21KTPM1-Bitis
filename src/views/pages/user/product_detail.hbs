@@ -50,42 +50,42 @@
 
 <!--Display-->
 <div class="container-fluid">
-    <div class="container Product-display">
+    <div class="container product-display">
         <div class="row g-4">
             <div class="col">
                 <div class="left-display">
                     <!--Product images-->
-                    <div class="Product-img-list">
+                    <div class="product-img-list">
                         <img src={{Product.images.[0]}} onclick="changeThumbnail(event)">
                         <img src={{Product.images.[1]}} onclick="changeThumbnail(event)">
                         <img src={{Product.images.[2]}} onclick="changeThumbnail(event)">
                     </div>
 <!--                    Product thumbnail-->
-                    <img class="Product-thumbnail" src='{{Product.images.[0]}}' alt="">
+                    <img class="product-thumbnail" src='{{Product.images.[0]}}' alt="">
                 </div>
             </div>
             <div class="col">
                 <div class="right-display">
                     <!--Product name-->
-                    <h4 class="Product-name">{{Product.name}}</h4>
+                    <h4 class="product-name">{{Product.name}}</h4>
                     <!--Product rating-->
-                    <div class="Product-rating align-items-center">
+                    <div class="product-rating align-items-center">
                         <img src="{{rating Product.rating_average}}" alt="">
                         <p>(211)</p>
                     </div>
                     <!--Product price-->
-                    <h3 class="Product-price">{{currency Product.price}}</h3>
+                    <h3 class="product-price">{{currency Product.price}}</h3>
                     <!--Product stock-->
-                    <p>Tình trạng: <a class="Product-stock"><strong>{{pStatus Product.quantity}} ({{Product.quantity}}
+                    <p>Tình trạng: <a class="product-stock"><strong>{{pStatus Product.quantity}} ({{Product.quantity}}
                         )</strong></a>
                         <!--Product description-->
-                    <div class="Product-description" style="font-size: 14px;">
-                        <!--                     Nâng tầm mỗi bước chạy với đôi giày chạy bộ hiệu suất cao của chúng tôi! Thiết kế với vật liệu nhẹ và đế đàn hồi, đôi giày này mang lại sự thoải mái và hỗ trợ vô song qua từng dặm đường. Phần upper bằng vải lưới thông thoáng giúp giữ đôi chân mát mẻ trong khi lớp lót đệm hấp thụ lực tác động.-->
+                    <div class="product-description" style="font-size: 14px;">
+                        <!--                    Nâng tầm mỗi bước chạy với đôi giày chạy bộ hiệu suất cao của chúng tôi! Thiết kế với vật liệu nhẹ và đế đàn hồi, đôi giày này mang lại sự thoải mái và hỗ trợ vô song qua từng dặm đường. Phần upper bằng vải lưới thông thoáng giúp giữ đôi chân mát mẻ trong khi lớp lót đệm hấp thụ lực tác động.-->
                     {{{Product.description}}}
                     </div>
                     <!--Product variants-->
-                    <div class="Products-variants mb-3">
-                        <div class="Product-sizes">
+                    <div class="products-variants mb-3">
+                        <div class="product-sizes">
                             <p style="margin: 0;">Kích thước:</p>
                             <div class="size-option d-flex">
                                 <button onclick="selectSize(this)">35</button>
@@ -100,9 +100,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="Product-qty">
+                    <div class="product-qty">
                         <p style="margin: 0;">Số lượng:</p>
-                        <div class="Product-quantity mb-2">
+                        <div class="product-quantity mb-2">
                             <input type="button" value="-" onclick="minusQuantity()" class="qty-btn">
                             <input type="text" id="quantity" name="quantity" value="1" min="1" class="qty-input">
                             <input type="button" value="+" onclick="plusQuantity()" class="qty-btn">
