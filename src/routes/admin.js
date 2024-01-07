@@ -4,7 +4,7 @@ const router = express.Router();
 
 //ADMIN router
 router.get('/add-product', async function (req, res, next) {
-    res.render('pages/admin/add_product.hbs', { title: 'Thông tin liên hệ'});
+    res.render('pages/admin/add_product.hbs', { title: 'Thông tin liên hệ', layout:'admin.hbs'});
 });
 
 router.get('/all_orders', async function (req, res, next) {
