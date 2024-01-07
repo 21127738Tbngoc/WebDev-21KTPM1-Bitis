@@ -1,14 +1,41 @@
 <div class="container-fluid">
     <div class="container">
         <!--Breadcrumb-->
-       <ul class="breadcrumb">
+        <ul class="breadcrumb">
             <li><a href="/">TRANG CHỦ</a></li>
             <li>GIỎ HÀNG</li>
         </ul>
-
-        <!--Cart items-->     
-        <div class="cart-container">
-            <h3>Giỏ hàng của bạn</h3>
+        
+        <div class="row">
+            <!--Cart items-->     
+            <div class="col-8 cart-container">
+                <h3>Giỏ hàng của bạn</h3>
+                <p>Bạn đang có <strong>1 sản phẩm</strong> trong giỏ hàng.</p>
+                <!--Item-->
+                <div class="cart-item d-flex">
+                    <img class="product-thumbnail">
+                    <div class="cart-item-info flex-column">
+                        <!--Name-->
+                        <div class="product-name border-bottom" style="height: 3rem">
+                            <a href="/{{product._id}}" style=" overflow: auto; text-overflow: ellipsis">{{product.name}}</a>
+                        </div>
+                        <div class="flex-row">
+                            <div class="product-price d-flex align-items-center justify-content-end">{{currency product.price}}</div>
+                            <div class="product-quantity mb-2">
+                                <input type="button" value="-" onclick="minusQuantity()" class="qty-btn">
+                                <input type="text" id="quantity" name="quantity" value="1" min="1" class="qty-input">
+                                <input type="button" value="+" onclick="plusQuantity()" class="qty-btn">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Order detail-->
+            <div class="col-4 order-detail">
+                <h3>Thông tin đơn hàng</h3>
+            </div>
         </div>
+
+        
     </div>
 </div>
