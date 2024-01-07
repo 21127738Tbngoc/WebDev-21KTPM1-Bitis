@@ -23,18 +23,29 @@ router.get("/", async function (req, res, next) {
     })
 })
 
-router.get('/detail/:id', async (req,res)=>
-{
+router.get('/detail/:id', async (req, res) => {
     try {
-        let product = await Product.findOne({_id: req.params.id});
-        let related = await Product.find({
-            categories: {$all: product.categories.slice(0, product.categories.length - 1)}
-        }).sort({date: -1}).limit(4)
+        let product = await axios.get('http://localhost:3000/product/', {
+                    params:
+                        {
+                            filter: {_id: req.params.id}
+                        }
+                }
+            ).then((res)=> res.data)
+        ;
+        product = product[0];
+        let related = await axios.get('http://localhost:3000/product/',{
+            params: {
+                filter: {categories: {$all: product.categories.slice(0, product.categories.length - 1)}},
+                limit: 4,
+        }
+    }).then((res)=> res.data)
         let feedbacks = await axios.get('http://localhost:3000/feedback/', {
             params: {
                 filter: {"product_id": product.id}
             }
         }).then((res) => res.data)
+
         let fbUser = []
         for (let i = 0; i < feedbacks.length; i++) {
             let avartar = await axios.get(`http://localhost:3000/user/avartar/`, {
@@ -43,11 +54,15 @@ router.get('/detail/:id', async (req,res)=>
             })
             fbUser.push({feedback: feedbacks[i], avartar: avartar})
         }
-        console.log(product)
-        res.status(200).render('pages/user/product_detail', {
-            title: 'Thông tin sản phẩm', Product:product, relatedProducts: related, feedbacks:fbUser, User:req.user
+        res.render('pages/user/product_detail', {
+            title: 'Thông tin sản phẩm',
+            Product: product,
+            relatedProducts: related,
+            feedbacks: fbUser,
+            User: req.user
         });
-    } catch (err) {
+    } catch
+        (err) {
         res.status(500).json(err.message);
     }
 })
@@ -70,11 +85,9 @@ router.get('/about-us', async function (req, res, next) {
     res.render('pages/user/about_us', {title: 'Thông tin liên hệ'});
 });
 
-router.get('/order-history', async function (req,res,next)
-{
+router.get('/order-history', async function (req, res, next) {
     res.render('pages/user/order_history', {title: 'Profile'})
 })
-
 
 
 module.exports = router;
