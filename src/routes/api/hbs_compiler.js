@@ -61,25 +61,25 @@ function partials(partials_name, data)
     } catch (err) {
         console.log(err)
     }
-})
+}
 
-router.post('/pages', async(req,res)=>
+function page(page_name, Data)
 {
     let html;
     try {
-        let source = fs.readFileSync(`./views/page/${req.body.page}.hbs`, "utf-8")
+        let source = fs.readFileSync(`./views/page/${page_name}.hbs`, "utf-8")
         Handlebars.registerPartial('product_detail', source);
         let partial = Handlebars.compile(source);
-        const product = req.body.data;
+        const product = Data;
         try {
             html = partial({product: product});
         } catch (e) {
             console.log(e)
         }
-        res.status(200).send(html)
+       return html
     } catch (err) {
-        res.status(500).json(err.message)
+        console.log(err)
     }
-})
+}
 
 module.exports = router
