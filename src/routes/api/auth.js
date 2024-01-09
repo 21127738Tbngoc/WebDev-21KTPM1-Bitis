@@ -18,28 +18,13 @@ let transporter = nodemailer.createTransport({
     }
 });
 
-
 router.post('/login', async (req, res) => {
-    try{
-        const user = await User.findOne({username: req.body.username});
-
-        !user && res.status(401).json("wrong credentials")
-        const hashedPassword=CryptoJS.AES.decrypt(user.password, process.env.PASS_SEC);
-        const realpassword=hashedPassword.toString(CryptoJS.enc.Utf8);
-        realpassword !== req.body.password && res.status(401).json("wrong credentials")
-
-        const accessToken=jwt.sign({
-                id:user._id,
-                isAdmin: user.isAdmin,
-            },
-            process.env.JWT_SEC,
-            {expiresIn:"3d"}
-        )
-
-
-        const{password, ...others}=user._doc;
-
-        res.status(200).json({...others, accessToken})
+    try {
+        passport.authenticate('local', {
+            successRedirect: '/',
+            failureRedirect: '/',
+            failureFlash: true
+        });
     }
     catch(err){
         res.status(500).json(err);
@@ -76,7 +61,7 @@ router.post("/register", async (req, res) => {
             html: 'Please click <a href="' + link + '"> here </a> to activate your account.'
         };
 
-        transporter.sendMail(mailOptions, function (error, info) {
+        await transporter.sendMail(mailOptions, function (error, info) {
             if (error) {
                 console.error('Gửi email không thành công: ' + error);
             } else {
@@ -123,20 +108,19 @@ router.post("/register", async (req, res) => {
 //         });
 // });
 
-router.get('/active/:activeToken', function (req, res, next) {
+router.get('/active/:_id', function (req, res, next) {
 
     // find the corresponding user
     User.findOne({
-        activeToken: req.params.activeToken,
-        // check if the expire time > the current time activeExpires: {$gt: Date.now()}
+        _id: req.params._id,
     }, function (err, user) {
         if (err) return next(err);
 
         // invalid activation code
         if (!user) {
-            return res.render('message', {
-                title: 'fail to activate',
-                content: 'Your activation link is invalid, please <a href="/account/signup">register</a> again'
+            return res.render('pages/error', {
+                title: 'Fail to activate',
+                message: 'Your activation link is invalid, please <a href="/signup">register</a> again'
             });
         }
         // activate and save
@@ -144,9 +128,9 @@ router.get('/active/:activeToken', function (req, res, next) {
         user.save(function (err, user) {
             if (err) return next(err);
             // activation success
-            res.render('message', {
+            res.render('pages/index', {
                 title: 'activation success!',
-                content: user.username + 'Please <a href="/account/login">login</a>'
+                content: user.username + 'Please <a href="/login">login</a>'
             })
         });
     });
@@ -157,7 +141,8 @@ router.get('/active/:activeToken', function (req, res, next) {
 router.get("/logout", (req, res) => {
     //use passport logout method to end user session and un-authenticate it
     req.logout();
-    sessionStorage.clear();
+    localStorage.removeItem('cart')
+    localStorage.removeItem('allProducts')
     res.redirect("/");
 });
 

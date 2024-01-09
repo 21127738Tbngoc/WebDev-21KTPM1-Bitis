@@ -81,5 +81,3 @@ function page(page_name, Data)
         console.log(err)
     }
 }
-
-module.exports = router
