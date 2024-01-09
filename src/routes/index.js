@@ -4,6 +4,7 @@ const Product = require("../model/product");
 const router = express.Router();
 
 /* GET home page. USER router*/
+
 router.get("/", async function (req, res, next) {
 
     let NewProducts = await axios.get('http://localhost:3000/product/', {

@@ -21,6 +21,7 @@ const UserRouter = require("./routes/api/user.js");
 const OrderRouter = require('./routes/api/order.js');
 const FeedbackRouter = require('./routes/api/feedbacks.js');
 const AdminRouter = require('./routes/admin.js');
+const HbsRouter = require('./routes/api/hbs_compiler')
 
 const hbs = require("./handlebarsConfig");
 
@@ -120,8 +121,9 @@ passport.use(new GoogleStrategy({
 ));
 
 app.post('/login',
-    passport.authenticate('local', {failureRedirect: '/login'}),
+    passport.authenticate('local', {failureRedirect: '/'}),
     function (req, res) {
+        console.log("Logged in successfully")
         res.redirect('/');
     });
 
@@ -133,6 +135,7 @@ app.use('/user/', UserRouter);
 app.use('/feedback/', FeedbackRouter)
 app.use('/admin/', AdminRouter);
 app.use('/order/', OrderRouter);
+app.use('/hbs/',HbsRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
