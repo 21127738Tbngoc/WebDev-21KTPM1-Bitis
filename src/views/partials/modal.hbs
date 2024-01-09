@@ -1,13 +1,15 @@
 <!-- Login -->
+<div class="overlay" id="loginOverlay"></div>
 <div class="modal" id="loginModal">
     <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
-        <h3>Đăng nhập</h3>
+        <img src="/user/img/logo.png" alt="logo" width="150px" height="auto" style="margin-bottom: 0">
+        <h3 class="justify-content-center text-center" style="padding: 1em 0">Đăng nhập</h3>
         <form action="/auth/login" method="POST">
-            <label for="username">Tên đăng nhập:</label>
-            <input type="text" name="username" required>
-            <label for="password">Mật khẩu:</label>
-            <input type="password" name="password" required>
+            <label for="username">Tên đăng nhập</label>
+            <input type="text" name="username" placeholder="example123" required>
+            <label for="password">Mật khẩu</label>
+            <input type="password" name="password" placeholder="••••••••••••••••••••••" required>
             <p class="additional-text">Quên mật khẩu?</p>
             <button type="submit" class="btn primary-button">Đăng nhập</button>
         </form>
@@ -20,10 +22,12 @@
 
     function closeModal() {
         document.getElementById('loginModal').style.display = 'none';
+        document.getElementById('loginOverlay').style.display = 'none';
     }
 
     function openModal() {
         document.getElementById('loginModal').style.display = 'block';
+        document.getElementById('loginOverlay').style.display = 'block';
     }
 </script>
 
@@ -33,22 +37,23 @@
 <div class="modal" id="signupModal">
     <div class="modal-content">
         <span class="close" onclick={closeSignupModal()}>&times;</span>
-        <h3>Đăng ký</h3>
+        <img src="/user/img/logo.png" alt="logo" width="150px" height="auto" style="margin-bottom: 0">
+        <h3 class="justify-content-center text-center" style="padding: 1em 0">Đăng ký</h3>
         <form id="signup-form" action="/auth/register", method="POST">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="nguyenvana" required >
-            <p id="username-notice" style="color: red"></p>
+            <label for="username">Tên đăng nhập</label>
+            <input type="text" id="username" name="username" placeholder="Nhập tên đăng nhập" required >
+            <p id="username-notice" style="color: red; font-size: 10px"></p>
         
             <label for="username">Email</label>
-            <input type="text" id="email" name="username" placeholder="nguyenvana@gmail.com" required >
-            <p id="email-notice" style="color: red"></p>
+            <input type="text" id="email" name="username" placeholder="Nhập email" required >
+            <p id="email-notice" style="color: red; font-size: 10px""></p>
 
             <label for="password">Mật khẩu</label>
             <input type="password" id="password" name="username" placeholder="••••••••••••••••" required >
-            <p id="password-notice" style="color: red"></p>
+            <p id="password-notice" style="color: red; font-size: 10px""></p>
             <button type="submit" class="btn primary-button">Đăng ký</button>
             <br>
-            <p>Đã có tài khoản? <a class="link-button-small" href="#">Đăng nhập ngay</a></p>
+
         </form>
     </div>
 </div>
