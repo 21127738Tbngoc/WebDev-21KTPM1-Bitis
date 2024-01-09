@@ -1,21 +1,11 @@
-<script>
-async function deleteProduct()
-{
-
-}
-async function editProduct()
-</script>
-
-<div class="container-fluid">
+<div class="container-fluid mt-4">
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <h4>Danh sách sản phẩm: {{numProducts}}</h4>
-                {{#if loading}}
-                <h4 class="pt-4">Đang tải......</h4>
-                {{else}}
-                <table class="table">
-                    <thead>
+        <h4>Danh sách sản phẩm: {{numProducts}}</h4>
+        {{#if loading}}
+        <h4 class="pt-4">Đang tải......</h4>
+        {{else}}
+            <table class="table">
+                <thead>
                     <tr>
                         <th>Ảnh</th>
                         <th>Tên</th>
@@ -30,8 +20,8 @@ async function editProduct()
                         <th>Ngày</th>
                         <th>Tag</th>
                     </tr>
-                    </thead>
-                    <tbody>
+                </thead>
+                <tbody>
                     {{#each productsData}}
                         <tr>
                         <td>
@@ -64,10 +54,8 @@ async function editProduct()
                         </td>
                         </tr>
                     {{/each}}
-                    </tbody>
-                </table>
-                {{/if}}
-            </div>
-        </div>
+                </tbody>
+            </table>
+        {{/if}}
     </div>
 </div>
