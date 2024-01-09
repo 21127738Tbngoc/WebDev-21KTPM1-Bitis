@@ -31,16 +31,17 @@ router.get('/detail/:id', async (req, res) => {
                             filter: {_id: req.params.id}
                         }
                 }
-            ).then((res)=> res.data)
+            ).then((res) => res.data)
         ;
         product = product[0];
 
-        let related = await axios.get('http://localhost:3000/product/',{
+        let related = await axios.get('http://localhost:3000/product/', {
             params: {
                 filter: {categories: {$all: product.categories.slice(0, product.categories.length - 1)}},
                 limit: 4,
-        }
-    }).then((res)=> res.data)
+            }
+        }).then((res) => res.data)
+
         let feedbacks = await axios.get('http://localhost:3000/feedback/', {
             params: {
                 filter: {"product_id": product.id}
@@ -48,12 +49,13 @@ router.get('/detail/:id', async (req, res) => {
         }).then((res) => res.data)
 
         let fbUser = []
+
         for (let i = 0; i < feedbacks.length; i++) {
-            let avartar = await axios.get(`http://localhost:3000/user/avartar/`, {
+            let avatar = await axios.get(`http://localhost:3000/user/avartar/`, {
                 params:
                     {id: feedbacks[i].user_id}
             })
-            fbUser.push({feedback: feedbacks[i], avartar: avartar})
+            fbUser.push({feedback: feedbacks[i], avatar: avatar})
         }
 
         res.render('pages/user/product_detail', {
