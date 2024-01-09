@@ -1,19 +1,6 @@
 const User = require('../../model/user')
 const router = require("express").Router();
 
-// //CREATE
-// router.post("/user/add", async (req, res) => {
-//     const userInfo = JSON.parse(sessionStorage.getItem("userInfo"))
-//     if (!userInfo || !userInfo.isAdmin) return res.status(400).json("Bad request!");
-//     const newProduct = new User(req.body);
-//     try {
-//         const savedProduct = await newProduct.save();
-//         res.status(200).json(savedProduct);
-//     } catch (err) {
-//         res.status(500).json(err);
-//     }
-// });
-
 //UPDATE
 router.put("/update/:id", async (req, res) => {
     const userInfo = JSON.parse(sessionStorage.getItem("userInfo"))
@@ -54,13 +41,13 @@ router.get("/find/:id", async (req, res) => {
     }
 });
 
-router.get('/avartar/', async (req, res) => {
+router.get('/avatar/', async (req, res) => {
         const id = req.query.id;
         console.log(id)
         try
         {
             const user = await User.findOne({id: id})
-            return res.status(200).json(`"avatar": ${user.avartar}`);
+            return res.status(200).json(`"avatar": ${user.avatar}`);
         } catch (e)
         {
             res.status(e.code).json(e.message)
