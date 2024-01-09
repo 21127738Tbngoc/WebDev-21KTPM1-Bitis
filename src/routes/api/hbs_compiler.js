@@ -1,6 +1,10 @@
 const Handlebars = require("handlebars");
 const fs = require("fs");
 const dotenv = require('dotenv');
+const Product = require("../../model/product");
+const router = require("express").Router();
+
+var partials = {};
 
 // Đăng ký các helper
 Handlebars.registerHelper('currency', (data) => {
@@ -18,7 +22,7 @@ Handlebars.registerHelper('pStatus', (quantity) => {
     return (quantity === 0 ? 'Hết hàng' : 'Còn hàng');
 });
 
-Handlebars.registerHelper('timeDifference', function(fromDate) {
+Handlebars.registerHelper('timeDifference', function (fromDate) {
     const now = new Date();
     const difference = now - new Date(fromDate);
     const seconds = Math.floor(difference / 1000);
@@ -37,36 +41,44 @@ Handlebars.registerHelper('timeDifference', function(fromDate) {
     } else if (hours > 0) {
         return hours + (hours === 1 ? ' hour' : ' hours') + " ago";
     } else if (minutes > 0) {
-        return minutes + (minutes === 1 ? ' minute' : ' minutes')  + " ago";
+        return minutes + (minutes === 1 ? ' minute' : ' minutes') + " ago";
     } else {
-        return seconds + (seconds === 1 ? ' second' : ' seconds')  + " ago";
+        return seconds + (seconds === 1 ? ' second' : ' seconds') + " ago";
     }
 });
 
-function partials(partials_name, data)
-{
+fs.readdir(`./views/partials`, function (err, files) {
+    if (err) {
+        console.log('Lỗi khi đọc thư mục: ', err);
+        return;
+    }
+
+    files.forEach(function (file) {
+        const filePath = `./views/partials/${file}`;
+        let source = fs.readFileSync(filePath, 'utf8')
+        Handlebars.registerPartial(`${file.split("."[0])}`, source);
+        partials[file.split(".")[0]] = Handlebars.compile(source)
+    })
+});
+
+function renderProductCard(data) {
     let html;
     try {
-        let source = fs.readFileSync(`./views/partials/${partials_name}.hbs`, "utf-8")
-        Handlebars.registerPartial('product_card', source);
-        let partial = Handlebars.compile(source);
-        const product = data;
-        try {
-            html = partial({product: product});
-        } catch (e) {
-            console.log(e)
-        }
-       return html
+        // const filePath = `./views/partials/product_card.hbs`;
+//let source = fs.readFileSync(`./views/partials/product_card.hbs`, "utf-8")
+        //Handlebars.registerPartial(`product_card`, source);
+        // let partial = Handlebars.compile(source)
+        html = partials.product_card({product: data});
+        return html
     } catch (err) {
         console.log(err)
     }
 }
 
-function page(page_name, Data)
-{
+function page(Data) {
     let html;
     try {
-        let source = fs.readFileSync(`./views/page/${page_name}.hbs`, "utf-8")
+        let source = fs.readFileSync(`./views/page/${page_name}.hbs`)
         Handlebars.registerPartial('product_detail', source);
         let partial = Handlebars.compile(source);
         const product = Data;
@@ -75,8 +87,25 @@ function page(page_name, Data)
         } catch (e) {
             console.log(e)
         }
-       return html
+        return html
     } catch (err) {
         console.log(err)
     }
 }
+
+router.get('/product-page', async (req,res)=>
+{
+    const qFilter = req.query.filter || {};
+    const qSort = req.query.sort || {date: -1};
+    const qLimit = req.query.limit || 2 ** 32;
+    let products = await Product.find(qFilter).sort(qSort).limit(qLimit);
+    let html = []
+    for (let i = 0; i < products.length; i++)
+    {
+        html.push(renderProductCard(products[i]))
+    }
+    console.log(html)
+    res.status(200).send(html)
+})
+
+module.exports = router

@@ -1,67 +1,71 @@
 <script>
-async function deleteProduct()
-{
+    async function deleteProduct() {
 
-}
-async function editProduct()
+    }
+
+    async function editProduct() {
+
+    }
+
 </script>
 
 <div class="container">
     <div class="row">
         <div class="col">
-            <h4>Danh sách sản phẩm: {{numProducts}}</h4>
+            <h4>Danh sách sản phẩm: {{productsData.length}}</h4>
             {{#if loading}}
-            <h4 class="pt-4">Đang tải......</h4>
+                <h4 class="pt-4">Đang tải......</h4>
             {{else}}
-            <table class="table">
-                <thead>
-                <tr>
-                    <th>Images</th>
-                    <th>Name</th>
-                    <th>Rating</th>
-                    <th>Price</th>
-                    <th>Stock</th>
-                    <th>Description</th>
-                    <th>Size</th>
-                    <th>Color</th>
-                    <th>Qty</th>
-                    <th>Action</th>
-                </tr>
-                </thead>
-                <tbody>
-                {{#each productsData}}
+                <table class="table">
+                    <thead>
                     <tr>
-                    <td>
-                        {{#each images}}
-                        <img src="{{this}}" alt="product" style="width: 50px; height: 50px;" />
-                        {{/each}}
-                    </td>
-                    <td>{{name}}</td>
-                    <td>{{rating}}</td>
-                    <td>{{price}}</td>
-                    <td>{{stock}}</td>
-                    <td>{{description}}</td>
-                    <td>{{size}}</td>
-                    <td>
-                        {{#each color}}
-                        {{this}} 
-                        {{/each}}
-                    </td>
-                    <td>{{qty}}</td>
-                    <td>
-                        <button class="outline-button" style="border: no-border;" onclick="editProduct('{{this}}')">
-                            <i class="las la-edit" style="font-size: 24px"></i>
-                        </button>
-                    </td>
-                    <td>
-                        <button class="primary-button" onclick="deleteProduct('{{this}}')">
-                            XÓA
-                        </button>
-                    </td>
+                        <th>Images</th>
+                        <th>Name</th>
+                        <th>Rating</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Description</th>
+                        <th>Size</th>
+                        <th>Color</th>
+                        <th>Qty</th>
+                        <th>Action</th>
                     </tr>
-                {{/each}}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                    {{#each productsData}}
+                        <tr>
+                            <td>
+                                {{#each images}}
+                                    <img src="{{this}}" alt="product" style="width: 50px; height: 50px;"/>
+                                {{/each}}
+                            </td>
+                            <td>{{name}}</td>
+                            <td>{{rating_average}}</td>
+                            <td>{{price}}</td>
+                            <td>{{stock}}</td>
+                            <td>{{description}}</td>
+                            <td>{{size}}</td>
+                            <td>
+                                {{#each color}}
+                                    {{this}}
+                                {{/each}}
+                            </td>
+                            <td>{{qty}}</td>
+                            <td>
+                                <button class="outline-button" style="border: no-border;"
+                                        onclick="editProduct('{{this}}')">
+                                    <i class="las la-edit" style="font-size: 24px"></i>
+                                </button>
+                            </td>
+                            <td>
+                                <button class="primary-button" onclick="deleteProduct('{{this}}')">
+                                    XÓA
+                                </button>
+                            </td>
+                        </tr>
+                    {{/each}}
+                    </tbody>
+                </table>
             {{/if}}
         </div>
     </div>
