@@ -2,10 +2,10 @@ const passport = require("passport");
 const {compareSync} = require('bcrypt');
 const LocalStrategy = require('passport-local').Strategy;
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
-const FacebookStrategy = require("passport-facebook").Strategy;
 const User = require("../model/user")
 var _ = require('lodash');
 var nodemailer = require('nodemailer');
+
 
 // Configure nodemailer for sending emails
 var transporter = nodemailer.createTransport({
@@ -19,22 +19,36 @@ var transporter = nodemailer.createTransport({
 
 passport.initialize();
 
+//Persists user data inside session
+passport.serializeUser(function (user, done) {
+    done(null, user.id);
+});
+
+//Fetches session details using session id
+passport.deserializeUser(function (id, done) {
+    User.findById(id, function (err, user) {
+        done(err, user);
+    });
+});
+
+
 //Use passport-local configuration Create passport local Strategy
 passport.use(new LocalStrategy(
-    function (username, password, done) {
-        User.findOne({ username: username }, function (err, user) {
-            if (err) { return done(err); } //When some error occurs
+    async function(username,password, done) {
+        try {
+            let user = await User.findOne({ username: username });
 
-            if (!user) {  //When username is invalid
-                return done(null, false, { message: 'Incorrect username.' });
+            if (!user) {
+                return done(null, false); // Không tìm thấy người dùng
             }
 
-            if (!compareSync(password, user.password)) { //When password is invalid
-                return done(null, false, { message: 'Incorrect password.' });
+            if (password !== user.password) {
+                return done(null, false); // Sai mật khẩu
             }
-
-            return done(null, user); //When user is valid
-        });
+            return done(null, user); // Xác thực thành công
+        } catch (err) {
+            return done(err); // Xảy ra lỗi trong quá trình tìm kiếm người dùng
+        }
     }
 ));
 
@@ -69,35 +83,4 @@ passport.use(new GoogleStrategy({
     }
 ));
 
-// //Configure FacebookStrategy
-// passport.use(new FacebookStrategy({
-//     clientID: process.env.FB_APP_ID,
-//     clientSecret: process.env.FB_APP_SECRET,
-//     callbackURL: "http://localhost:3000/auth/facebook/secret"
-// },
-//     function verify(accessToken, refreshToken, profile, cb) {
-//         const userProfile = {
-//             facebookId: profile.id,
-//             username: profile.emails[0],
-//             name: profile.displayName,
-//             email: profile.emails[0],
-//             avatar: profile.photos[0]
-//         }
-//         User.findOrCreate(userProfile, function (err, user) {
-//             return cb(err, user);
-//         });
-//     }
-// ));
 
-
-//Persists user data inside session
-passport.serializeUser(function (user, done) {
-    done(null, user.id);
-});
-
-//Fetches session details using session id
-passport.deserializeUser(function (id, done) {
-    User.findById(id, function (err, user) {
-        done(err, user);
-    });
-});
