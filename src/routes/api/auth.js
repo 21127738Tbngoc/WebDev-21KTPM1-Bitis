@@ -6,7 +6,6 @@ const CryptoJS = require('crypto-js');
 const dotenv = require('dotenv');
 const passport = require("passport");
 const User = require("../../model/user")
-const {check, validationResult} = require("express-validator");
 
 dotenv.config();
 const nodemailer = require('nodemailer');
@@ -20,38 +19,71 @@ let transporter = nodemailer.createTransport({
 });
 
 
-router.post('/login', (req, res) => {
+router.post('/login', async (req, res) => {
+    try{
+        const user = await User.findOne({username: req.body.username});
 
+        !user && res.status(401).json("wrong credentials")
+        const hashedPassword=CryptoJS.AES.decrypt(user.password, process.env.PASS_SEC);
+        const realpassword=hashedPassword.toString(CryptoJS.enc.Utf8);
+        realpassword !== req.body.password && res.status(401).json("wrong credentials")
+
+        const accessToken=jwt.sign({
+                id:user._id,
+                isAdmin: user.isAdmin,
+            },
+            process.env.JWT_SEC,
+            {expiresIn:"3d"}
+        )
+
+
+        const{password, ...others}=user._doc;
+
+        res.status(200).json({...others, accessToken})
+    }
+    catch(err){
+        res.status(500).json(err);
+    }
 })
 
-
 router.post("/register", async (req, res) => {
-    const newUser = new User({
-        username: req.body.username,
-        email: req.body.email,
-        password: CryptoJS.AES.encrypt(
-            req.body.password,
-            process.env.PASS_SEC
-        ).toString(),
-    });
-
-    let mailOptions = {
-        from: process.env.ADMIN_EMAIL, // Địa chỉ email người gửi
-        to: req.body.email, // Địa chỉ email người nhận
-        subject: 'EMAIL KÍCH HOẠT TÀI KHOẢN TỪ WEB_DEV_072_038', // Chủ đề email
-        html: 'Please click <a href="' + link + '"> here </a> to activate your account.'
-    };
-
-    transporter.sendMail(mailOptions, function(error, info) {
-        if (error) {
-            console.error('Gửi email không thành công: ' + error);
-        } else {
-            console.log('Email đã được gửi: ' + info.response);
-        }
-    });
 
     try {
-        const savedUser = await newUser.save();
+        const newUser = new User({
+            username: req.body.username,
+            email: req.body.email,
+            password: CryptoJS.AES.encrypt(
+                req.body.password,
+                process.env.PASS_SEC
+            ).toString(),
+        });
+
+        let savedUser;
+
+        try {
+            savedUser = await newUser.save();
+        } catch (e) {
+            console.log(err)
+        }
+
+        let activeToken = savedUser._id.toString('hex');
+        var link = 'http://locolhost:3000/account/active/' + activeToken;
+
+        let mailOptions = {
+            from: process.env.ADMIN_EMAIL, // Địa chỉ email người gửi
+            to: req.body.email, // Địa chỉ email người nhận
+            subject: 'EMAIL KÍCH HOẠT TÀI KHOẢN TỪ WEB_DEV_072_038', // Chủ đề email
+            html: 'Please click <a href="' + link + '"> here </a> to activate your account.'
+        };
+
+        transporter.sendMail(mailOptions, function (error, info) {
+            if (error) {
+                console.error('Gửi email không thành công: ' + error);
+            } else {
+                console.log('Email đã được gửi: ' + info.response);
+            }
+        });
+
         res.status(201).json({_id: savedUser._id, username: savedUser.username});
     } catch (err) {
         res.status(500).json(err);
@@ -59,37 +91,37 @@ router.post("/register", async (req, res) => {
 });
 
 //Local route Register new user
-router.post('/register', function (req, res, next) {
-    User.register(new User({username: req.body.username}),
-        req.body.password,
-        function (err, user) {
-
-            // Generate 20 bit activation code, ‘crypto’ is nodejs built in package.
-            crypto.randomBytes(20, function (err, buf) {
-
-                // Ensure the activation code is unique.
-                user.activeToken = user._id.toString('hex');
-
-                // Set expiration time is 24 hours.
-                user.activeExpires = Date.now() + 24 * 3600 * 1000;
-                var link = 'http://locolhost:3000/account/active/'
-                    + user.activeToken;
-
-                // Sending activation email
-                mailer.send({
-                    to: req.body.email,
-                    subject: 'Welcome to Biti\'s',
-                    html: 'Please click <a href="' + link + '"> here </a> to activate your account.'
-                });
-
-                // save user object
-                user.save(function (err, user) {
-                    if (err) return next(err);
-                    res.send('The activation email has been sent to' + user.username + ', please click the activation link within 24 hours.');
-                });
-            });
-        });
-});
+// router.post('/register', function (req, res, next) {
+//     User.register(new User({username: req.body.username}),
+//         req.body.password,
+//         function (err, user) {
+//
+//             // Generate 20 bit activation code, ‘crypto’ is nodejs built in package.
+//             crypto.randomBytes(20, function (err, buf) {
+//
+//                 // Ensure the activation code is unique.
+//                 user.activeToken = user._id.toString('hex');
+//
+//                 // Set expiration time is 24 hours.
+//                 user.activeExpires = Date.now() + 24 * 3600 * 1000;
+//                 var link = 'http://locolhost:3000/account/active/'
+//                     + user.activeToken;
+//
+//                 // Sending activation email
+//                 mailer.send({
+//                     to: req.body.email,
+//                     subject: 'Welcome to Biti\'s',
+//                     html: 'Please click <a href="' + link + '"> here </a> to activate your account.'
+//                 });
+//
+//                 // save user object
+//                 user.save(function (err, user) {
+//                     if (err) return next(err);
+//                     res.send('The activation email has been sent to' + user.username + ', please click the activation link within 24 hours.');
+//                 });
+//             });
+//         });
+// });
 
 router.get('/active/:activeToken', function (req, res, next) {
 
