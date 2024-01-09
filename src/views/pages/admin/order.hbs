@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="row g-4 d-flex flex-row">
+            <table class="table">
+                <thead>
+                    <tr class="tuble">
+                        <th>Id</th>
+                        <th>Tên</th>
+                        <th>Địa chỉ</th>
+                        <th>Chi tiết</th>
+                        <th>Phí ship</th>
+                        <th>Tổng cộng</th>
+                        <th>Ngày</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each ordersData as |data index|}}
+                    <tr class="table" key={{index}}>
+                        <td>{{data.user_id}}</td>
+                        <td>{{data.name}}</td>
+                        <td>{{data.address}}</td>
+                        <td>
+                            <ul>
+                                {{#each data.products as |product productIndex|}}
+                                    <li key={{productIndex}}>
+                                        Product ID: {{product.id}}, Product Name: {{product.name}}, Product Price: {{product.price}}, Quantity: {{product.quantity}}
+                                    </li>
+                                {{/each}}
+                            </ul>
+                        </td>
+                        <td>{{data.shipping_cost}}</td>
+                        <td>{{data.total_cost}}</td>
+                        <td>{{data.date}}</td>
+                    </tr>
+                </tbody>
+        </div>
+    </div>
+</div>
