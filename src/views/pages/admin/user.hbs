@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="row g-4 d-flex flex-row">
+            <table class="table">
+                <thead>
+                    <tr class="tuble">
+                    <th>Avatar</th>
+                    <th>Tên đăng nhập</th>
+                    <th>Email</th>
+                    <th>Admin</th>
+                    <th>Chức năng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each userData as |user index|}}
+                    <tr class="teble">
+                        <td><img src="{{user.avatar}}" alt="avatar" style="width: 100px; height: 100px;" /></td>
+                        <td>{{user.username}}</td>
+                        <td>{{user.email}}</td>
+                        <td>{{user.isAdmin}}</td>
+                        <td>
+                        <button class="btn btn-danger" onclick="deleteProduct('{{user._id}}')">Delete</button>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

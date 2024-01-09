@@ -1,13 +1,13 @@
 <script>
     //Product image list
     window.onload = function () {
-        const firstImage = document.querySelector('.Product-img-list img:first-child');
+        const firstImage = document.querySelector('.product-img-list img:first-child');
         firstImage.click(); // Simulate a click on the first image
     }
 
     function changeThumbnail(event) {
         const src = event.target.src;
-        const thumbnail = document.querySelector('.Product-thumbnail');
+        const thumbnail = document.querySelector('.product-thumbnail');
         thumbnail.src = src;
         const images = document.querySelectorAll('.Product-img-list img');
         images.forEach(img => img.style.border = 'none');
@@ -79,9 +79,9 @@
                     <p>Tình trạng: <a class="product-stock"><strong>{{pStatus Product.quantity}} ({{Product.quantity}}
                         )</strong></a>
                         <!--Product description-->
-                    <div class="product-description" style="font-size: 14px;">
+                    <div class="product-description">
                         <!--Nâng tầm mỗi bước chạy với đôi giày chạy bộ hiệu suất cao của chúng tôi! Thiết kế với vật liệu nhẹ và đế đàn hồi, đôi giày này mang lại sự thoải mái và hỗ trợ vô song qua từng dặm đường. Phần upper bằng vải lưới thông thoáng giúp giữ đôi chân mát mẻ trong khi lớp lót đệm hấp thụ lực tác động.-->
-                    {{{Product.description}}}
+                        {{{Product.description}}}
                     </div>
                     <!--Product variants-->
                     <div class="products-variants mb-3">
