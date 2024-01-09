@@ -43,7 +43,6 @@ Handlebars.registerHelper('timeDifference', function(fromDate) {
     }
 });
 
-
 function partials(partials_name, data)
 {
     let html;
@@ -51,7 +50,7 @@ function partials(partials_name, data)
         let source = fs.readFileSync(`./views/partials/${partials_name}.hbs`, "utf-8")
         Handlebars.registerPartial('product_card', source);
         let partial = Handlebars.compile(source);
-        const product = req.body.data;
+        const product = data;
         try {
             html = partial({product: product});
         } catch (e) {

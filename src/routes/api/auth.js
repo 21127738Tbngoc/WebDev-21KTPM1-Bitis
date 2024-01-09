@@ -1,13 +1,12 @@
 //Require express router, passport, passport-google-oauth20, passport-facebook
 const router = require("express").Router();
 const express = require('express');
-const mailer = require('../../middleware/mailer');
-const CryptoJS = require('crypto-js');
 const dotenv = require('dotenv');
 const passport = require("passport");
 const User = require("../../model/user")
 
 dotenv.config();
+
 const nodemailer = require('nodemailer');
 
 let transporter = nodemailer.createTransport({
@@ -18,36 +17,21 @@ let transporter = nodemailer.createTransport({
     }
 });
 
-router.post('/login', async (req, res) => {
-    try {
-        passport.authenticate('local', {
-            successRedirect: '/',
-            failureRedirect: '/',
-            failureFlash: true
-        });
-    }
-    catch(err){
-        res.status(500).json(err);
-    }
-})
 
 router.post("/register", async (req, res) => {
-
     try {
+        console.log(req.body)
         const newUser = new User({
             username: req.body.username,
             email: req.body.email,
-            password: CryptoJS.AES.encrypt(
-                req.body.password,
-                process.env.PASS_SEC
-            ).toString(),
+            password: req.body.password,
         });
 
         let savedUser;
 
         try {
             savedUser = await newUser.save();
-        } catch (e) {
+        } catch (err) {
             console.log(err)
         }
 
