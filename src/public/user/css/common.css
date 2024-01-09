@@ -481,3 +481,35 @@ ul {
     background-color: rgba(0, 0, 0, 0.2); /* Một lớp mờ đen khi di chuột qua */
     cursor: pointer; /* Bật icon con trỏ */
 }
+
+/* Basic styles for pagination */
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .pagination-button {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .pagination-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .pagination-button.active {
+    background-color: #337ab7;
+    color: #fff;
+  }
+  
+  /* Styles for "first" and "last" buttons */
+  .pagination-button:first-child,
+  .pagination-button:last-child {
+    margin: 0 5px;
+  }
