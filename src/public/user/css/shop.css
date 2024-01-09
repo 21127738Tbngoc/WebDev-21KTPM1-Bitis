@@ -16,32 +16,39 @@
 .product-filter {
     margin-top: 1em;
 }
+
 .product-filter h5, h6 {
     font-family: title;
     margin-top: 0.6em;
 }
+
 .product-filter p {
     font-family: subtitle;
     margin-bottom: 0.5em;
 }
+
 .product-filter img {
     width: 40px;
     background-color: #e4e7e6;
 }
+
 .product-types {
     border-radius: 50%;
     padding: 8px;
     margin-bottom: 0.5em;
 }
+
 .product-filter img:hover {
     background-color: #ffc008;
 }
+
 .product-filter a {
     text-decoration: none;
     color: #1d1d1d;
     font-family: subtitle;
     background-color: #e4e7e6;
 }
+
 .color-option button {
     margin: 0 16px 0 0;
     height: 40px;
@@ -49,6 +56,45 @@
     border-radius: 0px;
     border: none;
 }
+
 .color-option button:hover {
     border: 2px solid black;
+}
+
+
+
+.pagination {
+    display: block;
+    width: 75%;
+    margin: 1em auto;
+    text-align: center;
+}
+.pagination:after {
+    content: "";
+    clear: both;
+}
+
+.pagination-button {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #e0e0e0;
+    background-color: #eee;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.1s, color 0.1s;
+}
+.pagination-button:hover {
+    background-color: #ddd;
+    color: #3366cc;
+}
+.pagination-button.active {
+    background-color: #bbb;
+    border-color: #bbb;
+    color: #3366cc;
+}
+.pagination-button:first-of-type {
+    border-radius: 18px 0 0 18px;
+}
+.pagination-button:last-of-type {
+    border-radius: 0 18px 18px 0;
 }

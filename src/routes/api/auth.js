@@ -2,38 +2,65 @@
 const router = require("express").Router();
 const express = require('express');
 const mailer = require('../../middleware/mailer');
-const crypto = require('crypto');
+const CryptoJS = require('crypto-js');
 const dotenv = require('dotenv');
 const passport = require("passport");
 const User = require("../../model/user")
-dotenv.config();
+const {check, validationResult} = require("express-validator");
 
-//Local route Login user
-router.post("/login", (req, res) => {
-    //create new user
-    const user = new User({
-        username: req.body.username,
-        password: bcrypt.AES.encrypt(req.body.password, process.env.SERET_KEY).toString()
-    });
-    //use passport login method to check if user credentials true and  authenticate it
-    req.login(user, (err) => {
-        if (err) {
-            console.log(err);
-        }
-        else {
-            passport.authenticate("local")(req, res, () => {
-                sessionStorage.setItem("userInfo", JSON.stringify(user));
-                res.redirect("/")
-            });
-        }
-    });
+dotenv.config();
+const nodemailer = require('nodemailer');
+
+let transporter = nodemailer.createTransport({
+    service: 'gmail', // Sử dụng dịch vụ Gmail (có thể sử dụng các cài đặt khác, ví dụ: host, port, auth, etc.)
+    auth: {
+        user: process.env.ADMIN_EMAIL,
+        pass: process.env.EMAIL_PASS
+    }
 });
 
 
+router.post('/login', (req, res) => {
+
+})
+
+
+router.post("/register", async (req, res) => {
+    const newUser = new User({
+        username: req.body.username,
+        email: req.body.email,
+        password: CryptoJS.AES.encrypt(
+            req.body.password,
+            process.env.PASS_SEC
+        ).toString(),
+    });
+
+    let mailOptions = {
+        from: process.env.ADMIN_EMAIL, // Địa chỉ email người gửi
+        to: req.body.email, // Địa chỉ email người nhận
+        subject: 'EMAIL KÍCH HOẠT TÀI KHOẢN TỪ WEB_DEV_072_038', // Chủ đề email
+        html: 'Please click <a href="' + link + '"> here </a> to activate your account.'
+    };
+
+    transporter.sendMail(mailOptions, function(error, info) {
+        if (error) {
+            console.error('Gửi email không thành công: ' + error);
+        } else {
+            console.log('Email đã được gửi: ' + info.response);
+        }
+    });
+
+    try {
+        const savedUser = await newUser.save();
+        res.status(201).json({_id: savedUser._id, username: savedUser.username});
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
 
 //Local route Register new user
 router.post('/register', function (req, res, next) {
-    User.register(new User({ username: req.body.username }),
+    User.register(new User({username: req.body.username}),
         req.body.password,
         function (err, user) {
 
@@ -69,11 +96,10 @@ router.get('/active/:activeToken', function (req, res, next) {
     // find the corresponding user
     User.findOne({
         activeToken: req.params.activeToken,
-        
         // check if the expire time > the current time activeExpires: {$gt: Date.now()}
     }, function (err, user) {
         if (err) return next(err);
-        
+
         // invalid activation code
         if (!user) {
             return res.render('message', {
@@ -81,12 +107,10 @@ router.get('/active/:activeToken', function (req, res, next) {
                 content: 'Your activation link is invalid, please <a href="/account/signup">register</a> again'
             });
         }
-
         // activate and save
-        user.active = true;
+        user.status = "Activated"
         user.save(function (err, user) {
             if (err) return next(err);
-
             // activation success
             res.render('message', {
                 title: 'activation success!',
@@ -95,7 +119,6 @@ router.get('/active/:activeToken', function (req, res, next) {
         });
     });
 });
-
 
 
 //Logout user
@@ -116,10 +139,10 @@ router.get('/oauth2/redirect/google', passport.authenticate('google', {
 }));
 
 router.get("/google/secret",
-    passport.authenticate('google', { failureRedirect: "/login" }),
+    passport.authenticate('google', {failureRedirect: "/login"}),
     function (req, res) {
         // Successful authentication, redirect secrets page.
-        localStorage.setItem("userInfo",JSON.stringify(req.body))
+        localStorage.setItem("userInfo", JSON.stringify(req.body))
         res.status(200).json(sessionStorage.getItem("userInfo"));
         res.redirect("/");
     });
@@ -134,7 +157,6 @@ router.get("/google/secret",
 //         // Successful authentication, redirect secrets page.
 //         res.redirect("/secrets");
 //     });
-
 
 
 //Export router
