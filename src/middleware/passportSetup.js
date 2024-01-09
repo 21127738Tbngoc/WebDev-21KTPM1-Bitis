@@ -1,11 +1,23 @@
 const passport = require("passport");
-const { compareSync } = require('bcrypt');
+const {compareSync} = require('bcrypt');
 const LocalStrategy = require('passport-local').Strategy;
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const FacebookStrategy = require("passport-facebook").Strategy;
 const User = require("../model/user")
+var _ = require('lodash');
+var nodemailer = require('nodemailer');
 
-passport.initialize()
+// Configure nodemailer for sending emails
+var transporter = nodemailer.createTransport({
+    // configure your email service
+    service: "gmail",
+    auth: {
+        user: "nhkhanh21@clc.fitus.edu.vn",
+        pass: "076942542",
+    },
+});
+
+passport.initialize();
 
 //Use passport-local configuration Create passport local Strategy
 passport.use(new LocalStrategy(
@@ -26,6 +38,7 @@ passport.use(new LocalStrategy(
     }
 ));
 
+
 // Configure Google Strategy
 passport.use(new GoogleStrategy({
         clientID: process.env.GOOGLE_CLIENT_ID,
@@ -35,7 +48,7 @@ passport.use(new GoogleStrategy({
     },
     function (accessToken, refreshToken, profile, cb) {
         console.log(accessToken, profile);
-        User.findOne({ googleId: profile.id }, (err, user) => {
+        User.findOne({googleId: profile.id}, (err, user) => {
             if (err) return cb(err, null);
             if (!user) {
                 let newUser = new User({
@@ -44,8 +57,11 @@ passport.use(new GoogleStrategy({
                     email: profile.emails[0],
                     avatar: profile.photos[0]
                 })
+
                 newUser.save();
+
                 return cb(null, newUser);
+
             } else {
                 return cb(null, user)
             }
@@ -85,5 +101,3 @@ passport.deserializeUser(function (id, done) {
         done(err, user);
     });
 });
-
-module.exports = passport;

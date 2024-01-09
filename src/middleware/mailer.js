@@ -5,16 +5,16 @@ var config = {
     host: 'smtp.126.com',
     port: 25,
     auth: {
-        user: 'xxx@126.com',
-        pass: 'yourpassword'
+        user: 'nhkhanh21@clc.fitus.edu.vn',
+        pass: '076942542'
     }
 };
     
 var transporter = nodemailer.createTransport(config);
 
 var defaultMail = {
-    from: 'Me <xxx@126.com>',
-    text: 'test text',
+    from: "Nguyễn Hữu Khánh <nhkhanh21@clc.fitus.edu.vn>",
+    text: "test text",
 };
 
 module.exports = function(mail){

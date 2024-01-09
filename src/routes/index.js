@@ -25,7 +25,7 @@ router.get("/", async function (req, res, next) {
 
 router.get('/detail/:id', async (req, res) => {
     try {
-        let product = await axios.get('http://localhost:3000/product/', {
+        let product = await axios.get(`http://localhost:3000/product/`, {
                     params:
                         {
                             filter: {_id: req.params.id}
@@ -34,6 +34,7 @@ router.get('/detail/:id', async (req, res) => {
             ).then((res)=> res.data)
         ;
         product = product[0];
+
         let related = await axios.get('http://localhost:3000/product/',{
             params: {
                 filter: {categories: {$all: product.categories.slice(0, product.categories.length - 1)}},
@@ -54,6 +55,7 @@ router.get('/detail/:id', async (req, res) => {
             })
             fbUser.push({feedback: feedbacks[i], avartar: avartar})
         }
+
         res.render('pages/user/product_detail', {
             title: 'Thông tin sản phẩm',
             Product: product,
@@ -61,6 +63,7 @@ router.get('/detail/:id', async (req, res) => {
             feedbacks: fbUser,
             User: req.user
         });
+
     } catch
         (err) {
         res.status(500).json(err.message);
