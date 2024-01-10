@@ -75,12 +75,19 @@ router.get('/detail/:id', async (req, res) => {
 
 
 router.get('/shop-nam', async function (req, res, next) {
-    res.render('pages/user/shop', {title: 'Giày dép nam', Nam: true});
+    const qFilter = req.query.filter || {};
+    const qSort = req.query.sort || {date: -1};
+    const qLimit = req.query.limit || 2 ** 32;
+    let products = await Product.find(qFilter).sort(qSort).limit(qLimit);
+    res.render('pages/user/shop', {title: 'Giày dép nam', Nam: true, Products:products});
 });
 
 router.get('/shop-nu', async function (req, res, next) {
-
-    res.render('pages/user/shop', {title: 'Giày dép nữ', Nam: false});
+    const qFilter = req.query.filter || {};
+    const qSort = req.query.sort || {date: -1};
+    const qLimit = req.query.limit || 2 ** 32;
+    let products = await Product.find(qFilter).sort(qSort).limit(qLimit);
+    res.render('pages/user/shop', {title: 'Giày dép nữ', Nam: false ,Products: products});
 });
 
 router.get('/contact', async function (req, res, next) {
