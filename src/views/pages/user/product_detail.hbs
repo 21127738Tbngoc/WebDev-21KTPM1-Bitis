@@ -145,10 +145,21 @@
 </div>
 
 <!--Related-->
+<h2 class="border-bottom mb-5">Các sản phẩm liên quan</h2>
 <div class="container-fluid">
-    <div class="container">
-
+    <div class="container" style="display: flex">
+        {{#each relatedProducts}}
+            {{> index_product_card product=this}}
+        {{/each}}
     </div>
 </div>
+
+<script>
+    let cards = document.getElementsByClassName('product-card-container')
+    for (let i = 0 ; i < cards.length; i++)
+    {
+        cards[i].style = "display: flex"
+    }
+</script>
 
 

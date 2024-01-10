@@ -33,6 +33,7 @@ router.post("/register", async (req, res) => {
             savedUser = await newUser.save();
         } catch (err) {
             console.log(err)
+            res.status(500).render('pages/error', {layout: 'error.hbs', error: err, status: err.status || 500});
         }
 
         let activeToken = savedUser._id.toString('hex');
@@ -55,7 +56,7 @@ router.post("/register", async (req, res) => {
 
         res.status(201).json({_id: savedUser._id, username: savedUser.username});
     } catch (err) {
-        res.status(500).json(err);
+        res.status(500).render('pages/error', {layout: 'error.hbs', error: err, status: err.status || 500});
     }
 });
 

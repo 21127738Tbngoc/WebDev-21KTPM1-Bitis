@@ -135,7 +135,7 @@ app.use('/user/', UserRouter);
 app.use('/feedback/', FeedbackRouter)
 app.use('/admin/', AdminRouter);
 app.use('/order/', OrderRouter);
-app.use('/hbs/',HbsRouter);
+// app.use('/hbs/',HbsRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
