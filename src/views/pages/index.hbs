@@ -12,13 +12,13 @@
             {{#each NewProducts}}
                 {{> index_product_card product=this}}
             {{/each}}
-            <div class="row justify-content-center align-content-center d-flex">
+            <div class="row justify-content-center align-content-center d-flex g-4">
                 <a href="/shop-nam" class="link-button">CÒN NHIỀU LẮM, XEM THÊM</a>
             </div>
 
 
             <!--------- Sản phẩm bán chạy --------->
-            <h3 class="row justify-content-center align-content-center">BÁN CHẠY</h3>
+            <h3 class="row justify-content-center align-content-center g-4">BÁN CHẠY</h3>
             {{#each BestSellers}}
                 {{> index_product_card product=this}}
             {{/each}}
