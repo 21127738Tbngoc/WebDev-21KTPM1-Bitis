@@ -174,22 +174,9 @@
         return HTMLdocument.body.firstElementChild;
     }
 
-    const loadingElement = create_Element(`<div id="loading-container" class="justify-content-center" style="display:block; z-index: 9999;">
-        <div class="loading-divider" aria-hidden="true"></div>
-        <p class="loading-text" aria-label="Loading">
-            <span class="loading-letter" aria-hidden="true">L</span>
-            <span class="loading-letter" aria-hidden="true">o</span>
-            <span class="loading-letter" aria-hidden="true">a</span>
-            <span class="loading-letter" aria-hidden="true">d</span>
-            <span class="loading-letter" aria-hidden="true">i</span>
-            <span class="loading-letter" aria-hidden="true">n</span>
-            <span class="loading-letter" aria-hidden="true">g</span>
-        </p>
-    </div>`)
-
     async function CommentsLoading(query) {
     const Filter = query.filter || {};
-    const Sort = query.sort || {name: "ascending"};
+    const Sort = query.sort || {date: "descending"};
     const Limit = query.limit || 2 ** 32;
     let Data = await $.ajax(
         {
@@ -206,7 +193,7 @@
             error: (errors) => errors
         });
 
-    let allProducts = []
+    let allComments = []
 
     for (let i = 0; i < Data.length; i++) {
         if (Data[i]) {
@@ -225,10 +212,10 @@
                     error: (errors) => errors
                 })
             let partial = createElement(data)
-            allProducts.push(partial);
+            allComments.push(partial);
         }
     }
-    return allProducts;
+    return allComments;
 }
 
     async function loadCommentsPage(query, page) {
@@ -300,4 +287,5 @@
         localStorage.setItem("cart",JSON.stringify(cart))
     }
 
+    CommentsLoading({filter: {product_id: {{Product.id}} }})
 </script>

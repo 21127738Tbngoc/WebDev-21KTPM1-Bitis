@@ -103,3 +103,35 @@
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const sendButton = document.querySelector('.send');
+        sendButton.addEventListener('click', function () {
+            const rating = document.querySelector('input[name="rating"]:checked').value;
+            const comment = document.querySelector('.comment-area textarea').value;
+
+            // Gửi dữ liệu lên server
+            fetch('/http://localhost:3000/feedback/add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: { product_id: {{Product.id}}, rating: rating, comments: comment, user_id: {{User._id}}
+            })
+                    .then(response => {
+                        if (response.ok) {
+                            console.log('Comment submitted successfully!');
+                            // Xử lý khi gửi thành công
+                        } else {
+                            console.error('Error submitting comment!');
+                            // Xử lý khi gửi thất bại
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error submitting comment:', error);
+                        // Xử lý khi gửi thất bại
+                    });
+        });
+    });
+</script>

@@ -24,12 +24,12 @@ router.get("/", async function (req, res, next) {
     })
 })
 
-router.get('/detail/:id', async (req, res) => {
+router.get('/detail/:_id', async (req, res) => {
     try {
         let product = await axios.get(`http://localhost:3000/product/`, {
                     params:
                         {
-                            filter: {_id: req.params.id}
+                            filter: {_id: req.params._id}
                         }
                 }
             ).then((res) => res.data)
