@@ -5,7 +5,7 @@
         <span class="close" onclick="closeModal()">&times;</span>
         <img src="/user/img/logo.png" alt="logo" width="150px" height="auto" style="margin-bottom: 0">
         <h3 class="justify-content-center text-center" style="padding: 1em 0">Đăng nhập</h3>
-        <form action="/auth/login" method="POST">
+        <form action="/login" method="POST">
             <label for="username">Tên đăng nhập</label>
             <input type="text" name="username" placeholder="example123" required>
             <label for="password">Mật khẩu</label>
@@ -31,7 +31,6 @@
     }
 </script>
 
-
 <!-- Sign up modal -->
 <div class="overlay" id="signupOverlay"></div>
 <div class="modal" id="signupModal">
@@ -39,22 +38,21 @@
         <span class="close" onclick={closeSignupModal()}>&times;</span>
         <img src="/user/img/logo.png" alt="logo" width="150px" height="auto" style="margin-bottom: 0">
         <h3 class="justify-content-center text-center" style="padding: 1em 0">Đăng ký</h3>
-        <form id="signup-form" action="/auth/register", method="POST">
+        <form id="signup-form" action="/auth/register" method="POST">
             <label for="username">Tên đăng nhập</label>
             <input type="text" id="username" name="username" placeholder="Nhập tên đăng nhập" required >
             <p id="username-notice" style="color: red; font-size: 10px"></p>
         
-            <label for="username">Email</label>
-            <input type="text" id="email" name="username" placeholder="Nhập email" required >
-            <p id="email-notice" style="color: red; font-size: 10px""></p>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Nhập email" required >
+            <p id="email-notice" style="color: red; font-size: 10px"></p>
 
             <label for="password">Mật khẩu</label>
-            <input type="password" id="password" name="username" placeholder="••••••••••••••••" required >
-            <p id="password-notice" style="color: red; font-size: 10px""></p>
+            <input type="password" id="password" name="password" placeholder="••••••••••••••••" required >
+            <p id="password-notice" style="color: red; font-size: 10px"></p>
             <button type="submit" class="btn primary-button">Đăng ký</button>
-            <br>
-
         </form>
+
     </div>
 </div>
 
@@ -74,6 +72,40 @@
         document.getElementById('signupModal').style.display = 'block';
         document.getElementById('signupOverlay').style.display = 'block';
     }
+
+    document.getElementById('signup-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Ngăn chặn việc gửi form một cách mặc định
+
+        // Lấy giá trị từ các trường input
+        const username = document.getElementById('username').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        // Tạo một object chứa dữ liệu từ form
+        const formData = {
+            username: username,
+            email: email,
+            password: password
+        };
+
+        // Gửi request POST đến URL "localhost:3000/auth/register" sử dụng Fetch API hoặc XMLHttpRequest
+        fetch('http://localhost:3000/auth/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+                .then(response => response.json())
+                .then(data => {
+                    // Xử lý dữ liệu phản hồi từ server (nếu cần)
+                    console.log(data);
+                })
+                .catch(error => {
+                    // Xử lý lỗi nếu có
+                    console.error('Error:', error);
+                });
+    });
 
 </script>
 
