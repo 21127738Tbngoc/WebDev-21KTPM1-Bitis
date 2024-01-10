@@ -48,6 +48,8 @@
     console.log(typeof `{{Product}}`)
 </script>
 
+<script src="/user/js/viewhandlers/detail_handler.js"></script>
+
 <!--Display-->
 <div class="container-fluid">
     <div class="container product-display">
@@ -145,7 +147,8 @@
 </div>
 
 <!--Related-->
-<h2 class="border-bottom mb-5">Các sản phẩm liên quan</h2>
+<div class="col-3"></div>
+<h2 class="border-bottom mb-5 justify-content-center" style="text-indent: 5em">Các sản phẩm liên quan</h2>
 <div class="container-fluid">
     <div class="container" style="display: flex">
         {{#each relatedProducts}}
@@ -153,6 +156,8 @@
         {{/each}}
     </div>
 </div>
+
+
 
 <script>
     let cards = document.getElementsByClassName('product-card-container')

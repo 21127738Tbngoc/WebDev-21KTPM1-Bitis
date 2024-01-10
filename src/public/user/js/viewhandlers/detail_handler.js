@@ -128,5 +128,6 @@ function addToCart(product,quantity)
         cart.push(dataToPush);
     }
     localStorage.setItem("cart",JSON.stringify(cart))
+    console.log(cart)
 }
 

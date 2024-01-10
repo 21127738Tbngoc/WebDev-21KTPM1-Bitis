@@ -20,7 +20,7 @@ router.get("/", async function (req, res, next) {
     }).then((res) => res.data)
 
     res.render('pages/index', {
-        title: 'Biti\'s', NewProducts: NewProducts, BestSellers: BestSellers,
+        title: 'Biti\'s', NewProducts: NewProducts, BestSellers: BestSellers,User: req.user
     })
 })
 
@@ -79,7 +79,7 @@ router.get('/shop-nam', async function (req, res, next) {
     const qSort = req.query.sort || {date: -1};
     const qLimit = req.query.limit || 2 ** 32;
     let products = await Product.find(qFilter).sort(qSort).limit(qLimit);
-    res.render('pages/user/shop', {title: 'Giày dép nam', Nam: true, Products:products});
+    res.render('pages/user/shop', {title: 'Giày dép nam', Nam: true, Products:products ,User: req.user});
 });
 
 router.get('/shop-nu', async function (req, res, next) {
@@ -87,19 +87,19 @@ router.get('/shop-nu', async function (req, res, next) {
     const qSort = req.query.sort || {date: -1};
     const qLimit = req.query.limit || 2 ** 32;
     let products = await Product.find(qFilter).sort(qSort).limit(qLimit);
-    res.render('pages/user/shop', {title: 'Giày dép nữ', Nam: false ,Products: products});
+    res.render('pages/user/shop', {title: 'Giày dép nữ', Nam: false ,Products: products ,User: req.user});
 });
 
 router.get('/contact', async function (req, res, next) {
-    res.render('pages/user/contact', {title: 'Thông tin liên hệ'});
+    res.render('pages/user/contact', {title: 'Thông tin liên hệ',User: req.user});
 });
 
 router.get('/about-us', async function (req, res, next) {
-    res.render('pages/user/about_us', {title: 'Thông tin liên hệ'});
+    res.render('pages/user/about_us', {title: 'Thông tin liên hệ',User: req.user});
 });
 
 router.get('/order-history', async function (req, res, next) {
-    res.render('pages/user/order_history', {title: 'Profile'})
+    res.render('pages/user/order_history', {title: 'Profile',User: req.user})
 })
 
 
